@@ -50,16 +50,22 @@ const (
 	skipMultusConnectivityTestsLabel = "test-network-function.com/skip_multus_connectivity_tests"
 )
 
-type PodStruct v1.Pod
+type PodStruct struct {
+	BasePod *v1.Pod
+}
 
-func (p *PodStruct) MarshalText() ([]byte, error) {
+func (p PodStruct) MarshalText() ([]byte, error) {
 	return json.Marshal(&struct {
 		Name      string `json:"Name,omitempty"`
 		Namespace string `json:"Namespace,omitempty"`
 	}{
-		Name:      p.Name,
-		Namespace: p.Namespace,
+		Name:      p.BasePod.Name,
+		Namespace: p.BasePod.Namespace,
 	})
+}
+func NewPodStruct(aPod *v1.Pod) (out PodStruct) {
+	out.BasePod = aPod
+	return out
 }
 
 type TestEnvironment struct { // rename this with testTarget
@@ -72,9 +78,9 @@ type TestEnvironment struct { // rename this with testTarget
 	variables          configuration.TestParameters
 	Crds               []*apiextv1.CustomResourceDefinition
 	ContainersMap      map[*v1.Container]*Container `json:"-"` // dont need to be in the claim.json
-	MultusIPs          map[*PodStruct]map[string][]string
-	SkipNetTests       map[*PodStruct]bool
-	SkipMultusNetTests map[*PodStruct]bool
+	MultusIPs          map[PodStruct]map[string][]string
+	SkipNetTests       map[PodStruct]bool
+	SkipMultusNetTests map[PodStruct]bool
 	Deployments        []*v1apps.Deployment
 	StatetfulSets      []*v1apps.StatefulSet
 	HorizontalScaler   map[string]*v1scaling.HorizontalPodAutoscaler
@@ -129,24 +135,23 @@ func buildTestEnvironment() { //nolint:funlen
 	env.Namespaces = data.Namespaces
 	env.variables = data.Env
 	env.ContainersMap = make(map[*v1.Container]*Container)
-	env.MultusIPs = make(map[*PodStruct]map[string][]string)
-	env.SkipNetTests = make(map[*PodStruct]bool)
-	env.SkipMultusNetTests = make(map[*PodStruct]bool)
+	env.MultusIPs = make(map[PodStruct]map[string][]string)
+	env.SkipNetTests = make(map[PodStruct]bool)
+	env.SkipMultusNetTests = make(map[PodStruct]bool)
 	env.Nodes = data.Nodes
 	pods := data.Pods
 	for i := 0; i < len(pods); i++ {
 		env.Pods = append(env.Pods, &pods[i])
 		var err error
-		testpod := PodStruct(pods[i])
-		env.MultusIPs[&testpod], err = getPodIPsPerNet(pods[i].GetAnnotations()[cniNetworksStatusKey])
+		env.MultusIPs[PodStruct{&pods[i]}], err = getPodIPsPerNet(pods[i].GetAnnotations()[cniNetworksStatusKey])
 		if err != nil {
 			logrus.Errorf("Could not decode networks-status annotation")
 		}
 		if pods[i].GetLabels()[skipConnectivityTestsLabel] != "" {
-			env.SkipNetTests[&testpod] = true
+			env.SkipNetTests[PodStruct{&pods[i]}] = true
 		}
 		if pods[i].GetLabels()[skipMultusConnectivityTestsLabel] != "" {
-			env.SkipMultusNetTests[&testpod] = true
+			env.SkipMultusNetTests[PodStruct{&pods[i]}] = true
 		}
 		env.Containers = append(env.Containers, getPodContainers(&pods[i])...)
 	}
