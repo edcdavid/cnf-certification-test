@@ -3,8 +3,11 @@ ARG TNF_PARTNER_DIR=/usr/tnf-partner
 
 ENV TNF_PARTNER_SRC_DIR=$TNF_PARTNER_DIR/src
 
-ARG OPENSHIFT_VERSION
-ENV OPENSHIFT_VERSION=${OPENSHIFT_VERSION}
+ENV RELEASE_LEVEL="4.10"
+
+ARG LOCAL_BUILD
+ENV LOCAL_BUILD_DEFAULT=false
+ENV LOCAL_BUILD="${LOCAL_BUILD:-$LOCAL_BUILD_DEFAULT}"
 
 ENV TNF_DIR=/usr/tnf
 ENV TNF_SRC_DIR=${TNF_DIR}/tnf-src
@@ -29,6 +32,10 @@ RUN if [[ "$(uname -m)" -eq "x86_64" ]] ; then \
      fi
 
 # Install oc binary
+RUN VERSIONS=($(curl -sH 'Accept: application/json' "https://api.openshift.com/api/upgrades_info/v1/graph?channel=stable-${RELEASE_LEVEL}&arch=amd64" | jq -r '.nodes[].version' | sort -t "." -k1,1n -k2,2n -k3,3n));export VERSIONS=$VERSIONS
+RUN OPENSHIFT_VERSION=${VERSIONS[${#VERSIONS[@]} - 1]}; export OPENSHIFT_VERSION=$OPENSHIFT_VERSION
+RUN echo $VERSIONS
+RUN echo $OPENSHIFT_VERSION
 ENV OC_BIN_TAR="openshift-client-linux.tar.gz"
 ENV OC_DL_URL="https://mirror.openshift.com/pub/openshift-v4/clients/ocp"/${OPENSHIFT_VERSION}/${OC_BIN_TAR}
 ENV OC_BIN="/usr/local/oc/bin"
@@ -50,10 +57,16 @@ ARG TNF_PARTNER_VERSION
 ARG TNF_PARTNER_SRC_URL=https://github.com/test-network-function/cnf-certification-test-partner
 ARG GIT_PARTNER_CHECKOUT_TARGET=$TNF_PARTNER_VERSION
 
-# Clone the TNF source repository and checkout the target branch/tag/commit
-RUN git clone --no-single-branch --depth=1 ${TNF_SRC_URL} ${TNF_SRC_DIR}
-RUN git -C ${TNF_SRC_DIR} fetch origin ${GIT_CHECKOUT_TARGET}
-RUN git -C ${TNF_SRC_DIR} checkout ${GIT_CHECKOUT_TARGET}
+if $LOCAL_BUILD == true ; then
+	# Copy local source
+	COPY ./ /${TNF_SRC_DIR}/.
+	RUN rm -rf /${TNF_SRC_DIR}/vendor
+else
+	# Clone the TNF source repository and checkout the target branch/tag/commit
+	RUN git clone --no-single-branch --depth=1 ${TNF_SRC_URL} ${TNF_SRC_DIR}
+	RUN git -C ${TNF_SRC_DIR} fetch origin ${GIT_CHECKOUT_TARGET}
+	RUN git -C ${TNF_SRC_DIR} checkout ${GIT_CHECKOUT_TARGET}
+fi
 
 # Clone the partner source repository and checkout the target branch/tag/commit
 RUN git clone --no-single-branch --depth=1 ${TNF_PARTNER_SRC_URL} ${TNF_PARTNER_SRC_DIR}

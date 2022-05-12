@@ -135,3 +135,8 @@ install-moq:
 generate: install-moq
 	find . | grep _moq.go | xargs rm
 	go generate ./...
+
+local-image-podman:
+	podman build --no-cache \
+	-t localimage:latest \
+	--build-arg LOCAL_BUILD=true .
