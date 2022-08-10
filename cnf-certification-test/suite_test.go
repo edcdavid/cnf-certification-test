@@ -34,6 +34,7 @@ import (
 	_ "github.com/test-network-function/cnf-certification-test/cnf-certification-test/accesscontrol"
 	_ "github.com/test-network-function/cnf-certification-test/cnf-certification-test/certification"
 	_ "github.com/test-network-function/cnf-certification-test/cnf-certification-test/chaostesting"
+	_ "github.com/test-network-function/cnf-certification-test/cnf-certification-test/cnfextentions"
 	_ "github.com/test-network-function/cnf-certification-test/cnf-certification-test/lifecycle"
 	_ "github.com/test-network-function/cnf-certification-test/cnf-certification-test/networking"
 	_ "github.com/test-network-function/cnf-certification-test/cnf-certification-test/observability"

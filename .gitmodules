@@ -1,0 +1,3 @@
+[submodule "cnf-certification-test/cnfextentions"]
+	path = cnf-certification-test/cnfextentions
+	url = git@github.com:edcdavid/cnfextentions.git
