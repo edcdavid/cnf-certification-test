@@ -3,7 +3,7 @@ module github.com/test-network-function/cnf-certification-test
 go 1.18
 
 require (
-	github.com/Masterminds/semver/v3 v3.1.1
+	github.com/Masterminds/semver/v3 v3.1.1 // indirect
 	github.com/basgys/goxml2json v1.1.0
 	github.com/sirupsen/logrus v1.9.0
 	github.com/spf13/cobra v1.5.0
@@ -13,7 +13,7 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
 
-require k8s.io/client-go v0.25.0
+require k8s.io/client-go v0.25.1
 
 require (
 	github.com/kelseyhightower/envconfig v1.4.0
@@ -24,8 +24,8 @@ require (
 	github.com/operator-framework/operator-lifecycle-manager v0.20.0
 	github.com/pkg/errors v0.9.1 // indirect
 	helm.sh/helm/v3 v3.9.4
-	k8s.io/api v0.25.0
-	k8s.io/apimachinery v0.25.0
+	k8s.io/api v0.25.1
+	k8s.io/apimachinery v0.25.1
 	k8s.io/klog/v2 v2.70.1 // indirect
 )
 
@@ -168,7 +168,5 @@ require (
 	github.com/openshift/machine-config-operator v0.0.0-00010101000000-000000000000
 	gopkg.in/yaml.v3 v3.0.1
 )
-
-require github.com/josharian/intern v1.0.0 // indirect
 
 replace github.com/openshift/machine-config-operator => github.com/openshift/machine-config-operator v0.0.1-0.20200913004441-7eba765c69c9
