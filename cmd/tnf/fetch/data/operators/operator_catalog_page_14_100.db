@@ -1,395 +1,6 @@
 {
   "data": [
     {
-      "_id": "6127d9b3dece23122b7a8392",
-      "alm_examples": [
-        {
-          "api_version": "modelbuilder.com/v1alpha1",
-          "kind": "Modelbuilder",
-          "metadata": {
-            "name": "modelbuilder-sample"
-          },
-          "spec": {
-            "backup_storage": {
-              "storage_class": "ibmc-file-gold-gid",
-              "storage_size": "20G"
-            },
-            "env_type": "prod",
-            "in_memory_storage": {
-              "storage_class": "ibmc-file-gold-gid",
-              "storage_size": "20G"
-            },
-            "license": {
-              "accept": false
-            },
-            "metadata_storage": {
-              "storage_class": "ibmc-block-bronze",
-              "storage_size": "20G"
-            },
-            "photo_storage": {
-              "storage_class": "ibmc-file-gold-gid",
-              "storage_size": "500G"
-            },
-            "vm_request_method": "dynamic"
-          }
-        }
-      ],
-      "annotations": {
-        "infrastructure_features": [],
-        "valid_subscription": []
-      },
-      "architectures": [],
-      "bundle_path": "registry.connect.redhat.com/ibm/modelbuilder-bundle@sha256:cf8245accfa24c18ad9d27792b5bd2379fa476cc1f221c749e10f1b0f770f8ff",
-      "bundle_path_digest": "sha256:cf8245accfa24c18ad9d27792b5bd2379fa476cc1f221c749e10f1b0f770f8ff",
-      "capabilities": [
-        "Seamless Upgrades"
-      ],
-      "channel_name": "stable",
-      "creation_date": "2021-08-26T18:13:07.816000+00:00",
-      "csv_description": "IBM Services Software Model Builder for Vision is an AI training platform that can use the capabilities of IBM Cloud and its GPUs to quickly train computer vision models for compatible mobile apps. IBM Services Software Inspection Workbench iOS and iPadOS app will be used as the exclusive UI for labeling and training. Specifically, IBM Model Builder for Vision will train computer vision models that can then be deployed for use on the IBM Services Software Inspector Portable , IBM Services Software Inspector Wearable and the IBM Maximo Visual Inspection Mobile apps.",
-      "csv_display_name": "IBM Model Builder for Vision",
-      "csv_metadata_description": "",
-      "csv_name": "ibm-modelbuilder-for-vision.v1.0.0",
-      "in_index_img": true,
-      "install_modes": [
-        {
-          "supported": true,
-          "type": "OwnNamespace"
-        },
-        {
-          "supported": true,
-          "type": "SingleNamespace"
-        },
-        {
-          "supported": false,
-          "type": "MultiNamespace"
-        },
-        {
-          "supported": false,
-          "type": "AllNamespaces"
-        }
-      ],
-      "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:42:34.128000+00:00",
-      "latest_in_channel": true,
-      "ocp_version": "4.5",
-      "organization": "certified-operators",
-      "package": "model-builder-for-vision-certified",
-      "provided_apis": [
-        {
-          "group": "modelbuilder.com",
-          "kind": "Modelbuilder",
-          "plural": "modelbuilders",
-          "version": "v1alpha1"
-        }
-      ],
-      "provider": "IBM",
-      "related_images": [
-        {
-          "digest": "sha256:7839f12f1bd45ff5df207a30e254996701ec4a3034b3f29f0e89abe30b89e5e8",
-          "image": "registry.connect.redhat.com/ibm/modelbuilder-operator@sha256:7839f12f1bd45ff5df207a30e254996701ec4a3034b3f29f0e89abe30b89e5e8",
-          "name": "modelbuilder-operator-7839f12f1bd45ff5df207a30e254996701ec4a3034b3f29f0e89abe30b89e5e8-annotation"
-        },
-        {
-          "digest": "sha256:7839f12f1bd45ff5df207a30e254996701ec4a3034b3f29f0e89abe30b89e5e8",
-          "image": "registry.connect.redhat.com/ibm/modelbuilder-operator@sha256:7839f12f1bd45ff5df207a30e254996701ec4a3034b3f29f0e89abe30b89e5e8",
-          "name": "modelbuilder"
-        },
-        {
-          "digest": "sha256:8ce51f160748de50a023e6fe8c2a50f3f0088988e1244e25de9d27594f4c0b2e",
-          "image": "registry.redhat.io/openshift4/ose-kube-rbac-proxy@sha256:8ce51f160748de50a023e6fe8c2a50f3f0088988e1244e25de9d27594f4c0b2e",
-          "name": "kube-rbac-proxy"
-        },
-        {
-          "digest": "sha256:0c5350728fd5f7739eacaee7f32456d02cf1a2465f9d7fc48bacdcf73dcfa142",
-          "image": "registry.redhat.io/rhel8/postgresql-12@sha256:0c5350728fd5f7739eacaee7f32456d02cf1a2465f9d7fc48bacdcf73dcfa142",
-          "name": "postgres_cli"
-        },
-        {
-          "digest": "sha256:4c5f605669edc2125a6aea31c66c89cef524b57284eac302f35bbfa4680d1467",
-          "image": "registry.connect.redhat.com/crunchydata/pgo-deployer@sha256:4c5f605669edc2125a6aea31c66c89cef524b57284eac302f35bbfa4680d1467",
-          "name": "pgo_deploy"
-        },
-        {
-          "digest": "sha256:7d7ac1726d07e5c0cce79fa2b7d6ea7dfac3b94a1873ceeac84a90b2f5a0273d",
-          "image": "registry.connect.redhat.com/ibm/modelbuilder-pgo-util@sha256:7d7ac1726d07e5c0cce79fa2b7d6ea7dfac3b94a1873ceeac84a90b2f5a0273d",
-          "name": "pgo_client"
-        },
-        {
-          "digest": "sha256:2454f6ee74033c8c6ad55868cee4509c78b6da523110ce28ceaa6b99ed06e582",
-          "image": "registry.connect.redhat.com/ibm/modelbuilder-augmentor@sha256:2454f6ee74033c8c6ad55868cee4509c78b6da523110ce28ceaa6b99ed06e582",
-          "name": "coreml_augmentor"
-        },
-        {
-          "digest": "sha256:50389b84e5857dfb512740192c151896bc538e1afc037dc823b48fd002419d68",
-          "image": "registry.connect.redhat.com/ibm/modelbuilder-image-server@sha256:50389b84e5857dfb512740192c151896bc538e1afc037dc823b48fd002419d68",
-          "name": "nginx"
-        },
-        {
-          "digest": "sha256:0f3f57dd27aa346b030bb0b6d5e8ffe3f225e4f89c1187c6b00803d320a60898",
-          "image": "registry.connect.redhat.com/ibm/modelbuilder-auth-service@sha256:0f3f57dd27aa346b030bb0b6d5e8ffe3f225e4f89c1187c6b00803d320a60898",
-          "name": "mb_auth_coreml"
-        },
-        {
-          "digest": "sha256:e3bbe7f8dd13da47271e98c8e897ceae14ec34a2b18c377d560fbabfbd52d2c6",
-          "image": "registry.connect.redhat.com/ibm/modelbuilder-cv-training-service@sha256:e3bbe7f8dd13da47271e98c8e897ceae14ec34a2b18c377d560fbabfbd52d2c6",
-          "name": "mb_service_coreml"
-        },
-        {
-          "digest": "sha256:e43443f9b8a5c0c4f228c23f302b37444f74b55539b6fd5f7ca4d6ebc9d5e0f1",
-          "image": "registry.redhat.io/rhel8/redis-6@sha256:e43443f9b8a5c0c4f228c23f302b37444f74b55539b6fd5f7ca4d6ebc9d5e0f1",
-          "name": "redis"
-        },
-        {
-          "digest": "sha256:f28f53451464900701cc711a88b86372dab2b6d6f59cc40ad302f8e9f462c1b7",
-          "image": "registry.connect.redhat.com/ibm/modelbuilder-util@sha256:f28f53451464900701cc711a88b86372dab2b6d6f59cc40ad302f8e9f462c1b7",
-          "name": "util"
-        }
-      ],
-      "replaces": null,
-      "skip_range": null,
-      "skips": [],
-      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.5",
-      "version": "1.0.0",
-      "version_original": "1.0.0"
-    },
-    {
-      "_id": "61295ccdeb34b73652493666",
-      "alm_examples": [
-        {
-          "api_version": "sonatype.com/v1alpha1",
-          "kind": "NexusIQ",
-          "metadata": {
-            "name": "example-nexusiq"
-          },
-          "spec": {
-            "deployment": {
-              "postStart": {},
-              "preStart": {}
-            },
-            "fullnameOverride": "",
-            "imagePullSecrets": [],
-            "ingress": {
-              "annotations": {},
-              "enabled": false,
-              "hosts": [],
-              "path": "/",
-              "tls": []
-            },
-            "iq": {
-              "adminPort": 8071,
-              "applicationPort": 8070,
-              "configYaml": {
-                "createSampleData": true,
-                "server": {
-                  "adminConnectors": [
-                    {
-                      "port": 8071,
-                      "type": "http"
-                    }
-                  ],
-                  "applicationConnectors": [
-                    {
-                      "port": 8070,
-                      "type": "http"
-                    }
-                  ]
-                },
-                "sonatypeWork": "/sonatype-work"
-              },
-              "imageName": "registry.connect.redhat.com/sonatype/nexus-iq-server@sha256:ce08dbabd686ab02f246b43dccb708e2c4d81d656a091965dd3b73123091f790",
-              "imagePullPolicy": "IfNotPresent",
-              "imagePullSecret": "",
-              "licenseSecret": "",
-              "memory": "1Gi",
-              "name": "nxiq"
-            },
-            "nameOverride": "",
-            "persistence": {
-              "accessMode": "ReadWriteOnce",
-              "storageSize": "1Gi"
-            },
-            "service": {
-              "annotations": {},
-              "enabled": false,
-              "labels": {},
-              "ports": [
-                {
-                  "name": "nexus-service",
-                  "port": 80,
-                  "targetPort": 80
-                }
-              ]
-            },
-            "serviceAccount": {
-              "create": true
-            }
-          }
-        }
-      ],
-      "annotations": {
-        "infrastructure_features": [],
-        "valid_subscription": []
-      },
-      "architectures": [],
-      "bundle_path": "registry.connect.redhat.com/sonatype/nxiq-operator-bundle@sha256:8a3a9689f37c693a1a87bbe2c1f794df9d577fb048c3e4ef74d88e3d5328b594",
-      "bundle_path_digest": "sha256:8a3a9689f37c693a1a87bbe2c1f794df9d577fb048c3e4ef74d88e3d5328b594",
-      "capabilities": [
-        "Basic Install"
-      ],
-      "channel_name": "stable",
-      "creation_date": "2021-08-27T21:44:45.783000+00:00",
-      "csv_description": "Nexus Lifecycle is an open source governance platform that continuously identifies risk,\nautomatically enforces policy, and provides visibility throughout the entire SDLC.\nDevelopers leveraging open source require a solution that helps them make safer choices\nwhile still delivering at DevOps speed.\nNexus Lifecycle empowers developers and security teams to choose the best components\nand govern open source usage, ensuring organizations continue to innovate with less risk.\n\n## Core Capabilities\n\n* **Dependency Management**:\n  Generate a precise software bill of materials for all applications\n  to identify open source components and gather contextual direct\n  and transitive dependency information for faster action.\n* **One-Click Remediation**:\n  Upgrade to the best components and versions based on real-time intelligence.\n  Available in your preferred IDE or a GitHub pull request.\n* **Automated Open Source Policy Enforcement**:\n  Create custom security, license, and architectural policies based\n  on application type or organization and contextually enforce those policies\n  across every stage of the SDLC.\n* **Continuous Monitoring**:\n  Real-time notifications of newly discovered defects,\n  as well as vulnerabilities based on component,\n  risk level or application/container affected.\n\n## Extras\n\n* IDE Integrations: Eclipse, IntelliJ, and Visual Studio\n* Source Control Integrations: GitHub, GitLab, and Bitbucket\n* Chrome Browser Extension\n* Red Hat Clair for Container Scanning\n\n\n## Usage\n\nOnce the server instance is created by the operator and running,\nyou'll want to expose the service as you see fit:\n1. Create a Route to the new service for iq.applicationPort (8070).\n2. Visit the URL provided by the Route, login, and set new credentials.\n  The default credentials are `admin`/`admin123`.\n\nThe Nexus IQ Server can be further configured via the NexusIQ custom resource definition:\n\n| Parameter            | Description                                                  | Default           |\n| -------------------- | ------------------------------------------------------------ | ----------------- |\n| `iq.applicationPort` | Port of the application connector. Must match the value in the `configYaml` property | `8070`            |\n| `iq.adminPort`       | Port of the application connector. Must match the value in the `configYaml` property | `8071`            |\n| `iq.memory`          | The amount of RAM to allocate                                | `1Gi`             |\n| `iq.licenseSecret`   | The base-64 encoded license file to be installed at startup  | `\"\"`              |\n| `iq.configYaml`      | A YAML block which will be used as a configuration block for IQ Server. | See example YAML shown when creating a NexusIQ. |\n| `ingress.enabled`                           | Create an ingress for Nexus         | `true`                                  |\n| `ingress.annotations`                       | Annotations to enhance ingress configuration  | `{}`                          |\n| `ingress.tls.enabled`                       | Enable TLS                          | `true`                                 |\n| `ingress.tls.secretName`                    | Name of the secret storing TLS cert, `false` to use the Ingress' default certificate | `nexus-tls`                             |\n| `ingress.path`                              | Path for ingress rules. GCP users should set to `/*` | `/`                    |\n| `deployment.preStart.command`               | Command to run before starting the IQ Server container  | `nil`                   |\n| `deployment.postStart.command`              | Command to run after starting the IQ Server container  | `nil`                    |\n| `deployment.terminationGracePeriodSeconds` | Time to allow for clean shutdown                        | 120                      |\n| `persistence.storageClass` | The provisioner class                        | `-` (disables dynamic provisioning)            |\n| `persistence.storageSize` | The amount of drive space to allocate                        | `1Gi`             |\n| `persistence.accessMode` | Default access mode                        | `ReadWriteOnce`             |\n| `persistence.volumeConfiguration` | A YAML block to configure the persistent volume type. Defaults to `hostPath` which should not be used in production | `hostPath`             |\n\n## Configuring IQ Server\n\nYou can define the `config.yml` for IQ Server in your CRD on startup. \nIt is the `iq.configYaml` property. For more details, see the [Configuring IQ Server](https://help.sonatype.com/iqserver/configuring) help page.\n\n\n## Installing the License\n\nThe license file can be installed via the UI when IQ server is running, or it can be done as a part of the deploy. \nIf you leave the `licenseFile` field empty/commented, IQ Server will start and prompt you to manually install the license \nwhen you first enter the GUI.\n\n### Installing the License Automatically\nTo do it automatically, first encode your `.lic` file in Base 64 with no line breaks, eg:\n\n```bash\nbase64 --wrap=0 mylicense.lic > lic.base64\n```\n\nThen add this value to your CRD file as `iq.licenseSecret`, eg:\n\n```yaml\niq:\n  licenseSecret: bXkgc2FtcGxlIGxpY2Vuc2U=\n```\n\nSpecify the `licenseFile` path in `iq.configYaml` as:\n\n```yaml\niq:\n  configYaml:\n    server:\n      applicationConnectors:\n        - type: http\n          port: 8070\n      adminConnectors:\n        - type: http\n          port: 8071\n    createSampleData: true\n    sonatypeWork: /sonatype-work\n    # add this line and the `licenseSecret` above to autoconfigure licensing\n    licenseFile: /etc/nexus-iq-license/license_lic\n```",
-      "csv_display_name": "Nexus IQ Operator",
-      "csv_metadata_description": "Nexus Lifecycle is an open source governance platform that continuously identifies risk,\nautomatically enforces policy, and provides visibility throughout the entire SDLC.",
-      "csv_name": "nxiq-operator-certified.v1.121.0-2",
-      "in_index_img": true,
-      "install_modes": [
-        {
-          "supported": true,
-          "type": "OwnNamespace"
-        },
-        {
-          "supported": true,
-          "type": "SingleNamespace"
-        },
-        {
-          "supported": false,
-          "type": "MultiNamespace"
-        },
-        {
-          "supported": true,
-          "type": "AllNamespaces"
-        }
-      ],
-      "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:38:13.086000+00:00",
-      "latest_in_channel": false,
-      "ocp_version": "4.5",
-      "organization": "certified-operators",
-      "package": "nxiq-operator-certified",
-      "provided_apis": [
-        {
-          "group": "sonatype.com",
-          "kind": "NexusIQ",
-          "plural": "nexusiqs",
-          "version": "v1alpha1"
-        }
-      ],
-      "provider": "Sonatype",
-      "related_images": [
-        {
-          "digest": "sha256:866afa870edc9e18d904c287b8c52daefdac775c01fbbaa4ed8b68e4aba64ed3",
-          "image": "registry.connect.redhat.com/sonatype/nxiq-operator-certified@sha256:866afa870edc9e18d904c287b8c52daefdac775c01fbbaa4ed8b68e4aba64ed3",
-          "name": "nxiq-operator-certified-866afa870edc9e18d904c287b8c52daefdac775c01fbbaa4ed8b68e4aba64ed3-annotation"
-        },
-        {
-          "digest": "sha256:866afa870edc9e18d904c287b8c52daefdac775c01fbbaa4ed8b68e4aba64ed3",
-          "image": "registry.connect.redhat.com/sonatype/nxiq-operator-certified@sha256:866afa870edc9e18d904c287b8c52daefdac775c01fbbaa4ed8b68e4aba64ed3",
-          "name": "nxiq-operator-certified"
-        },
-        {
-          "digest": "sha256:ce08dbabd686ab02f246b43dccb708e2c4d81d656a091965dd3b73123091f790",
-          "image": "registry.connect.redhat.com/sonatype/nexus-iq-server@sha256:ce08dbabd686ab02f246b43dccb708e2c4d81d656a091965dd3b73123091f790",
-          "name": "iq"
-        },
-        {
-          "digest": "sha256:ce08dbabd686ab02f246b43dccb708e2c4d81d656a091965dd3b73123091f790",
-          "image": "registry.connect.redhat.com/sonatype/nexus-iq-server@sha256:ce08dbabd686ab02f246b43dccb708e2c4d81d656a091965dd3b73123091f790",
-          "name": "nexus-iq-server-ce08dbabd686ab02f246b43dccb708e2c4d81d656a091965dd3b73123091f790-annotation"
-        }
-      ],
-      "replaces": null,
-      "skip_range": null,
-      "skips": [],
-      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.5",
-      "version": "1.121.0-2",
-      "version_original": "1.121.0-2"
-    },
-    {
-      "_id": "613017c5dc2dfaaae870540f",
-      "alm_examples": [
-        {
-          "api_version": "charts.helm.k8s.io/v1",
-          "kind": "Kubeturbo",
-          "metadata": {
-            "name": "kubeturbo-release"
-          },
-          "spec": {
-            "serverMeta": {
-              "turboServer": "https://Turbo_server_URL"
-            },
-            "targetConfig": {
-              "targetName": "Cluster_Name"
-            }
-          }
-        }
-      ],
-      "annotations": {
-        "infrastructure_features": [],
-        "valid_subscription": []
-      },
-      "architectures": [],
-      "bundle_path": "registry.connect.redhat.com/turbonomic/kubeturbo-operator-bundle@sha256:62250d515fa374b29f57381fea8f4f9a56ff6e00056b38476e629c91606c7369",
-      "bundle_path_digest": "sha256:62250d515fa374b29f57381fea8f4f9a56ff6e00056b38476e629c91606c7369",
-      "capabilities": [
-        "Basic Install"
-      ],
-      "channel_name": "stable",
-      "creation_date": "2021-09-02T00:16:05.959000+00:00",
-      "csv_description": "### Application Resource Management for Kubernetes\nTurbonomic AI-powered Application Resource Management simultaneously optimizes performance, compliance, and cost in real time.\nSoftware manages the complete application stack, automatically. Applications are continually resourced to perform while satisfying business constraints.\n\nTurbonomic makes workloads smart \u2014 enabling them to self-manage and determines the specific actions that will drive continuous health:\n\n* Continuous placement for Pods (rescheduling)\n* Continuous scaling for applications and  the underlying cluster.\n\nIt assures application performance by giving workloads the resources they need when they need them.\n\n### How does it work?\nTurbonomic uses a container \u2014 KubeTurbo \u2014 that runs in your Kubernetes or Red Hat OpenShift cluster to discover and monitor your environment.\nKubeTurbo runs together with the default scheduler and sends this data back to the Turbonomic analytics engine.\nTurbonomic determines the right actions that drive continuous health, including continuous placement for Pods and continuous scaling for applications and the underlying cluster.",
-      "csv_display_name": "Kubeturbo Operator",
-      "csv_metadata_description": "Turbonomic Workload Automation for Multicloud simultaneously optimizes performance, compliance, and cost in real-time. Workloads are precisely resourced, automatically, to perform while satisfying business constraints.",
-      "csv_name": "kubeturbo-operator.v8.3.1",
-      "in_index_img": true,
-      "install_modes": [
-        {
-          "supported": true,
-          "type": "OwnNamespace"
-        },
-        {
-          "supported": true,
-          "type": "SingleNamespace"
-        },
-        {
-          "supported": false,
-          "type": "MultiNamespace"
-        },
-        {
-          "supported": true,
-          "type": "AllNamespaces"
-        }
-      ],
-      "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:11:53.267000+00:00",
-      "latest_in_channel": false,
-      "ocp_version": "4.5",
-      "organization": "certified-operators",
-      "package": "kubeturbo-certified",
-      "provided_apis": [
-        {
-          "group": "charts.helm.k8s.io",
-          "kind": "Kubeturbo",
-          "plural": "kubeturbos",
-          "version": "v1"
-        },
-        {
-          "group": "charts.helm.k8s.io",
-          "kind": "Kubeturbo",
-          "plural": "kubeturbos",
-          "version": "v1alpha1"
-        }
-      ],
-      "provider": "Turbonomic, Inc.",
-      "related_images": [],
-      "replaces": null,
-      "skip_range": null,
-      "skips": [],
-      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.5",
-      "version": "8.3.1",
-      "version_original": "8.3.1"
-    },
-    {
       "_id": "6133af63c61b370d4fd4cca6",
       "alm_examples": [
         {
@@ -478,7 +89,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:09:55.489000+00:00",
+      "last_update_date": "2022-11-23T07:19:04.726000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -565,7 +176,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:25:48.040000+00:00",
+      "last_update_date": "2022-11-23T07:26:23.788000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -806,7 +417,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:46:01.771000+00:00",
+      "last_update_date": "2022-11-23T08:51:59.559000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.5",
       "organization": "certified-operators",
@@ -962,7 +573,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:25:00.613000+00:00",
+      "last_update_date": "2022-11-23T08:49:11.787000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.5",
       "organization": "certified-operators",
@@ -1068,7 +679,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:54:48.152000+00:00",
+      "last_update_date": "2022-11-23T07:40:18.094000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -1189,7 +800,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:57:12.400000+00:00",
+      "last_update_date": "2022-11-23T07:27:00.862000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -1330,7 +941,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:05:58.051000+00:00",
+      "last_update_date": "2022-11-23T08:31:17.177000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.5",
       "organization": "certified-operators",
@@ -1434,7 +1045,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:36:56.392000+00:00",
+      "last_update_date": "2022-11-23T08:34:25.175000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.5",
       "organization": "certified-operators",
@@ -1530,7 +1141,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T10:39:19.279000+00:00",
+      "last_update_date": "2022-11-23T08:47:26.652000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.5",
       "organization": "certified-operators",
@@ -1738,7 +1349,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:49:45.400000+00:00",
+      "last_update_date": "2022-11-23T08:58:25.539000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.5",
       "organization": "certified-operators",
@@ -1839,7 +1450,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:13:18.130000+00:00",
+      "last_update_date": "2022-11-23T09:24:32.882000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.5",
       "organization": "certified-operators",
@@ -2047,7 +1658,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:07:42.962000+00:00",
+      "last_update_date": "2022-11-23T06:44:46.941000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -2173,7 +1784,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:36:51.223000+00:00",
+      "last_update_date": "2022-11-23T07:29:53.435000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -2398,7 +2009,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:24:54.036000+00:00",
+      "last_update_date": "2022-11-23T07:34:01.246000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -2608,7 +2219,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T12:13:01.347000+00:00",
+      "last_update_date": "2022-11-23T07:36:15.381000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -2734,7 +2345,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:28:43.844000+00:00",
+      "last_update_date": "2022-11-23T07:43:49.450000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -2876,7 +2487,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:35:23.352000+00:00",
+      "last_update_date": "2022-11-23T07:30:36.165000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -3023,7 +2634,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:56:16.291000+00:00",
+      "last_update_date": "2022-11-23T07:39:00.322000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -3170,7 +2781,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:28:55.627000+00:00",
+      "last_update_date": "2022-11-23T07:36:47.992000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -3570,7 +3181,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:12:04.501000+00:00",
+      "last_update_date": "2022-11-23T07:07:52.604000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -4031,7 +3642,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:15:48.306000+00:00",
+      "last_update_date": "2022-11-23T07:33:26.528000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -4224,7 +3835,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:09:39.300000+00:00",
+      "last_update_date": "2022-11-23T07:42:40.586000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -4345,7 +3956,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:17:18.342000+00:00",
+      "last_update_date": "2022-11-23T08:47:38.446000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -4465,7 +4076,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:30:45.891000+00:00",
+      "last_update_date": "2022-11-23T07:33:09.554000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -4572,7 +4183,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:18:07.748000+00:00",
+      "last_update_date": "2022-11-23T07:13:00.286000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -4633,7 +4244,7 @@
       "in_index_img": true,
       "install_modes": [],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T12:08:56.801000+00:00",
+      "last_update_date": "2022-11-23T07:18:25.994000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -4731,7 +4342,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:17:56.617000+00:00",
+      "last_update_date": "2022-11-23T07:29:37.689000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -4852,7 +4463,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:30:37.511000+00:00",
+      "last_update_date": "2022-11-23T07:40:14.569000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -4984,7 +4595,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:04:41.031000+00:00",
+      "last_update_date": "2022-11-23T07:22:33.818000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -5056,7 +4667,7 @@
       "in_index_img": true,
       "install_modes": [],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:39:42.708000+00:00",
+      "last_update_date": "2022-11-23T07:29:06.153000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -5152,7 +4763,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:03:48.210000+00:00",
+      "last_update_date": "2022-11-23T07:38:10.727000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -5259,7 +4870,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:50:17.484000+00:00",
+      "last_update_date": "2022-11-23T07:42:15.301000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -5380,7 +4991,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:25:44.192000+00:00",
+      "last_update_date": "2022-11-23T07:42:09.069000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -5500,7 +5111,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:06:30.343000+00:00",
+      "last_update_date": "2022-11-23T07:36:17.037000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -5621,7 +5232,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:05:18.472000+00:00",
+      "last_update_date": "2022-11-23T07:32:39.929000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -5693,7 +5304,7 @@
       "in_index_img": true,
       "install_modes": [],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:46:08.612000+00:00",
+      "last_update_date": "2022-11-23T07:26:34.086000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -5789,7 +5400,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:35:12.445000+00:00",
+      "last_update_date": "2022-11-23T07:36:03.578000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -5898,7 +5509,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:07:48.209000+00:00",
+      "last_update_date": "2022-11-23T06:40:16.768000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -6007,7 +5618,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T10:40:03.298000+00:00",
+      "last_update_date": "2022-11-23T07:29:47.462000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -6126,7 +5737,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:48:26.907000+00:00",
+      "last_update_date": "2022-11-23T06:55:16.116000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -6246,7 +5857,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:33:12.129000+00:00",
+      "last_update_date": "2022-11-23T07:40:38.415000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -6355,7 +5966,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:01:18.969000+00:00",
+      "last_update_date": "2022-11-23T07:22:22.165000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -6462,7 +6073,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:41:21.878000+00:00",
+      "last_update_date": "2022-11-23T07:45:34.328000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -6583,7 +6194,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:22:17.013000+00:00",
+      "last_update_date": "2022-11-23T07:32:05.958000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -6712,7 +6323,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:41:34.948000+00:00",
+      "last_update_date": "2022-11-23T07:33:31.422000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -6829,7 +6440,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T12:11:16.983000+00:00",
+      "last_update_date": "2022-11-23T07:38:12.438000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -6950,7 +6561,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T10:55:49.469000+00:00",
+      "last_update_date": "2022-11-23T07:35:58.320000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -7067,7 +6678,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:50:59.960000+00:00",
+      "last_update_date": "2022-11-23T07:32:18.558000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -7126,7 +6737,7 @@
       "in_index_img": true,
       "install_modes": [],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:49:40.618000+00:00",
+      "last_update_date": "2022-11-23T07:29:25.754000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -7174,7 +6785,7 @@
       "in_index_img": true,
       "install_modes": [],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:21:11.883000+00:00",
+      "last_update_date": "2022-11-23T07:05:10.792000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -7224,7 +6835,7 @@
       "in_index_img": true,
       "install_modes": [],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:39:30.234000+00:00",
+      "last_update_date": "2022-11-23T07:30:08.623000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -7322,7 +6933,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T12:11:33.936000+00:00",
+      "last_update_date": "2022-11-23T08:58:20.590000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -7430,7 +7041,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T12:06:06.011000+00:00",
+      "last_update_date": "2022-11-23T06:45:09.908000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -7724,7 +7335,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T12:07:42.106000+00:00",
+      "last_update_date": "2022-11-23T07:28:59.622000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -8097,7 +7708,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:11:39.749000+00:00",
+      "last_update_date": "2022-11-23T07:36:01.612000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -8309,7 +7920,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:26:57.174000+00:00",
+      "last_update_date": "2022-11-23T07:31:17.832000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -8478,7 +8089,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:22:24.680000+00:00",
+      "last_update_date": "2022-11-23T07:40:12.861000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -8732,7 +8343,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:28:49.201000+00:00",
+      "last_update_date": "2022-11-23T07:29:20.100000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -9120,7 +8731,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:03:46.759000+00:00",
+      "last_update_date": "2022-11-23T07:38:29.361000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -9463,7 +9074,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:10:00.535000+00:00",
+      "last_update_date": "2022-11-23T06:52:46.674000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -9806,7 +9417,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:06:48.127000+00:00",
+      "last_update_date": "2022-11-23T07:14:19.909000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.9",
       "organization": "certified-operators",
@@ -9994,7 +9605,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T12:09:23.093000+00:00",
+      "last_update_date": "2022-11-23T07:29:10.048000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -10173,7 +9784,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:49:16.566000+00:00",
+      "last_update_date": "2022-11-23T07:38:53.449000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -10352,7 +9963,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:20:56.945000+00:00",
+      "last_update_date": "2022-11-23T07:40:10.754000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -10460,7 +10071,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:39:13.751000+00:00",
+      "last_update_date": "2022-11-23T06:36:45.768000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -10564,7 +10175,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:06:26.327000+00:00",
+      "last_update_date": "2022-11-23T07:15:58.671000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -10667,7 +10278,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:49:14.731000+00:00",
+      "last_update_date": "2022-11-23T07:40:40.710000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -10771,7 +10382,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:07:27.741000+00:00",
+      "last_update_date": "2022-11-23T07:34:34.314000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -10838,7 +10449,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:22:20.659000+00:00",
+      "last_update_date": "2022-11-23T07:02:25.724000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -10905,7 +10516,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:54:19.743000+00:00",
+      "last_update_date": "2022-11-23T07:28:16.780000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -10972,7 +10583,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:06:36.306000+00:00",
+      "last_update_date": "2022-11-23T07:29:23.401000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -11044,7 +10655,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:57:06.259000+00:00",
+      "last_update_date": "2022-11-23T07:05:42.886000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -11116,7 +10727,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:17:44.265000+00:00",
+      "last_update_date": "2022-11-23T07:45:00.280000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -11188,7 +10799,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:10:21.263000+00:00",
+      "last_update_date": "2022-11-23T07:17:26.963000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.9",
       "organization": "certified-operators",
@@ -11260,7 +10871,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:53:31.964000+00:00",
+      "last_update_date": "2022-11-23T07:32:36.533000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -11320,7 +10931,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:22:51.465000+00:00",
+      "last_update_date": "2022-11-23T07:37:51.893000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -11380,7 +10991,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:09:51.133000+00:00",
+      "last_update_date": "2022-11-23T07:16:53.297000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.9",
       "organization": "certified-operators",
@@ -11440,7 +11051,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:09:56.023000+00:00",
+      "last_update_date": "2022-11-23T07:17:00.348000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.9",
       "organization": "certified-operators",
@@ -11500,7 +11111,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:51:06.542000+00:00",
+      "last_update_date": "2022-11-23T07:30:10.260000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -11560,7 +11171,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:10:01.767000+00:00",
+      "last_update_date": "2022-11-23T07:17:05.444000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.9",
       "organization": "certified-operators",
@@ -11643,7 +11254,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:52:06.033000+00:00",
+      "last_update_date": "2022-11-23T07:01:55.249000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.9",
       "organization": "certified-operators",
@@ -11733,7 +11344,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:52:15.542000+00:00",
+      "last_update_date": "2022-11-23T07:02:02.809000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.9",
       "organization": "certified-operators",
@@ -11823,7 +11434,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:52:34.544000+00:00",
+      "last_update_date": "2022-11-23T07:44:46.912000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -11913,7 +11524,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:16:49.463000+00:00",
+      "last_update_date": "2022-11-23T07:37:20.062000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -12107,7 +11718,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:40:30.597000+00:00",
+      "last_update_date": "2022-11-23T08:23:44.692000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.5",
       "organization": "certified-operators",
@@ -12232,7 +11843,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:46:59.946000+00:00",
+      "last_update_date": "2022-11-23T09:35:36.007000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.5",
       "organization": "certified-operators",
@@ -12347,7 +11958,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T10:50:34.618000+00:00",
+      "last_update_date": "2022-11-23T09:01:41.077000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.5",
       "organization": "certified-operators",
@@ -12409,7 +12020,7 @@
       "in_index_img": true,
       "install_modes": [],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T10:54:50.899000+00:00",
+      "last_update_date": "2022-11-23T08:38:18.204000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.5",
       "organization": "certified-operators",
@@ -12506,7 +12117,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T10:44:40.006000+00:00",
+      "last_update_date": "2022-11-23T09:35:27.504000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.5",
       "organization": "certified-operators",
@@ -12632,7 +12243,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:11:01.986000+00:00",
+      "last_update_date": "2022-11-23T08:55:37.596000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.5",
       "organization": "certified-operators",
@@ -12715,7 +12326,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:01:09.451000+00:00",
+      "last_update_date": "2022-11-23T08:36:09.513000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.5",
       "organization": "certified-operators",
@@ -12798,7 +12409,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:38:22.082000+00:00",
+      "last_update_date": "2022-11-23T08:27:05.971000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.5",
       "organization": "certified-operators",
@@ -12911,7 +12522,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:38:45.639000+00:00",
+      "last_update_date": "2022-11-23T09:29:36.345000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.5",
       "organization": "certified-operators",
@@ -13002,7 +12613,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:46:55.009000+00:00",
+      "last_update_date": "2022-11-23T08:37:33.346000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.5",
       "organization": "certified-operators",
@@ -13131,7 +12742,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:01:41.407000+00:00",
+      "last_update_date": "2022-11-23T08:37:55.929000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.5",
       "organization": "certified-operators",
@@ -13391,7 +13002,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:08:46.067000+00:00",
+      "last_update_date": "2022-11-23T09:46:50.773000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.5",
       "organization": "certified-operators",
@@ -13617,7 +13228,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:00:28.348000+00:00",
+      "last_update_date": "2022-11-23T08:38:59.198000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.5",
       "organization": "certified-operators",
@@ -13672,6 +13283,244 @@
       "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.5",
       "version": "0.0.8",
       "version_original": "0.0.8"
+    },
+    {
+      "_id": "6154d165d2c7f84a4d2edca9",
+      "alm_examples": [],
+      "annotations": {
+        "infrastructure_features": [],
+        "valid_subscription": []
+      },
+      "architectures": [],
+      "bundle_path": "registry.connect.redhat.com/redislabs/redis-enterprise-operator-bundle@sha256:a16342d44039d3619f08f3fdd411e0074f7809442fbb486939b69f8c15451ecf",
+      "bundle_path_digest": "sha256:a16342d44039d3619f08f3fdd411e0074f7809442fbb486939b69f8c15451ecf",
+      "capabilities": [
+        ""
+      ],
+      "channel_name": "6.2.4",
+      "creation_date": "2021-09-29T20:49:41.044000+00:00",
+      "csv_description": "",
+      "csv_display_name": "",
+      "csv_metadata_description": "",
+      "csv_name": "redis-enterprise-operator.v6.0.6-11",
+      "in_index_img": true,
+      "install_modes": [],
+      "is_default_channel": false,
+      "last_update_date": "2022-11-23T09:01:49.737000+00:00",
+      "latest_in_channel": false,
+      "ocp_version": "4.5",
+      "organization": "certified-operators",
+      "package": "redis-enterprise-operator-cert",
+      "provided_apis": [],
+      "provider": "",
+      "related_images": [],
+      "replaces": null,
+      "skip_range": null,
+      "skips": [],
+      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.5",
+      "version": "6.0.6-11",
+      "version_original": "6.0.6-11"
+    },
+    {
+      "_id": "6154d17269cb9f1af5ba7478",
+      "alm_examples": [
+        {
+          "api_version": "app.redislabs.com/v1",
+          "kind": "RedisEnterpriseCluster",
+          "metadata": {
+            "name": "rec"
+          },
+          "spec": {
+            "nodes": 3,
+            "persistentSpec": {
+              "enabled": true
+            },
+            "redisEnterpriseImageSpec": {
+              "imagePullPolicy": "IfNotPresent",
+              "repository": "redislabs/redis",
+              "versionTag": "6.0.6-39.rhel7-openshift"
+            },
+            "redisEnterpriseNodeResources": {
+              "limits": {
+                "cpu": "4000m",
+                "memory": "4Gi"
+              },
+              "requests": {
+                "cpu": "4000m",
+                "memory": "4Gi"
+              }
+            },
+            "uiServiceType": "ClusterIP",
+            "username": "demo@redislabs.com"
+          }
+        }
+      ],
+      "annotations": {
+        "infrastructure_features": [],
+        "valid_subscription": []
+      },
+      "architectures": [],
+      "bundle_path": "registry.connect.redhat.com/redislabs/redis-enterprise-operator-bundle@sha256:b0edae8a793cf9e47a9d33a6341e2d2dfd3656ce8f2a4fbaa7d22a7407402b7f",
+      "bundle_path_digest": "sha256:b0edae8a793cf9e47a9d33a6341e2d2dfd3656ce8f2a4fbaa7d22a7407402b7f",
+      "capabilities": [
+        "Deep Insights"
+      ],
+      "channel_name": "6.2.4",
+      "creation_date": "2021-09-29T20:49:54.048000+00:00",
+      "csv_description": "Redis Enterprise Software is enterprise grade, distributed, in-memory NoSQL database server, fully compatible with open source Redis by Redis Labs. Redis Enterprise Software extends open source Redis and delivers stable high performance, zero-downtime linear scaling and high availability, with significant operational savings.\nRedis Enterprise provides a flexible and cost-effective data platform so developers can focus on rapid, high-quality development for sophisticated use cases that meet the needs of a modern digital enterprise. With Redis Enterprise, you can:\n* Enjoy high performance and record-setting low latencies with minimal operational overhead\n* Develop highly scalable microservices-based and Kubernetes-orchestrated applications\n* Use versatile data structures for a variety of use cases, such as high-speed transactions, user session management, real-time analytics, caching and many more\n* Leverage enterprise-grade operational controls for high availability, security and seamless scale\n* Automate operational best practices for deploying and managing the Redis Enterprise data platform with built-in Kubernetes Operator support\n* Deploy, manage and move applications to and from any cloud for seamless portability\n\n### Core capabilities\n* **Speed application development and time to market** - Unburden developers from the complexity of infrastructure operations and empower them to manage data with maximum flexibility. This helps them build modern applications quickly, make changes rapidly and support a variety of different data tructures, models, relationships and use cases.\n* **Ensure business continuity with always-on data service** - Maintain service uptime and ensure failsafe high availability, instant failover and automatic recovery to protect your applications against unplanned downtime, outages and data loss.\n* **Design for performance and unmatched user experience** - Deliver the highest level of responsiveness and interactive customer experiences with best-inclass exceptional linear scaling high performance through a shared-nothing architecture and in-memory processing.\n* **Simplify operations with automated lifecycle management and layered orchestration** - Automate database provisioning, management and maintenance, and abstract away the complexities of high availability, seamless scale and zero-downtime upgrades with built-in support for Kubernetes and Operators.\n* **Enjoy multi-level robust security** - Provide granular control to meet self-imposed and regulatory compliance regulations and standards with built-in finegrained security controls and data encryption.\n* **Gain platform independence with flexible deployment options** - Ensure portability with multiple deployment options across any cloud of choice for multicloud and hybrid deployments and on-premises.\n* **Ensure success** - Leverage 24x7 enterprise-grade support backed by expertise in managing and scaling hundreds of thousands of Redis databases for thousands of enterprise customers worldwide.\n* **Future proof investments** - Use the most popular database amongst developers, built on open source innovation and entrenched firmly in the application landscape with over 1B downloads on Docker. Redis preserves your investment for years with easy extensibility and versatility through its Modules and support for over 50 different programming languages\n\n#### Prerequisites\nA minimum of 3 nodes which support the following requirements:\n* RAM - At least 3GB with 4GB recommended\n* Persistent Storage - At least 10GB of free space with 20GB recommended.\n* A kubernetes version of 1.9 or higher\n* For service broker - a k8s distribution that supports service catalog (see also: service-catalog)\n\n#### Recommendations/known issues\n\nChanging the name of the Redis Enterprise Cluster in the spec from the\ndefault requires running a command to grant permissions to the pods:\n\n\n> *oc adm policy add-scc-to-group redis-enterprise-scc\nsystem:serviceaccounts:my-project*\n\n\nReplace my-project withh the actual name of the project/namespace.",
+      "csv_display_name": "Redis Enterprise Operator",
+      "csv_metadata_description": "",
+      "csv_name": "redis-enterprise-operator.v6.0.6-24",
+      "in_index_img": true,
+      "install_modes": [
+        {
+          "supported": true,
+          "type": "OwnNamespace"
+        },
+        {
+          "supported": true,
+          "type": "SingleNamespace"
+        },
+        {
+          "supported": false,
+          "type": "MultiNamespace"
+        },
+        {
+          "supported": false,
+          "type": "AllNamespaces"
+        }
+      ],
+      "is_default_channel": false,
+      "last_update_date": "2022-11-23T09:20:15.482000+00:00",
+      "latest_in_channel": false,
+      "ocp_version": "4.5",
+      "organization": "certified-operators",
+      "package": "redis-enterprise-operator-cert",
+      "provided_apis": [],
+      "provider": "Redis Labs",
+      "related_images": [
+        {
+          "digest": "sha256:998d6be639f0ce0cb0c51f048845c4d7aaacdb820c2c0e0450392c966744507b",
+          "image": "redislabs/operator@sha256:998d6be639f0ce0cb0c51f048845c4d7aaacdb820c2c0e0450392c966744507b",
+          "name": "operator-998d6be639f0ce0cb0c51f048845c4d7aaacdb820c2c0e0450392c966744507b-annotation"
+        },
+        {
+          "digest": "sha256:998d6be639f0ce0cb0c51f048845c4d7aaacdb820c2c0e0450392c966744507b",
+          "image": "registry.connect.redhat.com/redislabs/redis-enterprise-operator@sha256:998d6be639f0ce0cb0c51f048845c4d7aaacdb820c2c0e0450392c966744507b",
+          "name": "redis-enterprise-operator"
+        }
+      ],
+      "replaces": null,
+      "skip_range": null,
+      "skips": [],
+      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.5",
+      "version": "6.0.6-24",
+      "version_original": "6.0.6-24"
+    },
+    {
+      "_id": "6154d18c69cb9f1af5ba7479",
+      "alm_examples": [
+        {
+          "api_version": "core.libopenstorage.org/v1",
+          "kind": "StorageCluster",
+          "metadata": {
+            "annotations": {
+              "portworx.io/is-openshift": "true"
+            },
+            "name": "portworx",
+            "namespace": "test-operator"
+          },
+          "spec": {
+            "autopilot": {
+              "enabled": false
+            }
+          }
+        },
+        {
+          "api_version": "core.libopenstorage.org/v1",
+          "kind": "StorageNode",
+          "metadata": {
+            "name": "example",
+            "namespace": "test-operator"
+          },
+          "spec": {}
+        }
+      ],
+      "annotations": {
+        "infrastructure_features": [],
+        "valid_subscription": []
+      },
+      "architectures": [],
+      "bundle_path": "registry.connect.redhat.com/portworx/portworx-certified-bundle@sha256:b768b8641735bcad65f3763ebe87f41daafdeb3ce35a0a8af0ac20a336f6db28",
+      "bundle_path_digest": "sha256:b768b8641735bcad65f3763ebe87f41daafdeb3ce35a0a8af0ac20a336f6db28",
+      "capabilities": [
+        "Auto Pilot"
+      ],
+      "channel_name": "stable",
+      "creation_date": "2021-09-29T20:50:20.052000+00:00",
+      "csv_description": "Portworx-Enterprise is the most widely-used and reliable cloud-native\nstorage solution for production workloads and provides high-availability,\ndata protection and security for containerized applications.\n\nPortworx Enterprise enables you to migrate entire applications, including\ndata, between clusters in a single data center or cloud, or between clouds,\nwith a single kubectl command.\n\nThe cloud native storage and data management platform that enterprises trust\nto manage data in containers now has an operator which simplifies the install,\nconfiguration, upgrades and manages the Portworx Enterprise cluster lifecycle.\n\nLearn more about the Portworx Enterprise\n[the data platform for Kubernetes](https://portworx.com/products/introduction)\n\nTo learn more about the platform features, please visit our\n[product features page](https://portworx.com/products/features)\n\n### About Portworx\n\nPortworx is the solution for running stateful containers in production,\ndesigned with DevOps in mind. With Portworx, users can manage any database\nor stateful service on any infrastructure using any container scheduler,\nincluding Kubernetes, Mesosphere DC/OS, and Docker Swarm. Portworx solves\nthe five most common problems DevOps teams encounter when running stateful\nservices in production: persistence, high availability, data automation,\nsecurity, and support for multiple data stores and infrastructure.\n\n### How to install StorageCluster\n\nTo customize your cluster's configuration (specification), use the\n[Spec Generator](https://central.portworx.com/) from PX-Central.\n\n### Prerequisite\n\nEnsure ports 17001-17020 on worker nodes are reachable from master and other worker nodes.\n\n### Tutorials\n\n* [Portworx Enterprise on Openshift](https://portworx.com/openshift)\n\n* [Stateful applications on Kubernetes](https://docs.portworx.com/portworx-install-with-kubernetes/application-install-with-kubernetes)\n\n* [Portworx Enterprise on Kubernetes](https://docs.portworx.com/portworx-install-with-kubernetes)\n\n* [Kafka on Kubernetes](https://portworx.com/kafka-kubernetes)\n\n* [Elastisearch on Kubernetes](https://portworx.com/elasticsearch-kubernetes)\n\n* [PostgreSQL on Kubernetes](https://portworx.com/postgres-kubernetes/)\n\n* [MongoDB on Kubernetes](https://portworx.com/mongodb-kubernetes/)\n\n* [Cassandra on Kubernetes](https://portworx.com/cassandra-kubernetes/)\n\n* [Kubernetes backup and recovery](https://portworx.com/kubernetes-backup/)\n\n* [Disaster Recovery for Kubernetes](https://portworx.com/kubernetes-disaster-recovery/)\n\n### Uninstall\n\nDeleting the StorageCluster object for Portworx cluster does not stop Portworx\nservice running on the nodes, to avoid application downtime.\n\nTo uninstall Portworx completely without wiping the data, you should add the\nfollowing delete strategy to the StorageCluster spec:\n```\nspec:\n  deleteStrategy:\n    type: Uninstall\n```\n**Caution:** To uninstall Portworx and **wipe all the data**, you should use the following\ndelete strategy:\n```\nspec:\n  deleteStrategy:\n    type: UninstallAndWipe\n```\n",
+      "csv_display_name": "Portworx Enterprise",
+      "csv_metadata_description": "Cloud native storage solution for production workloads",
+      "csv_name": "portworx-operator.v1.5.2",
+      "in_index_img": true,
+      "install_modes": [
+        {
+          "supported": true,
+          "type": "OwnNamespace"
+        },
+        {
+          "supported": true,
+          "type": "SingleNamespace"
+        },
+        {
+          "supported": true,
+          "type": "MultiNamespace"
+        },
+        {
+          "supported": true,
+          "type": "AllNamespaces"
+        }
+      ],
+      "is_default_channel": true,
+      "last_update_date": "2022-11-23T08:40:06.222000+00:00",
+      "latest_in_channel": true,
+      "ocp_version": "4.5",
+      "organization": "certified-operators",
+      "package": "portworx-certified",
+      "provided_apis": [
+        {
+          "group": "core.libopenstorage.org",
+          "kind": "StorageCluster",
+          "plural": "storageclusters",
+          "version": "v1alpha1"
+        },
+        {
+          "group": "core.libopenstorage.org",
+          "kind": "StorageNode",
+          "plural": "storagenodes",
+          "version": "v1"
+        },
+        {
+          "group": "core.libopenstorage.org",
+          "kind": "StorageNode",
+          "plural": "storagenodes",
+          "version": "v1alpha1"
+        },
+        {
+          "group": "core.libopenstorage.org",
+          "kind": "StorageCluster",
+          "plural": "storageclusters",
+          "version": "v1"
+        }
+      ],
+      "provider": "Portworx",
+      "related_images": [],
+      "replaces": null,
+      "skip_range": null,
+      "skips": [],
+      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.5",
+      "version": "1.5.2",
+      "version_original": "1.5.2"
     }
   ]
 }

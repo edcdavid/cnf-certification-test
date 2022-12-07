@@ -1,520 +1,6 @@
 {
   "data": [
     {
-      "_id": "619b0f572617fe8f092a7208",
-      "alm_examples": [
-        {
-          "api_version": "tools.opdev.io/v1",
-          "kind": "DemoResource",
-          "metadata": {
-            "name": "demoresource-sample"
-          },
-          "spec": {
-            "message": "Hello, World!"
-          }
-        }
-      ],
-      "annotations": {
-        "infrastructure_features": [],
-        "valid_subscription": []
-      },
-      "architectures": [],
-      "bundle_path": "registry.connect.redhat.com/jinhli-2021-update/jinhli-preflight-test@sha256:b95375653f7570769c8ac085f79fa9a24ad048e84277fad840e5a0b875c07223",
-      "bundle_path_digest": "sha256:b95375653f7570769c8ac085f79fa9a24ad048e84277fad840e5a0b875c07223",
-      "capabilities": [
-        "Basic Install"
-      ],
-      "channel_name": "stable",
-      "creation_date": "2021-11-22T03:32:39.955000+00:00",
-      "csv_description": "A simple demo operator with a minimal reconciliation function, for testing basic operator installation and validation workflows.",
-      "csv_display_name": "Simple Demo Operator",
-      "csv_metadata_description": "",
-      "csv_name": "jinhli-operator.v0.0.3",
-      "in_index_img": true,
-      "install_modes": [
-        {
-          "supported": true,
-          "type": "OwnNamespace"
-        },
-        {
-          "supported": false,
-          "type": "SingleNamespace"
-        },
-        {
-          "supported": false,
-          "type": "MultiNamespace"
-        },
-        {
-          "supported": true,
-          "type": "AllNamespaces"
-        }
-      ],
-      "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:10:29.741000+00:00",
-      "latest_in_channel": true,
-      "ocp_version": "4.9",
-      "organization": "certified-operators",
-      "package": "jinhli-demo-operator",
-      "provided_apis": [
-        {
-          "group": "tools.opdev.io",
-          "kind": "DemoResource",
-          "plural": "demoresources",
-          "version": "v1"
-        }
-      ],
-      "provider": "The Partner Lifecycle Engineering Team",
-      "related_images": [
-        {
-          "digest": "sha256:db06cc4c084dd0253134f156dddaaf53ef1c3fb3cc809e5d81711baa4029ea4c",
-          "image": "gcr.io/kubebuilder/kube-rbac-proxy@sha256:db06cc4c084dd0253134f156dddaaf53ef1c3fb3cc809e5d81711baa4029ea4c",
-          "name": "kube-rbac-proxy"
-        },
-        {
-          "digest": "sha256:25ca9cb1f3dc7b8ce0aba4d3383cac20f5f5a1298fbbfde4a6adab7b1000cb0e",
-          "image": "quay.io/opdev/simple-demo-operator@sha256:25ca9cb1f3dc7b8ce0aba4d3383cac20f5f5a1298fbbfde4a6adab7b1000cb0e",
-          "name": "manager"
-        }
-      ],
-      "replaces": null,
-      "skip_range": null,
-      "skips": [],
-      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.9",
-      "version": "0.0.3",
-      "version_original": "0.0.3"
-    },
-    {
-      "_id": "619b1dd72617fe8f092a7209",
-      "alm_examples": [
-        {
-          "api_version": "tools.opdev.io/v1",
-          "kind": "DemoResource",
-          "metadata": {
-            "name": "demoresource-sample"
-          },
-          "spec": {
-            "message": "Hello, World!"
-          }
-        }
-      ],
-      "annotations": {
-        "infrastructure_features": [],
-        "valid_subscription": []
-      },
-      "architectures": [],
-      "bundle_path": "registry.connect.redhat.com/jinhli-2021-update/jinhli-preflight-test@sha256:b95375653f7570769c8ac085f79fa9a24ad048e84277fad840e5a0b875c07223",
-      "bundle_path_digest": "sha256:b95375653f7570769c8ac085f79fa9a24ad048e84277fad840e5a0b875c07223",
-      "capabilities": [
-        "Basic Install"
-      ],
-      "channel_name": "stable",
-      "creation_date": "2021-11-22T04:34:31.736000+00:00",
-      "csv_description": "A simple demo operator with a minimal reconciliation function, for testing basic operator installation and validation workflows.",
-      "csv_display_name": "Simple Demo Operator",
-      "csv_metadata_description": "",
-      "csv_name": "jinhli-operator.v0.0.3",
-      "in_index_img": true,
-      "install_modes": [
-        {
-          "supported": true,
-          "type": "OwnNamespace"
-        },
-        {
-          "supported": false,
-          "type": "SingleNamespace"
-        },
-        {
-          "supported": false,
-          "type": "MultiNamespace"
-        },
-        {
-          "supported": true,
-          "type": "AllNamespaces"
-        }
-      ],
-      "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:08:45.254000+00:00",
-      "latest_in_channel": true,
-      "ocp_version": "4.7",
-      "organization": "certified-operators",
-      "package": "jinhli-demo-operator",
-      "provided_apis": [
-        {
-          "group": "tools.opdev.io",
-          "kind": "DemoResource",
-          "version": "v1"
-        }
-      ],
-      "provider": "The Partner Lifecycle Engineering Team",
-      "related_images": [
-        {
-          "digest": "sha256:db06cc4c084dd0253134f156dddaaf53ef1c3fb3cc809e5d81711baa4029ea4c",
-          "image": "gcr.io/kubebuilder/kube-rbac-proxy@sha256:db06cc4c084dd0253134f156dddaaf53ef1c3fb3cc809e5d81711baa4029ea4c",
-          "name": "kube-rbac-proxy"
-        },
-        {
-          "digest": "sha256:25ca9cb1f3dc7b8ce0aba4d3383cac20f5f5a1298fbbfde4a6adab7b1000cb0e",
-          "image": "quay.io/opdev/simple-demo-operator@sha256:25ca9cb1f3dc7b8ce0aba4d3383cac20f5f5a1298fbbfde4a6adab7b1000cb0e",
-          "name": "manager"
-        }
-      ],
-      "replaces": null,
-      "skip_range": null,
-      "skips": [],
-      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.7",
-      "version": "0.0.3",
-      "version_original": "0.0.3"
-    },
-    {
-      "_id": "619b4f6114180ede86fe6ee8",
-      "alm_examples": [
-        {
-          "api_version": "sources.triggermesh.com/v1alpha1",
-          "kind": "AwsEventSources",
-          "metadata": {
-            "name": "awseventsources-sample"
-          },
-          "spec": {
-            "adapters": {
-              "awscloudwatch": {
-                "image": "registry.connect.redhat.com/triggermesh/awscloudwatchsource@sha256:847b8546933d83c91cb7068609ad4dfbd87370da610bebb0ca6a1cc8efe0202c"
-              },
-              "awscloudwatchlogs": {
-                "image": "registry.connect.redhat.com/triggermesh/awscloudwatchlogssource@sha256:962fe3695f53f7083adce89acaffbba8d01f4d8e91312adfa4ac3a13485cd179"
-              },
-              "awscodecommit": {
-                "image": "registry.connect.redhat.com/triggermesh/awscodecommitsource@sha256:d3ab78147e535e224fcae5ede8ddfb8a269e343121105869213b78d257a3e1cb"
-              },
-              "awscognitoidentity": {
-                "image": "registry.connect.redhat.com/triggermesh/awscognitoidentitysource@sha256:8da3202e7cff988c76878aa40e00796d9ac82748d39c6c0e66eb8def281766cf"
-              },
-              "awscognitouserpool": {
-                "image": "registry.connect.redhat.com/triggermesh/awscognitouserpoolsource@sha256:09d6f609f7aee720bddb196702a0116e8dca785fbbf5337a97edee4bfd44cdb4"
-              },
-              "awsdynamodb": {
-                "image": "registry.connect.redhat.com/triggermesh/awsdynamodbsource@sha256:168890a69107536cc8e7332e1ce4cf90f7427a8c4dca7520d5237da58b98a700"
-              },
-              "awskinesis": {
-                "image": "registry.connect.redhat.com/triggermesh/awskinesissource@sha256:8b3984455cd08add91242fe5dedda6f234f644d80256ee42c407fc9fabfa8a4f"
-              },
-              "awsperformanceinsights": {
-                "image": "registry.connect.redhat.com/triggermesh/awsperformanceinsightssource@sha256:a5aa8d5c568e41ddcc9b718507b77aff4a4db1586a07f658972da912eca09931"
-              },
-              "awssns": {
-                "image": "registry.connect.redhat.com/triggermesh/awssnssource@sha256:e300042681697794716c6cf1a13e41c4e5b440ed513202b74db2b1aef1d9c8c6"
-              },
-              "awssqs": {
-                "image": "registry.connect.redhat.com/triggermesh/awssqssource@sha256:34cc1484951328499246a98e6d2277c3554e22b390b17c34449af4eeba076153"
-              }
-            },
-            "affinity": {},
-            "fullnameOverride": "",
-            "image": {
-              "image": "registry.connect.redhat.com/triggermesh/aws-event-sources-controller@sha256:a806b330ed4ba33a2d3544210d5f40c1657509cf054530c9f6d38789e6b6d5c3",
-              "pullPolicy": "IfNotPresent"
-            },
-            "imagePullSecrets": [],
-            "nameOverride": "",
-            "nodeSelector": {},
-            "podAnnotations": {},
-            "podSecurityContext": {},
-            "rbac": {
-              "create": true
-            },
-            "resources": {
-              "requests": {
-                "cpu": "20m",
-                "memory": "20Mi"
-              }
-            },
-            "securityContext": {},
-            "serviceAccount": {
-              "annotations": {},
-              "create": true,
-              "name": ""
-            },
-            "tolerations": []
-          }
-        }
-      ],
-      "annotations": {
-        "infrastructure_features": [],
-        "valid_subscription": []
-      },
-      "architectures": [],
-      "bundle_path": "registry.connect.redhat.com/triggermesh/aws-event-sources-operator-bundle@sha256:2d8c64b21eb17b985ae3aff6ddb62966cad14720f34a0ff685899dfb370e07de",
-      "bundle_path_digest": "sha256:2d8c64b21eb17b985ae3aff6ddb62966cad14720f34a0ff685899dfb370e07de",
-      "capabilities": [
-        "Basic Install"
-      ],
-      "channel_name": "beta",
-      "creation_date": "2021-11-22T08:05:53.610000+00:00",
-      "csv_description": "The TriggerMesh AWS Sources operator provides a collection of API's that enables to consume events that happen in your AWS services and send them to containers, microservices and functions running in your cluster.\n\n## Prerequisites\n\nThe TriggerMesh AWS Sources operator depends on the Knative API's provided by the Red Hat OpenShift Serverless operator. For more information, see the documentation on [Installing OpenShift Serverless](https://access.redhat.com/documentation/en-us/openshift_container_platform/4.3/html/serverless_applications/installing-openshift-serverless-1).\n\n## Supported Event Sources\n\n- **AWS CodeCommit event source**: Consume messages from a AWS CodeCommit repository and send them as CloudEvents to an arbitrary event sink.\n- **AWS Cognito Identity event source**: Consume messages from a AWS Cognito identity pool and send them as CloudEvents to an arbitrary event sink.\n- **AWS Cognito UserPool event source**: Consume messages from a AWS Cognito identity pool and send them as CloudEvents to an arbitrary event sink.\n- **AWS DynamoDB event source**: Consume messages from a AWS DynamoDB stream and send them as CloudEvents to an arbitrary event sink.\n- **AWS Kinesis event source**: Consume messages from a AWS Kinesis data stream and send them as CloudEvents to an arbitrary event sink.\n- **AWS SNS event source**: Subscribes to messages from a AWS SNS topic and send them as CloudEvents to an arbitrary event sink.\n- **AWS SQS event source**: Consume messages from a AWS SQS queue and sends them as CloudEvents to an arbitrary event sink.\n\n## Installation\n\nSee the documentation on [Installing TriggerMesh AWS Sources](https://github.com/triggermesh/aws-sources-operator/blob/master/README.md)\n\n## Getting Started\n\nSee the documentation on [Getting Started](https://github.com/triggermesh/aws-event-sources/blob/master/README.md)\n",
-      "csv_display_name": "AWS Sources Operator",
-      "csv_metadata_description": "Provides a collection of API's that enables to consume events that happen in your AWS services and send them to containers, microservices and functions running in your cluster.",
-      "csv_name": "aws-sources-operator.v0.4.0",
-      "in_index_img": true,
-      "install_modes": [
-        {
-          "supported": true,
-          "type": "OwnNamespace"
-        },
-        {
-          "supported": true,
-          "type": "SingleNamespace"
-        },
-        {
-          "supported": false,
-          "type": "MultiNamespace"
-        },
-        {
-          "supported": true,
-          "type": "AllNamespaces"
-        }
-      ],
-      "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:52:05.204000+00:00",
-      "latest_in_channel": true,
-      "ocp_version": "4.7",
-      "organization": "certified-operators",
-      "package": "aws-event-sources-operator-certified",
-      "provided_apis": [
-        {
-          "group": "sources.triggermesh.com",
-          "kind": "AwsEventSources",
-          "plural": "awseventsources",
-          "version": "v1alpha1"
-        }
-      ],
-      "provider": "TriggerMesh Inc.",
-      "related_images": [
-        {
-          "digest": "sha256:d39e74ed4d40b6c8443521480cb8690ebef2fc9d6d9e826e429d5a7b228aab5f",
-          "image": "registry.connect.redhat.com/triggermesh/aws-event-sources-operator@sha256:d39e74ed4d40b6c8443521480cb8690ebef2fc9d6d9e826e429d5a7b228aab5f",
-          "name": "aws-sources-operator"
-        },
-        {
-          "digest": "sha256:a806b330ed4ba33a2d3544210d5f40c1657509cf054530c9f6d38789e6b6d5c3",
-          "image": "registry.connect.redhat.com/triggermesh/aws-event-sources-controller@sha256:a806b330ed4ba33a2d3544210d5f40c1657509cf054530c9f6d38789e6b6d5c3",
-          "name": "controller"
-        },
-        {
-          "digest": "sha256:962fe3695f53f7083adce89acaffbba8d01f4d8e91312adfa4ac3a13485cd179",
-          "image": "registry.connect.redhat.com/triggermesh/awscloudwatchlogssource@sha256:962fe3695f53f7083adce89acaffbba8d01f4d8e91312adfa4ac3a13485cd179",
-          "name": "awscodecommit-cloudwatchlogs-adapter"
-        },
-        {
-          "digest": "sha256:847b8546933d83c91cb7068609ad4dfbd87370da610bebb0ca6a1cc8efe0202c",
-          "image": "registry.connect.redhat.com/triggermesh/awscloudwatchsource@sha256:847b8546933d83c91cb7068609ad4dfbd87370da610bebb0ca6a1cc8efe0202c",
-          "name": "awscodecommit-cloudwatch-adapter"
-        },
-        {
-          "digest": "sha256:d3ab78147e535e224fcae5ede8ddfb8a269e343121105869213b78d257a3e1cb",
-          "image": "registry.connect.redhat.com/triggermesh/awscodecommitsource@sha256:d3ab78147e535e224fcae5ede8ddfb8a269e343121105869213b78d257a3e1cb",
-          "name": "awscodecommit-adapter"
-        },
-        {
-          "digest": "sha256:8da3202e7cff988c76878aa40e00796d9ac82748d39c6c0e66eb8def281766cf",
-          "image": "registry.connect.redhat.com/triggermesh/awscognitoidentitysource@sha256:8da3202e7cff988c76878aa40e00796d9ac82748d39c6c0e66eb8def281766cf",
-          "name": "awscognitoidentity-adapter"
-        },
-        {
-          "digest": "sha256:09d6f609f7aee720bddb196702a0116e8dca785fbbf5337a97edee4bfd44cdb4",
-          "image": "registry.connect.redhat.com/triggermesh/awscognitouserpoolsource@sha256:09d6f609f7aee720bddb196702a0116e8dca785fbbf5337a97edee4bfd44cdb4",
-          "name": "awscognitouserpool-adapter"
-        },
-        {
-          "digest": "sha256:168890a69107536cc8e7332e1ce4cf90f7427a8c4dca7520d5237da58b98a700",
-          "image": "registry.connect.redhat.com/triggermesh/awsdynamodbsource@sha256:168890a69107536cc8e7332e1ce4cf90f7427a8c4dca7520d5237da58b98a700",
-          "name": "awsdynamodb-adapter"
-        },
-        {
-          "digest": "sha256:8b3984455cd08add91242fe5dedda6f234f644d80256ee42c407fc9fabfa8a4f",
-          "image": "registry.connect.redhat.com/triggermesh/awskinesissource@sha256:8b3984455cd08add91242fe5dedda6f234f644d80256ee42c407fc9fabfa8a4f",
-          "name": "awskinesis-adapter"
-        },
-        {
-          "digest": "sha256:a5aa8d5c568e41ddcc9b718507b77aff4a4db1586a07f658972da912eca09931",
-          "image": "registry.connect.redhat.com/triggermesh/awsperformanceinsightssource@sha256:a5aa8d5c568e41ddcc9b718507b77aff4a4db1586a07f658972da912eca09931",
-          "name": "awskinesis-performanceinsights-adapter"
-        },
-        {
-          "digest": "sha256:e300042681697794716c6cf1a13e41c4e5b440ed513202b74db2b1aef1d9c8c6",
-          "image": "registry.connect.redhat.com/triggermesh/awssnssource@sha256:e300042681697794716c6cf1a13e41c4e5b440ed513202b74db2b1aef1d9c8c6",
-          "name": "awssns-adapter"
-        },
-        {
-          "digest": "sha256:34cc1484951328499246a98e6d2277c3554e22b390b17c34449af4eeba076153",
-          "image": "registry.connect.redhat.com/triggermesh/awssqssource@sha256:34cc1484951328499246a98e6d2277c3554e22b390b17c34449af4eeba076153",
-          "name": "awssqs-adapter"
-        },
-        {
-          "digest": "sha256:d39e74ed4d40b6c8443521480cb8690ebef2fc9d6d9e826e429d5a7b228aab5f",
-          "image": "registry.connect.redhat.com/triggermesh/aws-event-sources-operator@sha256:d39e74ed4d40b6c8443521480cb8690ebef2fc9d6d9e826e429d5a7b228aab5f",
-          "name": "aws-event-sources-operator-d39e74ed4d40b6c8443521480cb8690ebef2fc9d6d9e826e429d5a7b228aab5f-annotation"
-        },
-        {
-          "digest": "sha256:db06cc4c084dd0253134f156dddaaf53ef1c3fb3cc809e5d81711baa4029ea4c",
-          "image": "gcr.io/kubebuilder/kube-rbac-proxy@sha256:db06cc4c084dd0253134f156dddaaf53ef1c3fb3cc809e5d81711baa4029ea4c",
-          "name": "kube-rbac-proxy"
-        },
-        {
-          "digest": "sha256:d39e74ed4d40b6c8443521480cb8690ebef2fc9d6d9e826e429d5a7b228aab5f",
-          "image": "registry.connect.redhat.com/triggermesh/aws-event-sources-operator@sha256:d39e74ed4d40b6c8443521480cb8690ebef2fc9d6d9e826e429d5a7b228aab5f",
-          "name": "manager"
-        },
-        {
-          "digest": "sha256:a806b330ed4ba33a2d3544210d5f40c1657509cf054530c9f6d38789e6b6d5c3",
-          "image": "registry.connect.redhat.com/triggermesh/aws-event-sources-controller@sha256:a806b330ed4ba33a2d3544210d5f40c1657509cf054530c9f6d38789e6b6d5c3",
-          "name": "aws-event-sources-controller-a806b330ed4ba33a2d3544210d5f40c1657509cf054530c9f6d38789e6b6d5c3-annotation"
-        },
-        {
-          "digest": "sha256:34cc1484951328499246a98e6d2277c3554e22b390b17c34449af4eeba076153",
-          "image": "registry.connect.redhat.com/triggermesh/awssqssource@sha256:34cc1484951328499246a98e6d2277c3554e22b390b17c34449af4eeba076153",
-          "name": "awssqssource-34cc1484951328499246a98e6d2277c3554e22b390b17c34449af4eeba076153-annotation"
-        },
-        {
-          "digest": "sha256:e300042681697794716c6cf1a13e41c4e5b440ed513202b74db2b1aef1d9c8c6",
-          "image": "registry.connect.redhat.com/triggermesh/awssnssource@sha256:e300042681697794716c6cf1a13e41c4e5b440ed513202b74db2b1aef1d9c8c6",
-          "name": "awssnssource-e300042681697794716c6cf1a13e41c4e5b440ed513202b74db2b1aef1d9c8c6-annotation"
-        },
-        {
-          "digest": "sha256:a5aa8d5c568e41ddcc9b718507b77aff4a4db1586a07f658972da912eca09931",
-          "image": "registry.connect.redhat.com/triggermesh/awsperformanceinsightssource@sha256:a5aa8d5c568e41ddcc9b718507b77aff4a4db1586a07f658972da912eca09931",
-          "name": "awsperformanceinsightssource-a5aa8d5c568e41ddcc9b718507b77aff4a4db1586a07f658972da912eca09931-annotation"
-        },
-        {
-          "digest": "sha256:8b3984455cd08add91242fe5dedda6f234f644d80256ee42c407fc9fabfa8a4f",
-          "image": "registry.connect.redhat.com/triggermesh/awskinesissource@sha256:8b3984455cd08add91242fe5dedda6f234f644d80256ee42c407fc9fabfa8a4f",
-          "name": "awskinesissource-8b3984455cd08add91242fe5dedda6f234f644d80256ee42c407fc9fabfa8a4f-annotation"
-        },
-        {
-          "digest": "sha256:168890a69107536cc8e7332e1ce4cf90f7427a8c4dca7520d5237da58b98a700",
-          "image": "registry.connect.redhat.com/triggermesh/awsdynamodbsource@sha256:168890a69107536cc8e7332e1ce4cf90f7427a8c4dca7520d5237da58b98a700",
-          "name": "awsdynamodbsource-168890a69107536cc8e7332e1ce4cf90f7427a8c4dca7520d5237da58b98a700-annotation"
-        },
-        {
-          "digest": "sha256:09d6f609f7aee720bddb196702a0116e8dca785fbbf5337a97edee4bfd44cdb4",
-          "image": "registry.connect.redhat.com/triggermesh/awscognitouserpoolsource@sha256:09d6f609f7aee720bddb196702a0116e8dca785fbbf5337a97edee4bfd44cdb4",
-          "name": "awscognitouserpoolsource-09d6f609f7aee720bddb196702a0116e8dca785fbbf5337a97edee4bfd44cdb4-annotation"
-        },
-        {
-          "digest": "sha256:8da3202e7cff988c76878aa40e00796d9ac82748d39c6c0e66eb8def281766cf",
-          "image": "registry.connect.redhat.com/triggermesh/awscognitoidentitysource@sha256:8da3202e7cff988c76878aa40e00796d9ac82748d39c6c0e66eb8def281766cf",
-          "name": "awscognitoidentitysource-8da3202e7cff988c76878aa40e00796d9ac82748d39c6c0e66eb8def281766cf-annotation"
-        },
-        {
-          "digest": "sha256:d3ab78147e535e224fcae5ede8ddfb8a269e343121105869213b78d257a3e1cb",
-          "image": "registry.connect.redhat.com/triggermesh/awscodecommitsource@sha256:d3ab78147e535e224fcae5ede8ddfb8a269e343121105869213b78d257a3e1cb",
-          "name": "awscodecommitsource-d3ab78147e535e224fcae5ede8ddfb8a269e343121105869213b78d257a3e1cb-annotation"
-        },
-        {
-          "digest": "sha256:962fe3695f53f7083adce89acaffbba8d01f4d8e91312adfa4ac3a13485cd179",
-          "image": "registry.connect.redhat.com/triggermesh/awscloudwatchlogssource@sha256:962fe3695f53f7083adce89acaffbba8d01f4d8e91312adfa4ac3a13485cd179",
-          "name": "awscloudwatchlogssource-962fe3695f53f7083adce89acaffbba8d01f4d8e91312adfa4ac3a13485cd179-annotation"
-        },
-        {
-          "digest": "sha256:847b8546933d83c91cb7068609ad4dfbd87370da610bebb0ca6a1cc8efe0202c",
-          "image": "registry.connect.redhat.com/triggermesh/awscloudwatchsource@sha256:847b8546933d83c91cb7068609ad4dfbd87370da610bebb0ca6a1cc8efe0202c",
-          "name": "awscloudwatchsource-847b8546933d83c91cb7068609ad4dfbd87370da610bebb0ca6a1cc8efe0202c-annotation"
-        }
-      ],
-      "replaces": null,
-      "skip_range": null,
-      "skips": [],
-      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.7",
-      "version": "0.4.0",
-      "version_original": "0.4.0"
-    },
-    {
-      "_id": "619b4f7414180ede86fe6ee9",
-      "alm_examples": [],
-      "annotations": {
-        "infrastructure_features": [],
-        "valid_subscription": []
-      },
-      "architectures": [],
-      "bundle_path": "registry.connect.redhat.com/triggermesh/aws-event-sources-operator-bundle@sha256:efaeab6112c4ca88ba5427936eda7e3b316e22060fa6ae8b920410cd9a3a6c4d",
-      "bundle_path_digest": "sha256:efaeab6112c4ca88ba5427936eda7e3b316e22060fa6ae8b920410cd9a3a6c4d",
-      "capabilities": [
-        ""
-      ],
-      "channel_name": "beta",
-      "creation_date": "2021-11-22T08:06:12.619000+00:00",
-      "csv_description": "",
-      "csv_display_name": "",
-      "csv_metadata_description": "",
-      "csv_name": "aws-sources-operator.v0.2.0",
-      "in_index_img": true,
-      "install_modes": [],
-      "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:27:08.817000+00:00",
-      "latest_in_channel": false,
-      "ocp_version": "4.7",
-      "organization": "certified-operators",
-      "package": "aws-event-sources-operator-certified",
-      "provided_apis": [
-        {
-          "group": "sources.triggermesh.com",
-          "kind": "AwsEventSources",
-          "plural": "awseventsources",
-          "version": "v1alpha1"
-        }
-      ],
-      "provider": "",
-      "related_images": [],
-      "replaces": null,
-      "skip_range": null,
-      "skips": [],
-      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.7",
-      "version": "0.2.0",
-      "version_original": "0.2.0"
-    },
-    {
-      "_id": "619b4fd1172f7877a2a8f1fc",
-      "alm_examples": [],
-      "annotations": {
-        "infrastructure_features": [],
-        "valid_subscription": []
-      },
-      "architectures": [],
-      "bundle_path": "registry.connect.redhat.com/triggermesh/aws-event-sources-operator-bundle@sha256:b9d8f05aa217db6847aed2b06cff677777bbdd5606191b832ff53000dea489cd",
-      "bundle_path_digest": "sha256:b9d8f05aa217db6847aed2b06cff677777bbdd5606191b832ff53000dea489cd",
-      "capabilities": [
-        ""
-      ],
-      "channel_name": "beta",
-      "creation_date": "2021-11-22T08:07:45.802000+00:00",
-      "csv_description": "",
-      "csv_display_name": "",
-      "csv_metadata_description": "",
-      "csv_name": "aws-sources-operator.v0.2.2",
-      "in_index_img": true,
-      "install_modes": [],
-      "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:57:53.492000+00:00",
-      "latest_in_channel": false,
-      "ocp_version": "4.7",
-      "organization": "certified-operators",
-      "package": "aws-event-sources-operator-certified",
-      "provided_apis": [
-        {
-          "group": "sources.triggermesh.com",
-          "kind": "AwsEventSources",
-          "plural": "awseventsources",
-          "version": "v1alpha1"
-        }
-      ],
-      "provider": "",
-      "related_images": [],
-      "replaces": null,
-      "skip_range": null,
-      "skips": [],
-      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.7",
-      "version": "0.2.2",
-      "version_original": "0.2.2"
-    },
-    {
       "_id": "619b50212617fe8f092a722b",
       "alm_examples": [],
       "annotations": {
@@ -536,7 +22,7 @@
       "in_index_img": true,
       "install_modes": [],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:59:45.709000+00:00",
+      "last_update_date": "2022-11-23T07:29:54.985000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -657,7 +143,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T12:05:21.906000+00:00",
+      "last_update_date": "2022-11-23T07:25:44.146000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -960,7 +446,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:37:27.247000+00:00",
+      "last_update_date": "2022-11-23T09:10:44.104000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.5",
       "organization": "certified-operators",
@@ -1198,7 +684,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:06:59.082000+00:00",
+      "last_update_date": "2022-11-23T07:14:28.917000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.9",
       "organization": "certified-operators",
@@ -1357,7 +843,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:33:42.655000+00:00",
+      "last_update_date": "2022-11-23T07:29:41.123000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -1460,7 +946,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:21:52.045000+00:00",
+      "last_update_date": "2022-11-23T07:25:18.318000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.9",
       "organization": "certified-operators",
@@ -1572,7 +1058,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:21:59.131000+00:00",
+      "last_update_date": "2022-11-23T07:25:21.471000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.9",
       "organization": "certified-operators",
@@ -1684,7 +1170,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:47:25.753000+00:00",
+      "last_update_date": "2022-11-23T07:15:47.692000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -1796,7 +1282,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T10:50:41.834000+00:00",
+      "last_update_date": "2022-11-23T07:27:38.050000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -2005,7 +1491,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:17:02.073000+00:00",
+      "last_update_date": "2022-11-23T09:16:42.252000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.5",
       "organization": "certified-operators",
@@ -2309,7 +1795,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:26:18.116000+00:00",
+      "last_update_date": "2022-11-23T07:33:32.127000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -2483,7 +1969,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:48:09.623000+00:00",
+      "last_update_date": "2022-11-23T07:39:47.157000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -2620,7 +2106,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:58:06.955000+00:00",
+      "last_update_date": "2022-11-23T07:33:00.686000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -2762,7 +2248,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:10:30.259000+00:00",
+      "last_update_date": "2022-11-23T07:32:43.215000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -2905,7 +2391,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:59:49.743000+00:00",
+      "last_update_date": "2022-11-23T07:44:09.345000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -3026,7 +2512,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:59:17.621000+00:00",
+      "last_update_date": "2022-11-23T07:43:55.560000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -3125,7 +2611,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:05:07.204000+00:00",
+      "last_update_date": "2022-11-23T07:43:38.690000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -3247,7 +2733,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T12:13:32.767000+00:00",
+      "last_update_date": "2022-11-23T07:32:23.132000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -3374,7 +2860,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:01:06.108000+00:00",
+      "last_update_date": "2022-11-23T07:39:20.453000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -3463,7 +2949,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:19:24.956000+00:00",
+      "last_update_date": "2022-11-23T07:35:45.450000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -3567,7 +3053,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:09:27.258000+00:00",
+      "last_update_date": "2022-11-23T07:36:38.807000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -3709,7 +3195,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:57:47.208000+00:00",
+      "last_update_date": "2022-11-23T07:32:34.570000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -3832,7 +3318,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:44:25.552000+00:00",
+      "last_update_date": "2022-11-23T07:29:20.552000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -3915,7 +3401,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:11:55.230000+00:00",
+      "last_update_date": "2022-11-23T07:32:25.434000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -3969,7 +3455,7 @@
       "in_index_img": true,
       "install_modes": [],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:44:49.546000+00:00",
+      "last_update_date": "2022-11-23T07:41:34.156000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -4052,7 +3538,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T10:40:58.533000+00:00",
+      "last_update_date": "2022-11-23T07:18:22.919000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -4346,7 +3832,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:33:25.841000+00:00",
+      "last_update_date": "2022-11-23T07:39:30.594000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -4493,7 +3979,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:49:20.518000+00:00",
+      "last_update_date": "2022-11-23T07:39:45.650000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -4620,7 +4106,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:46:01.239000+00:00",
+      "last_update_date": "2022-11-23T07:30:32.383000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -4707,7 +4193,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:01:31.835000+00:00",
+      "last_update_date": "2022-11-23T07:36:53.695000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -4761,7 +4247,7 @@
       "in_index_img": true,
       "install_modes": [],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:06:00.792000+00:00",
+      "last_update_date": "2022-11-23T07:39:22.057000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -4865,7 +4351,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T10:57:42.532000+00:00",
+      "last_update_date": "2022-11-23T07:38:39.669000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -4982,7 +4468,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T10:45:02.514000+00:00",
+      "last_update_date": "2022-11-23T07:31:30.089000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -5101,7 +4587,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:45:55.740000+00:00",
+      "last_update_date": "2022-11-23T07:24:24.514000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -5247,7 +4733,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:28:08.720000+00:00",
+      "last_update_date": "2022-11-23T07:41:50.538000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -5370,7 +4856,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:27:07.698000+00:00",
+      "last_update_date": "2022-11-23T07:43:25.644000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -5473,7 +4959,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:23:41.588000+00:00",
+      "last_update_date": "2022-11-23T07:37:29.252000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -5620,7 +5106,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:16:56.821000+00:00",
+      "last_update_date": "2022-11-23T07:36:43.406000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -5855,7 +5341,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T12:10:31.414000+00:00",
+      "last_update_date": "2022-11-23T07:39:14.715000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -5966,7 +5452,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:51:16.324000+00:00",
+      "last_update_date": "2022-11-23T07:42:39.535000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -6099,7 +5585,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:01:11.955000+00:00",
+      "last_update_date": "2022-11-23T07:31:03.465000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -6248,7 +5734,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:09:55.215000+00:00",
+      "last_update_date": "2022-11-23T07:41:49.223000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -6391,7 +5877,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:28:58.234000+00:00",
+      "last_update_date": "2022-11-23T07:34:01.339000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -6491,7 +5977,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:33:33.588000+00:00",
+      "last_update_date": "2022-11-23T07:35:34.820000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -6612,7 +6098,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:52:50.015000+00:00",
+      "last_update_date": "2022-11-23T07:41:46.988000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -6701,7 +6187,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:50:06.380000+00:00",
+      "last_update_date": "2022-11-23T07:45:01.580000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -6821,7 +6307,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T12:01:15.260000+00:00",
+      "last_update_date": "2022-11-23T07:45:24.468000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -6941,7 +6427,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:00:59.327000+00:00",
+      "last_update_date": "2022-11-23T07:31:12.548000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -7050,7 +6536,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T12:00:41.868000+00:00",
+      "last_update_date": "2022-11-23T07:29:59.856000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -7111,7 +6597,7 @@
       "in_index_img": true,
       "install_modes": [],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T10:49:25.974000+00:00",
+      "last_update_date": "2022-11-23T07:37:35.089000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -7245,7 +6731,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:21:50.057000+00:00",
+      "last_update_date": "2022-11-23T07:35:17.926000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -7480,7 +6966,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:39:58.168000+00:00",
+      "last_update_date": "2022-11-23T07:26:56.953000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -7626,7 +7112,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:07:19.439000+00:00",
+      "last_update_date": "2022-11-23T07:31:22.997000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -7749,7 +7235,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:44:30.137000+00:00",
+      "last_update_date": "2022-11-23T07:33:01.746000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -7852,7 +7338,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:18:16.867000+00:00",
+      "last_update_date": "2022-11-23T07:17:49.856000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -7971,7 +7457,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:55:16.743000+00:00",
+      "last_update_date": "2022-11-23T07:30:35.083000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -8079,7 +7565,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:50:51.132000+00:00",
+      "last_update_date": "2022-11-23T07:22:47.868000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -8152,7 +7638,7 @@
       "in_index_img": true,
       "install_modes": [],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:40:36.873000+00:00",
+      "last_update_date": "2022-11-23T07:27:26.629000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -8196,7 +7682,7 @@
       "in_index_img": true,
       "install_modes": [],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:52:59.159000+00:00",
+      "last_update_date": "2022-11-23T07:32:55.364000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -8292,7 +7778,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T10:44:42.235000+00:00",
+      "last_update_date": "2022-11-23T07:28:44.343000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -8379,7 +7865,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:46:40.460000+00:00",
+      "last_update_date": "2022-11-23T07:22:54.750000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -8487,7 +7973,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:05:06.624000+00:00",
+      "last_update_date": "2022-11-23T07:35:15.319000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -8546,7 +8032,7 @@
       "in_index_img": true,
       "install_modes": [],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:53:51.819000+00:00",
+      "last_update_date": "2022-11-23T07:17:45.774000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -8643,7 +8129,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T10:58:52.817000+00:00",
+      "last_update_date": "2022-11-23T07:40:44.463000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -8782,7 +8268,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:10:01.561000+00:00",
+      "last_update_date": "2022-11-23T07:43:37.852000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -8922,7 +8408,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:26:48.997000+00:00",
+      "last_update_date": "2022-11-23T07:27:03.292000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -9062,7 +8548,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:56:05.413000+00:00",
+      "last_update_date": "2022-11-23T07:05:26.053000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.9",
       "organization": "certified-operators",
@@ -9174,7 +8660,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:28:40.050000+00:00",
+      "last_update_date": "2022-11-23T07:28:31.662000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.9",
       "organization": "certified-operators",
@@ -9287,7 +8773,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T12:00:50.374000+00:00",
+      "last_update_date": "2022-11-23T07:38:15.978000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -9400,7 +8886,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:00:46.779000+00:00",
+      "last_update_date": "2022-11-23T08:58:35.129000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -9543,7 +9029,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:39:46.924000+00:00",
+      "last_update_date": "2022-11-23T07:34:44.465000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.8",
       "organization": "certified-operators",
@@ -9825,7 +9311,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:51:26.940000+00:00",
+      "last_update_date": "2022-11-23T06:57:37.942000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.7",
       "organization": "certified-operators",
@@ -10107,7 +9593,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:41:06.637000+00:00",
+      "last_update_date": "2022-11-23T07:25:40.961000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -10386,7 +9872,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:41:04.416000+00:00",
+      "last_update_date": "2022-11-23T07:33:07.570000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -10498,7 +9984,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:41:50.534000+00:00",
+      "last_update_date": "2022-11-23T07:19:31.240000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.6",
       "organization": "certified-operators",
@@ -10641,7 +10127,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:04:33.096000+00:00",
+      "last_update_date": "2022-11-23T07:12:23.614000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.9",
       "organization": "certified-operators",
@@ -10899,7 +10385,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:57:05.632000+00:00",
+      "last_update_date": "2022-11-23T08:18:56.428000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.10",
       "organization": "certified-operators",
@@ -10940,503 +10426,6 @@
       "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.10",
       "version": "1.0.1",
       "version_original": "1.0.1"
-    },
-    {
-      "_id": "61a57b153e9240fca360f54d",
-      "alm_examples": [
-        {
-          "api_version": "anzo.cambridgesemantics.com/v1",
-          "kind": "Anzo",
-          "metadata": {
-            "name": "agent01"
-          },
-          "spec": {
-            "nodeConfig": {
-              "spec": {
-                "replicas": 1,
-                "selector": {
-                  "matchLabels": {
-                    "app": "anzo"
-                  }
-                },
-                "serviceName": "anzo-agent01",
-                "template": {
-                  "metadata": {
-                    "labels": {
-                      "app": "anzo"
-                    }
-                  },
-                  "spec": {
-                    "containers": [
-                      {
-                        "image": "registry.connect.redhat.com/cambridgesemantics/anzo@sha256:d1c2d54ca205d669c5ea1bb6aae105afe2385cc5695cecd78423ffa1d98929f8",
-                        "name": "anzo",
-                        "resources": {
-                          "limits": {
-                            "cpu": "4000m",
-                            "memory": "12Gi"
-                          },
-                          "requests": {
-                            "cpu": "4000m",
-                            "memory": "12Gi"
-                          }
-                        }
-                      }
-                    ],
-                    "serviceAccountName": "anzo-operator"
-                  }
-                }
-              }
-            },
-            "role": "AnzoAgent"
-          }
-        }
-      ],
-      "annotations": {
-        "infrastructure_features": [],
-        "valid_subscription": []
-      },
-      "architectures": [],
-      "bundle_path": "registry.connect.redhat.com/cambridgesemantics/anzo-operator-bundle@sha256:28703523a1c160570fc23fb1236d2a02108b97e4423d42b0d3cde98c94d351cb",
-      "bundle_path_digest": "sha256:28703523a1c160570fc23fb1236d2a02108b97e4423d42b0d3cde98c94d351cb",
-      "capabilities": [
-        "Basic Install"
-      ],
-      "channel_name": "stable",
-      "creation_date": "2021-11-30T01:15:01.229000+00:00",
-      "csv_description": "The Anzo Operator provides the way to install and configure an anzo agent setup on Red Hat K8S environment.\nCurrently, this is supported only through when deployed as an Anzo Agent as part of an Anzo Unstructured deployment.\n\n### Installation\n Refer [installation instructions]( https://github.com/cambridgesemantics/csi-k8s-operator-anzo/blob/v2.0.0/README.md )\n\n### Documentation\n\nYou can find our documentation [here.]( https://docs.cambridgesemantics.com/anzo/userdoc/cloud-deployments.htm )\n\n### Support\n\nWe offer Support to our customers through [ Cambridge Semantics Customer Center ]( https://customercenter.cambridgesemantics.com/ ).",
-      "csv_display_name": "Anzo Operator",
-      "csv_metadata_description": "kubernetes operator for Anzo",
-      "csv_name": "anzo-operator.v2.0.101",
-      "in_index_img": true,
-      "install_modes": [
-        {
-          "supported": true,
-          "type": "OwnNamespace"
-        },
-        {
-          "supported": true,
-          "type": "SingleNamespace"
-        },
-        {
-          "supported": false,
-          "type": "MultiNamespace"
-        },
-        {
-          "supported": false,
-          "type": "AllNamespaces"
-        }
-      ],
-      "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:57:16.137000+00:00",
-      "latest_in_channel": true,
-      "ocp_version": "4.10",
-      "organization": "certified-operators",
-      "package": "anzo-operator",
-      "provided_apis": [
-        {
-          "group": "anzo.cambridgesemantics.com",
-          "kind": "Anzo",
-          "plural": "anzos",
-          "version": "v1"
-        }
-      ],
-      "provider": "Cambridge Semantics Inc.",
-      "related_images": [
-        {
-          "digest": "sha256:563e964f5771b9bfd860ea993b6e0936a54504908f5b2d1dff6f99ade74bb7a0",
-          "image": "registry.connect.redhat.com/cambridgesemantics/anzo-operator@sha256:563e964f5771b9bfd860ea993b6e0936a54504908f5b2d1dff6f99ade74bb7a0",
-          "name": "anzo-operator-563e964f5771b9bfd860ea993b6e0936a54504908f5b2d1dff6f99ade74bb7a0-annotation"
-        },
-        {
-          "digest": "sha256:563e964f5771b9bfd860ea993b6e0936a54504908f5b2d1dff6f99ade74bb7a0",
-          "image": "registry.connect.redhat.com/cambridgesemantics/anzo-operator@sha256:563e964f5771b9bfd860ea993b6e0936a54504908f5b2d1dff6f99ade74bb7a0",
-          "name": "manager"
-        },
-        {
-          "digest": "sha256:d1c2d54ca205d669c5ea1bb6aae105afe2385cc5695cecd78423ffa1d98929f8",
-          "image": "registry.connect.redhat.com/cambridgesemantics/anzo@sha256:d1c2d54ca205d669c5ea1bb6aae105afe2385cc5695cecd78423ffa1d98929f8",
-          "name": "anzo"
-        },
-        {
-          "digest": "sha256:d1c2d54ca205d669c5ea1bb6aae105afe2385cc5695cecd78423ffa1d98929f8",
-          "image": "registry.connect.redhat.com/cambridgesemantics/anzo@sha256:d1c2d54ca205d669c5ea1bb6aae105afe2385cc5695cecd78423ffa1d98929f8",
-          "name": "anzo-d1c2d54ca205d669c5ea1bb6aae105afe2385cc5695cecd78423ffa1d98929f8-annotation"
-        }
-      ],
-      "replaces": null,
-      "skip_range": null,
-      "skips": [],
-      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.10",
-      "version": "2.0.0",
-      "version_original": "2.0.0"
-    },
-    {
-      "_id": "61a57b1ebfd4a5234d5960cd",
-      "alm_examples": [
-        {
-          "api_version": "anzograph.clusters.cambridgesemantics.com/v2",
-          "kind": "AnzoGraph",
-          "metadata": {
-            "name": "azg01"
-          },
-          "spec": {
-            "db": {
-              "nodeConfig": {
-                "spec": {
-                  "replicas": 1,
-                  "selector": {
-                    "matchLabels": {
-                      "app_data": "anzograph-data-grpc",
-                      "app_mgmt": "anzograph-mgmt-grpc"
-                    }
-                  },
-                  "serviceName": "anzograph-azg01",
-                  "template": {
-                    "metadata": {
-                      "labels": {
-                        "app_data": "anzograph-data-grpc",
-                        "app_mgmt": "anzograph-mgmt-grpc"
-                      }
-                    },
-                    "spec": {
-                      "containers": [
-                        {
-                          "image": "registry.connect.redhat.com/cambridgesemantics/anzograph-db@sha256:8a5bd26551990929fdb776d6b421a9713cb84e03b19c18f81b625582f7f41af5",
-                          "name": "db",
-                          "resources": {
-                            "limits": {
-                              "cpu": "8000m",
-                              "memory": "8Gi"
-                            },
-                            "requests": {
-                              "cpu": "8000m",
-                              "memory": "8Gi"
-                            }
-                          }
-                        }
-                      ],
-                      "serviceAccountName": "anzograph-operator"
-                    }
-                  }
-                }
-              }
-            },
-            "deployFrontend": false,
-            "frontend": {
-              "nodeConfig": {
-                "spec": {
-                  "replicas": 1,
-                  "selector": {
-                    "matchLabels": {
-                      "app_mgmt": "anzograph-frontend"
-                    }
-                  },
-                  "serviceName": "anzograph-azg01",
-                  "template": {
-                    "metadata": {
-                      "labels": {
-                        "app_mgmt": "anzograph-frontend"
-                      }
-                    },
-                    "spec": {
-                      "containers": [
-                        {
-                          "image": "registry.connect.redhat.com/cambridgesemantics/anzograph-frontend@sha256:c1443bcdc8e998fc699f61980a665f1a083350adf2d3d1d55a7cb55e31ca50b3",
-                          "name": "frontend",
-                          "resources": {
-                            "limits": {
-                              "cpu": "2000m",
-                              "memory": "4Gi"
-                            },
-                            "requests": {
-                              "cpu": "2000m",
-                              "memory": "4Gi"
-                            }
-                          }
-                        }
-                      ],
-                      "serviceAccountName": "anzograph-operator"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      ],
-      "annotations": {
-        "infrastructure_features": [],
-        "valid_subscription": []
-      },
-      "architectures": [],
-      "bundle_path": "registry.connect.redhat.com/cambridgesemantics/anzograph-operator-bundle@sha256:9418a3505873ac387f2b5455ec7e696739a2bb6f03232f8c0f59489c605b96f2",
-      "bundle_path_digest": "sha256:9418a3505873ac387f2b5455ec7e696739a2bb6f03232f8c0f59489c605b96f2",
-      "capabilities": [
-        "Basic Install"
-      ],
-      "channel_name": "stable",
-      "creation_date": "2021-11-30T01:15:10.124000+00:00",
-      "csv_description": "The AnzoGraph Operator provides the way to install and configure an AnzoGraph\ncluster on Red Hat K8S environment.\n\n### Installation\n Refer [installation instructions]( https://github.com/cambridgesemantics/csi-k8s-operator-anzograph/blob/v2.0.1/README_openshift_marketplace.md )\n\n### Documentation\n\nYou can find our documentation [here.]( https://docs.cambridgesemantics.com/anzograph/userdoc/ )\n\n### Support\n\nWe offer Support to our customers with the AnzoGraph db Enterprise Edition License [here]( https://customercenter.cambridgesemantics.com/ ). For AnzoGraph db Free Edition questions, get help from our Anzograph User Community at Stack Overflow. When submitting a question, include the tag 'anzograph'.",
-      "csv_display_name": "AnzoGraph Operator",
-      "csv_metadata_description": "kubernetes operator for AnzoGraph DB",
-      "csv_name": "anzograph-operator.v2.0.102",
-      "in_index_img": true,
-      "install_modes": [
-        {
-          "supported": true,
-          "type": "OwnNamespace"
-        },
-        {
-          "supported": true,
-          "type": "SingleNamespace"
-        },
-        {
-          "supported": false,
-          "type": "MultiNamespace"
-        },
-        {
-          "supported": false,
-          "type": "AllNamespaces"
-        }
-      ],
-      "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:57:22.697000+00:00",
-      "latest_in_channel": true,
-      "ocp_version": "4.10",
-      "organization": "certified-operators",
-      "package": "anzograph-operator",
-      "provided_apis": [
-        {
-          "group": "anzograph.clusters.cambridgesemantics.com",
-          "kind": "AnzoGraph",
-          "version": "v2"
-        }
-      ],
-      "provider": "Cambridge Semantics Inc.",
-      "related_images": [
-        {
-          "digest": "sha256:a5b212558f748ddc8156541b546290320b656506e039a18903ad9fa6e638e732",
-          "image": "registry.connect.redhat.com/cambridgesemantics/anzograph-operator@sha256:a5b212558f748ddc8156541b546290320b656506e039a18903ad9fa6e638e732",
-          "name": "anzograph-operator-a5b212558f748ddc8156541b546290320b656506e039a18903ad9fa6e638e732-annotation"
-        },
-        {
-          "digest": "sha256:a5b212558f748ddc8156541b546290320b656506e039a18903ad9fa6e638e732",
-          "image": "registry.connect.redhat.com/cambridgesemantics/anzograph-operator@sha256:a5b212558f748ddc8156541b546290320b656506e039a18903ad9fa6e638e732",
-          "name": "manager"
-        },
-        {
-          "digest": "sha256:e3bdddf811b5ba69f388d023aea1ba538edd00e9f415c33ec555321d39129a36",
-          "image": "registry.connect.redhat.com/cambridgesemantics/anzograph@sha256:e3bdddf811b5ba69f388d023aea1ba538edd00e9f415c33ec555321d39129a36",
-          "name": "anzograph_allinone"
-        },
-        {
-          "digest": "sha256:8a5bd26551990929fdb776d6b421a9713cb84e03b19c18f81b625582f7f41af5",
-          "image": "registry.connect.redhat.com/cambridgesemantics/anzograph-db@sha256:8a5bd26551990929fdb776d6b421a9713cb84e03b19c18f81b625582f7f41af5",
-          "name": "anzograph_db"
-        },
-        {
-          "digest": "sha256:c1443bcdc8e998fc699f61980a665f1a083350adf2d3d1d55a7cb55e31ca50b3",
-          "image": "registry.connect.redhat.com/cambridgesemantics/anzograph-frontend@sha256:c1443bcdc8e998fc699f61980a665f1a083350adf2d3d1d55a7cb55e31ca50b3",
-          "name": "anzograph_frontend"
-        },
-        {
-          "digest": "sha256:c1443bcdc8e998fc699f61980a665f1a083350adf2d3d1d55a7cb55e31ca50b3",
-          "image": "registry.connect.redhat.com/cambridgesemantics/anzograph-frontend@sha256:c1443bcdc8e998fc699f61980a665f1a083350adf2d3d1d55a7cb55e31ca50b3",
-          "name": "anzograph-frontend-c1443bcdc8e998fc699f61980a665f1a083350adf2d3d1d55a7cb55e31ca50b3-annotation"
-        },
-        {
-          "digest": "sha256:8a5bd26551990929fdb776d6b421a9713cb84e03b19c18f81b625582f7f41af5",
-          "image": "registry.connect.redhat.com/cambridgesemantics/anzograph-db@sha256:8a5bd26551990929fdb776d6b421a9713cb84e03b19c18f81b625582f7f41af5",
-          "name": "anzograph-db-8a5bd26551990929fdb776d6b421a9713cb84e03b19c18f81b625582f7f41af5-annotation"
-        }
-      ],
-      "replaces": null,
-      "skip_range": null,
-      "skips": [],
-      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.10",
-      "version": "2.0.1",
-      "version_original": "2.0.1"
-    },
-    {
-      "_id": "61a57b26c17162a20c1c687f",
-      "alm_examples": [
-        {
-          "api_version": "anzounstructured.clusters.cambridgesemantics.com/v1",
-          "kind": "AnzoUnstructured",
-          "metadata": {
-            "name": "au01"
-          },
-          "spec": {
-            "auWorker": {
-              "nodeConfig": {
-                "spec": {
-                  "replicas": 1,
-                  "selector": {
-                    "matchLabels": {
-                      "app": "anzounstructured"
-                    }
-                  },
-                  "serviceName": "au-au01-w",
-                  "template": {
-                    "metadata": {
-                      "labels": {
-                        "app": "anzounstructured"
-                      }
-                    },
-                    "spec": {
-                      "containers": [
-                        {
-                          "image": "registry.connect.redhat.com/cambridgesemantics/anzo-unstructured-worker@sha256:4db61bdf6dc8b42824a06d2f8d8aeecddde765d123b40a63a7bbf87845719fb2",
-                          "name": "w",
-                          "resources": {
-                            "limits": {
-                              "cpu": "2",
-                              "memory": "4Gi"
-                            },
-                            "requests": {
-                              "cpu": "2",
-                              "memory": "4Gi"
-                            }
-                          }
-                        }
-                      ],
-                      "serviceAccountName": "unstructured-operator"
-                    }
-                  }
-                }
-              }
-            },
-            "msLeader": {
-              "nodeConfig": {
-                "spec": {
-                  "replicas": 1,
-                  "selector": {
-                    "matchLabels": {
-                      "app": "anzounstructured"
-                    }
-                  },
-                  "serviceName": "au-au01-ms",
-                  "template": {
-                    "metadata": {
-                      "labels": {
-                        "app": "anzounstructured"
-                      }
-                    },
-                    "spec": {
-                      "containers": [
-                        {
-                          "image": "registry.connect.redhat.com/cambridgesemantics/anzo-microservices-leader@sha256:0579fd97e81e436eaff3b58c5395f13aa924940a3d51f0bdea5163d327620286",
-                          "name": "ms",
-                          "resources": {
-                            "limits": {
-                              "cpu": "2",
-                              "memory": "4Gi"
-                            },
-                            "requests": {
-                              "cpu": "2",
-                              "memory": "4Gi"
-                            }
-                          }
-                        }
-                      ],
-                      "serviceAccountName": "unstructured-operator"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      ],
-      "annotations": {
-        "infrastructure_features": [],
-        "valid_subscription": []
-      },
-      "architectures": [],
-      "bundle_path": "registry.connect.redhat.com/cambridgesemantics/anzo-unstructured-operator-bundle@sha256:800c686058a8b80d2c082741019db9d35535b2ba2b59007cbde0c2dffa143e82",
-      "bundle_path_digest": "sha256:800c686058a8b80d2c082741019db9d35535b2ba2b59007cbde0c2dffa143e82",
-      "capabilities": [
-        "Basic Install"
-      ],
-      "channel_name": "stable",
-      "creation_date": "2021-11-30T01:15:18.637000+00:00",
-      "csv_description": "The Anzo Unstructured Operator provides the way to install and configure an anzo unstructured setup on Red Hat K8S environment.\nCurrently, this is possible only through existing Anzo installation.\n\n### Installation\n Refer [installation instructions]( https://github.com/cambridgesemantics/csi-k8s-operator-anzo-unstructured/blob/v2.0.0/README.md )\n\n### Documentation\n\nYou can find our documentation [here.]( https://docs.cambridgesemantics.com/anzo/userdoc/cloud-deployments.htm )\n\n### Support\n\nWe offer Support to our customers through [ Cambridge Semantics Customer Center ]( https://customercenter.cambridgesemantics.com/ ).",
-      "csv_display_name": "Anzo Unstructured Operator",
-      "csv_metadata_description": "Kubernetes Operator for Anzo Unstructured",
-      "csv_name": "anzounstructured-operator.v2.0.101",
-      "in_index_img": true,
-      "install_modes": [
-        {
-          "supported": true,
-          "type": "OwnNamespace"
-        },
-        {
-          "supported": true,
-          "type": "SingleNamespace"
-        },
-        {
-          "supported": false,
-          "type": "MultiNamespace"
-        },
-        {
-          "supported": false,
-          "type": "AllNamespaces"
-        }
-      ],
-      "is_default_channel": true,
-      "last_update_date": "2022-10-24T10:57:27.028000+00:00",
-      "latest_in_channel": true,
-      "ocp_version": "4.10",
-      "organization": "certified-operators",
-      "package": "anzounstructured-operator",
-      "provided_apis": [
-        {
-          "group": "anzounstructured.clusters.cambridgesemantics.com",
-          "kind": "AnzoUnstructured",
-          "plural": "anzounstructureds",
-          "version": "v1"
-        }
-      ],
-      "provider": "Cambridge Semantics Inc.",
-      "related_images": [
-        {
-          "digest": "sha256:a47af068a7aa55c12be84c80d263feeed5597ecc434986b4f2fff782b568bb04",
-          "image": "registry.connect.redhat.com/cambridgesemantics/unstructured-operator@sha256:a47af068a7aa55c12be84c80d263feeed5597ecc434986b4f2fff782b568bb04",
-          "name": "unstructured-operator-a47af068a7aa55c12be84c80d263feeed5597ecc434986b4f2fff782b568bb04-annotation"
-        },
-        {
-          "digest": "sha256:a47af068a7aa55c12be84c80d263feeed5597ecc434986b4f2fff782b568bb04",
-          "image": "registry.connect.redhat.com/cambridgesemantics/unstructured-operator@sha256:a47af068a7aa55c12be84c80d263feeed5597ecc434986b4f2fff782b568bb04",
-          "name": "manager"
-        },
-        {
-          "digest": "sha256:0579fd97e81e436eaff3b58c5395f13aa924940a3d51f0bdea5163d327620286",
-          "image": "registry.connect.redhat.com/cambridgesemantics/anzo-microservices-leader@sha256:0579fd97e81e436eaff3b58c5395f13aa924940a3d51f0bdea5163d327620286",
-          "name": "anzo_microservices_leader"
-        },
-        {
-          "digest": "sha256:4db61bdf6dc8b42824a06d2f8d8aeecddde765d123b40a63a7bbf87845719fb2",
-          "image": "registry.connect.redhat.com/cambridgesemantics/anzo-unstructured-worker@sha256:4db61bdf6dc8b42824a06d2f8d8aeecddde765d123b40a63a7bbf87845719fb2",
-          "name": "anzo_unstructured_worker"
-        },
-        {
-          "digest": "sha256:0579fd97e81e436eaff3b58c5395f13aa924940a3d51f0bdea5163d327620286",
-          "image": "registry.connect.redhat.com/cambridgesemantics/anzo-microservices-leader@sha256:0579fd97e81e436eaff3b58c5395f13aa924940a3d51f0bdea5163d327620286",
-          "name": "anzo-microservices-leader-0579fd97e81e436eaff3b58c5395f13aa924940a3d51f0bdea5163d327620286-annotation"
-        },
-        {
-          "digest": "sha256:4db61bdf6dc8b42824a06d2f8d8aeecddde765d123b40a63a7bbf87845719fb2",
-          "image": "registry.connect.redhat.com/cambridgesemantics/anzo-unstructured-worker@sha256:4db61bdf6dc8b42824a06d2f8d8aeecddde765d123b40a63a7bbf87845719fb2",
-          "name": "anzo-unstructured-worker-4db61bdf6dc8b42824a06d2f8d8aeecddde765d123b40a63a7bbf87845719fb2-annotation"
-        }
-      ],
-      "replaces": null,
-      "skip_range": null,
-      "skips": [],
-      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.10",
-      "version": "2.0.0",
-      "version_original": "2.0.0"
     },
     {
       "_id": "61a57b36bfd4a5234d5960ce",
@@ -11539,7 +10528,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T10:58:39.291000+00:00",
+      "last_update_date": "2022-11-23T08:20:09.964000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.10",
       "organization": "certified-operators",
@@ -11687,7 +10676,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T10:58:55.655000+00:00",
+      "last_update_date": "2022-11-23T08:20:15.244000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.10",
       "organization": "certified-operators",
@@ -11696,6 +10685,7 @@
         {
           "group": "charts.helm.k8s.io",
           "kind": "OpenshiftArtifactoryHa",
+          "plural": "openshiftartifactoryhas",
           "version": "v1"
         }
       ],
@@ -11810,7 +10800,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:00:29.255000+00:00",
+      "last_update_date": "2022-11-23T08:21:27.945000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.10",
       "organization": "certified-operators",
@@ -11954,7 +10944,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:01:54.307000+00:00",
+      "last_update_date": "2022-11-23T08:22:34.025000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.10",
       "organization": "certified-operators",
@@ -12110,7 +11100,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:02:02.860000+00:00",
+      "last_update_date": "2022-11-23T08:22:39.069000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.10",
       "organization": "certified-operators",
@@ -12368,7 +11358,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:03:06.505000+00:00",
+      "last_update_date": "2022-11-23T08:23:33.676000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.10",
       "organization": "certified-operators",
@@ -12626,7 +11616,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:06:09.070000+00:00",
+      "last_update_date": "2022-11-23T08:26:51.224000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.10",
       "organization": "certified-operators",
@@ -12915,7 +11905,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:06:14.357000+00:00",
+      "last_update_date": "2022-11-23T08:26:58.445000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.10",
       "organization": "certified-operators",
@@ -13290,7 +12280,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:06:20.859000+00:00",
+      "last_update_date": "2022-11-23T08:27:04.096000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.10",
       "organization": "certified-operators",
@@ -13540,7 +12530,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:06:44.342000+00:00",
+      "last_update_date": "2022-11-23T08:27:31.522000+00:00",
       "latest_in_channel": false,
       "ocp_version": "4.10",
       "organization": "certified-operators",
@@ -13764,7 +12754,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:06:50.255000+00:00",
+      "last_update_date": "2022-11-23T08:27:37.359000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.10",
       "organization": "certified-operators",
@@ -13935,7 +12925,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:11:24.308000+00:00",
+      "last_update_date": "2022-11-23T08:33:11.145000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.10",
       "organization": "certified-operators",
@@ -13995,7 +12985,7 @@
         }
       ],
       "is_default_channel": false,
-      "last_update_date": "2022-10-24T11:11:28.725000+00:00",
+      "last_update_date": "2022-11-23T08:33:18.741000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.10",
       "organization": "certified-operators",
@@ -14055,7 +13045,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:11:34.317000+00:00",
+      "last_update_date": "2022-11-23T08:33:26.447000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.10",
       "organization": "certified-operators",
@@ -14115,7 +13105,7 @@
         }
       ],
       "is_default_channel": true,
-      "last_update_date": "2022-10-24T11:11:56.867000+00:00",
+      "last_update_date": "2022-11-23T08:34:01.156000+00:00",
       "latest_in_channel": true,
       "ocp_version": "4.10",
       "organization": "certified-operators",
@@ -14147,6 +13137,1177 @@
       "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.10",
       "version": "0.10.1-rc4",
       "version_original": "0.10.1-rc4"
+    },
+    {
+      "_id": "61a57ca427e166330707d966",
+      "alm_examples": [
+        {
+          "api_version": "app.joget.com/v1alpha1",
+          "kind": "JogetDX",
+          "metadata": {
+            "name": "example-joget"
+          },
+          "spec": {
+            "size": 1
+          }
+        }
+      ],
+      "annotations": {
+        "infrastructure_features": [],
+        "valid_subscription": []
+      },
+      "architectures": [],
+      "bundle_path": "registry.connect.redhat.com/joget/joget-dx-operator-bundle@sha256:b0e763b8e865c832348cc4a883a99af0be4b657f0b44b4419ca4d6066a3c7bed",
+      "bundle_path_digest": "sha256:b0e763b8e865c832348cc4a883a99af0be4b657f0b44b4419ca4d6066a3c7bed",
+      "capabilities": [
+        "Seamless Upgrades"
+      ],
+      "channel_name": "alpha",
+      "creation_date": "2021-11-30T01:21:40.640000+00:00",
+      "csv_description": "Joget DX is the next generation open source no-code / low-code application platform that combines the best of Rapid Application Development, Business Process Automation and Workflow Management. \nJoget DX empowers business users, non-coders or coders with a single platform to easily build, deliver, monitor and maintain enterprise applications.\n\nThis operator installs a Joget DX cluster running on JBoss EAP 7.\n\n### Features\n* Build full-fledged apps e.g. CRM, HR, Healthcare, etc\n* Drag and drop forms, lists, UI\n* Add workflow to automate processes\n* Extend via plugins\n* Apps are mobile optimized and cloud ready\n* Download ready-made apps from the Joget Marketplace\n\n### Before You Start\nDeploy a [MySQL](https://docs.openshift.com/online/pro/using_images/db_images/mysql.html) or [MariaDB](https://docs.openshift.com/online/pro/using_images/db_images/mariadb.html) database.\n\n### Post Deployment\nAccess the service URL and complete the one-time [Database Setup](https://dev.joget.org/community/display/DX7/Setting+Up+Database)\n\n### More Information\nMore information about Joget DX on JBoss EAP 7 is available in the [Joget Knowledge Base](https://dev.joget.org/community/display/DX7/Automated+Deployment+on+Red+Hat+OpenShift+with+the+Joget+Operator)\n",
+      "csv_display_name": "Joget DX Operator",
+      "csv_metadata_description": "No-code/low-code application platform to visually build, run and maintain apps",
+      "csv_name": "joget-dx-openshift-operator.v0.0.20",
+      "in_index_img": true,
+      "install_modes": [
+        {
+          "supported": true,
+          "type": "OwnNamespace"
+        },
+        {
+          "supported": true,
+          "type": "SingleNamespace"
+        },
+        {
+          "supported": false,
+          "type": "MultiNamespace"
+        },
+        {
+          "supported": true,
+          "type": "AllNamespaces"
+        }
+      ],
+      "is_default_channel": true,
+      "last_update_date": "2022-11-23T08:34:07.950000+00:00",
+      "latest_in_channel": false,
+      "ocp_version": "4.10",
+      "organization": "certified-operators",
+      "package": "joget-dx-operator",
+      "provided_apis": [
+        {
+          "group": "app.joget.com",
+          "kind": "JogetDX",
+          "plural": "jogetdx",
+          "version": "v1alpha1"
+        }
+      ],
+      "provider": "Joget, Inc",
+      "related_images": [
+        {
+          "digest": "sha256:79856e88008da33fc0323e197819fec39fbd6b6bf2b03a0bf799b517bcf8e749",
+          "image": "registry.connect.redhat.com/joget/joget-dx-operator@sha256:79856e88008da33fc0323e197819fec39fbd6b6bf2b03a0bf799b517bcf8e749",
+          "name": "joget-dx-operator-79856e88008da33fc0323e197819fec39fbd6b6bf2b03a0bf799b517bcf8e749-annotation"
+        },
+        {
+          "digest": "sha256:79856e88008da33fc0323e197819fec39fbd6b6bf2b03a0bf799b517bcf8e749",
+          "image": "registry.connect.redhat.com/joget/joget-dx-operator@sha256:79856e88008da33fc0323e197819fec39fbd6b6bf2b03a0bf799b517bcf8e749",
+          "name": "operator"
+        },
+        {
+          "digest": "sha256:dffc105b4cf03f0b4f15c90786505ba5d660bf703bf11e19e80c90d93fece559",
+          "image": "registry.connect.redhat.com/joget/joget-dx7-eap7@sha256:dffc105b4cf03f0b4f15c90786505ba5d660bf703bf11e19e80c90d93fece559",
+          "name": "joget"
+        }
+      ],
+      "replaces": null,
+      "skip_range": null,
+      "skips": [],
+      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.10",
+      "version": "0.0.20",
+      "version_original": "0.0.20"
+    },
+    {
+      "_id": "61a57cae3e9240fca360f55a",
+      "alm_examples": [
+        {
+          "api_version": "app.joget.com/v1alpha1",
+          "kind": "JogetDX",
+          "metadata": {
+            "name": "example-joget"
+          },
+          "spec": {
+            "size": 1
+          }
+        }
+      ],
+      "annotations": {
+        "infrastructure_features": [],
+        "valid_subscription": []
+      },
+      "architectures": [],
+      "bundle_path": "registry.connect.redhat.com/joget/joget-dx-operator-bundle@sha256:58e3af46a8b343a8a899cea5c01061f9fb3530713d7786cca289b198d72bacf6",
+      "bundle_path_digest": "sha256:58e3af46a8b343a8a899cea5c01061f9fb3530713d7786cca289b198d72bacf6",
+      "capabilities": [
+        "Seamless Upgrades"
+      ],
+      "channel_name": "alpha",
+      "creation_date": "2021-11-30T01:21:50.428000+00:00",
+      "csv_description": "Joget DX is the next generation open source no-code / low-code application platform that combines the best of Rapid Application Development, Business Process Automation and Workflow Management. \nJoget DX empowers business users, non-coders or coders with a single platform to easily build, deliver, monitor and maintain enterprise applications.\n\nThis operator installs a Joget DX cluster running on JBoss EAP 7.\n\n### Features\n* Build full-fledged apps e.g. CRM, HR, Healthcare, etc\n* Drag and drop forms, lists, UI\n* Add workflow to automate processes\n* Extend via plugins\n* Apps are mobile optimized and cloud ready\n* Download ready-made apps from the Joget Marketplace\n\n### Before You Start\nDeploy a [MySQL](https://docs.openshift.com/online/pro/using_images/db_images/mysql.html) or [MariaDB](https://docs.openshift.com/online/pro/using_images/db_images/mariadb.html) database.\n\n### Post Deployment\nAccess the service URL and complete the one-time [Database Setup](https://dev.joget.org/community/display/DX7/Setting+Up+Database)\n\n### More Information\nMore information about Joget DX on JBoss EAP 7 is available in the [Joget Knowledge Base](https://dev.joget.org/community/display/DX7/Automated+Deployment+on+Red+Hat+OpenShift+with+the+Joget+Operator)\n",
+      "csv_display_name": "Joget DX Operator",
+      "csv_metadata_description": "No-code/low-code application platform to visually build, run and maintain apps",
+      "csv_name": "joget-dx-openshift-operator.v0.0.21",
+      "in_index_img": true,
+      "install_modes": [
+        {
+          "supported": true,
+          "type": "OwnNamespace"
+        },
+        {
+          "supported": true,
+          "type": "SingleNamespace"
+        },
+        {
+          "supported": false,
+          "type": "MultiNamespace"
+        },
+        {
+          "supported": true,
+          "type": "AllNamespaces"
+        }
+      ],
+      "is_default_channel": true,
+      "last_update_date": "2022-11-23T08:34:15.393000+00:00",
+      "latest_in_channel": false,
+      "ocp_version": "4.10",
+      "organization": "certified-operators",
+      "package": "joget-dx-operator",
+      "provided_apis": [
+        {
+          "group": "app.joget.com",
+          "kind": "JogetDX",
+          "plural": "jogetdx",
+          "version": "v1alpha1"
+        }
+      ],
+      "provider": "Joget, Inc",
+      "related_images": [
+        {
+          "digest": "sha256:79856e88008da33fc0323e197819fec39fbd6b6bf2b03a0bf799b517bcf8e749",
+          "image": "registry.connect.redhat.com/joget/joget-dx-operator@sha256:79856e88008da33fc0323e197819fec39fbd6b6bf2b03a0bf799b517bcf8e749",
+          "name": "joget-dx-operator-79856e88008da33fc0323e197819fec39fbd6b6bf2b03a0bf799b517bcf8e749-annotation"
+        },
+        {
+          "digest": "sha256:79856e88008da33fc0323e197819fec39fbd6b6bf2b03a0bf799b517bcf8e749",
+          "image": "registry.connect.redhat.com/joget/joget-dx-operator@sha256:79856e88008da33fc0323e197819fec39fbd6b6bf2b03a0bf799b517bcf8e749",
+          "name": "operator"
+        },
+        {
+          "digest": "sha256:326789849a178bdea0e57f1b4649a4e92a2590579902e899932c733bc24409d3",
+          "image": "registry.connect.redhat.com/joget/joget-dx7-eap7@sha256:326789849a178bdea0e57f1b4649a4e92a2590579902e899932c733bc24409d3",
+          "name": "joget"
+        }
+      ],
+      "replaces": null,
+      "skip_range": null,
+      "skips": [],
+      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.10",
+      "version": "0.0.21",
+      "version_original": "0.0.21"
+    },
+    {
+      "_id": "61a57cb7c17162a20c1c688c",
+      "alm_examples": [
+        {
+          "api_version": "app.joget.com/v1alpha1",
+          "kind": "JogetDX",
+          "metadata": {
+            "name": "example-joget"
+          },
+          "spec": {
+            "size": 1
+          }
+        }
+      ],
+      "annotations": {
+        "infrastructure_features": [],
+        "valid_subscription": []
+      },
+      "architectures": [],
+      "bundle_path": "registry.connect.redhat.com/joget/joget-dx-operator-bundle@sha256:d778e1d70bee8e4a17cac2ea9b04c82c747fd1d1f3859e846626f581f58f1ae3",
+      "bundle_path_digest": "sha256:d778e1d70bee8e4a17cac2ea9b04c82c747fd1d1f3859e846626f581f58f1ae3",
+      "capabilities": [
+        "Seamless Upgrades"
+      ],
+      "channel_name": "alpha",
+      "creation_date": "2021-11-30T01:21:59.698000+00:00",
+      "csv_description": "Joget DX is the next generation open source no-code / low-code application platform that combines the best of Rapid Application Development, Business Process Automation and Workflow Management. \nJoget DX empowers business users, non-coders or coders with a single platform to easily build, deliver, monitor and maintain enterprise applications.\n\nThis operator installs a Joget DX cluster running on JBoss EAP 7.\n\n### Features\n* Build full-fledged apps e.g. CRM, HR, Healthcare, etc\n* Drag and drop forms, lists, UI\n* Add workflow to automate processes\n* Extend via plugins\n* Apps are mobile optimized and cloud ready\n* Download ready-made apps from the Joget Marketplace\n\n### Before You Start\nDeploy a [MySQL](https://docs.openshift.com/online/pro/using_images/db_images/mysql.html) or [MariaDB](https://docs.openshift.com/online/pro/using_images/db_images/mariadb.html) database.\n\n### Post Deployment\nAccess the service URL and complete the one-time [Database Setup](https://dev.joget.org/community/display/DX7/Setting+Up+Database)\n\n### More Information\nMore information about Joget DX on JBoss EAP 7 is available in the [Joget Knowledge Base](https://dev.joget.org/community/display/DX7/Automated+Deployment+on+Red+Hat+OpenShift+with+the+Joget+Operator)\n",
+      "csv_display_name": "Joget DX Operator",
+      "csv_metadata_description": "No-code/low-code application platform to visually build, run and maintain apps",
+      "csv_name": "joget-dx-openshift-operator.v0.0.22",
+      "in_index_img": true,
+      "install_modes": [
+        {
+          "supported": true,
+          "type": "OwnNamespace"
+        },
+        {
+          "supported": true,
+          "type": "SingleNamespace"
+        },
+        {
+          "supported": false,
+          "type": "MultiNamespace"
+        },
+        {
+          "supported": true,
+          "type": "AllNamespaces"
+        }
+      ],
+      "is_default_channel": true,
+      "last_update_date": "2022-11-23T08:34:22.780000+00:00",
+      "latest_in_channel": false,
+      "ocp_version": "4.10",
+      "organization": "certified-operators",
+      "package": "joget-dx-operator",
+      "provided_apis": [
+        {
+          "group": "app.joget.com",
+          "kind": "JogetDX",
+          "plural": "jogetdx",
+          "version": "v1alpha1"
+        }
+      ],
+      "provider": "Joget, Inc",
+      "related_images": [
+        {
+          "digest": "sha256:79856e88008da33fc0323e197819fec39fbd6b6bf2b03a0bf799b517bcf8e749",
+          "image": "registry.connect.redhat.com/joget/joget-dx-operator@sha256:79856e88008da33fc0323e197819fec39fbd6b6bf2b03a0bf799b517bcf8e749",
+          "name": "joget-dx-operator-79856e88008da33fc0323e197819fec39fbd6b6bf2b03a0bf799b517bcf8e749-annotation"
+        },
+        {
+          "digest": "sha256:79856e88008da33fc0323e197819fec39fbd6b6bf2b03a0bf799b517bcf8e749",
+          "image": "registry.connect.redhat.com/joget/joget-dx-operator@sha256:79856e88008da33fc0323e197819fec39fbd6b6bf2b03a0bf799b517bcf8e749",
+          "name": "operator"
+        },
+        {
+          "digest": "sha256:f839152251e021fe0ae1d4bd9e5374c2a2fb3c01da4381ba4c01afcbaadbf8bd",
+          "image": "registry.connect.redhat.com/joget/joget-dx7-eap7@sha256:f839152251e021fe0ae1d4bd9e5374c2a2fb3c01da4381ba4c01afcbaadbf8bd",
+          "name": "joget"
+        }
+      ],
+      "replaces": null,
+      "skip_range": null,
+      "skips": [],
+      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.10",
+      "version": "0.0.22",
+      "version_original": "0.0.22"
+    },
+    {
+      "_id": "61a57ce1c17162a20c1c688f",
+      "alm_examples": [
+        {
+          "api_version": "core.k8s.kubemq.io/v1beta1",
+          "kind": "KubemqCluster",
+          "metadata": {
+            "name": "kubemq-cluster"
+          },
+          "spec": {
+            "replicas": 3
+          }
+        },
+        {
+          "api_version": "core.k8s.kubemq.io/v1beta1",
+          "kind": "KubemqDashboard",
+          "metadata": {
+            "name": "kubemq-dashboard"
+          },
+          "spec": {}
+        },
+        {
+          "api_version": "core.k8s.kubemq.io/v1beta1",
+          "kind": "KubemqConnector",
+          "metadata": {
+            "name": "kubemq-bridges"
+          },
+          "spec": {
+            "config": "bindings: null",
+            "type": "bridges"
+          }
+        }
+      ],
+      "annotations": {
+        "infrastructure_features": [],
+        "valid_subscription": []
+      },
+      "architectures": [],
+      "bundle_path": "registry.connect.redhat.com/kubemq/kubemq-operator-bundle@sha256:9009198860c7a1e0de4f429261d442b75b5b2893a943bb77914b14d643db8829",
+      "bundle_path_digest": "sha256:9009198860c7a1e0de4f429261d442b75b5b2893a943bb77914b14d643db8829",
+      "capabilities": [
+        "Auto Pilot"
+      ],
+      "channel_name": "alpha",
+      "creation_date": "2021-11-30T01:22:41.997000+00:00",
+      "csv_description": "\n## Kubernetes Messaging Platform\nA message-based architecture for microservices providing flexible connectivity for hybrid environments: multi-cloud, on-premises, and at the edge. Powered by enterprise-grade message broker and message queue with ready to use connectors, bridges, and control center.\n\nMessaging platform components:\n  - **KubeMQ Cluster** - Enterprise-grade message broker and message queue, scalable, high available, and secured.\n  - **KubeMQ Targets Connector** - connects a KubeMQ cluster with external systems and cloud services.\n  - **KubeMQ Bridges Connector** - bridge, replicate, aggregate, and transform messages between KubeMQ clusters.\n  - **KubeMQ Sources Connector** - transform external systems and cloud services data to KubeMQ cluster messages.\n  - **KubeMQ Dashboard** - monitor KubeMQ cluster metrics.\n\n### Kubernetes Native\nInnovative and modern message queue and message broker in a lightweight container developed to run in Kubernetes, certified in the CNCF landscape, and connect natively to the cloud-native ecosystem.\n\n### Ease of use\n\nSimple deployment in Kubernetes in less than 1 minute. Developer friendly by simple to use SDKs and elimination of the many developers and DevOps-centered challenges to define exchanges, brokers, channels, routes, and predefined topics\n\n### All messaging patterns\n\nKubeMQ is available with all messaging patterns such as Queue, Stream, Pub/Sub, and RPC, Saving the need to maintain multiple messaging platforms for different use cases.\n\n### Hybrid Environments\n\nKubeMQ enables the microservices from multiple environments to communicate and build one hybrid infrastructure solution across clouds, on-prem, and at the edge.\n\n### KubeMQ Cluster key features\n\n- All-batteries included Messaging Queue Broker for the Kubernetes environment\n- Deployed with Operator for full life cycle operation\n- Blazing fast (written in Go), small and lightweight Docker container\n- Asynchronous and Synchronous messaging with support for  `At Most Once Delivery` and `At Least Once Delivery` models\n- Supports durable FIFO based Queue, Publish-Subscribe Events, Publish-Subscribe with Persistence (Events Store), RPC Command and Query messaging patterns\n- Supports gRPC, Rest and WebSocket Transport protocols with TLS support (both RPC and Stream modes)\n- Supports Access control Authorization and Authentication\n- Supports message masticating and smart routing\n- No Message broker configuration needed (i.e., queues, exchanges)\n- .Net, Java, Python, Go, and NodeJS SDKs\n\n### KubeMQ Targets Connector key features\n\n- Runs anywhere - Kubernetes, Cloud, on-prem, anywhere\n- Stand-alone - small docker container / binary\n- Single Interface - One interface all the services\n- Any Service - Support all major services types (databases, cache, messaging, serverless, HTTP, etc.)\n- Plug-in Architecture Easy to extend, easy to connect\n- Middleware Supports - Logs, Metrics, Retries, and Rate Limiters\n- Easy Configuration - simple yaml file builds your topology\n\n[Check out Github page](https://github.com/kubemq-io/kubemq-targets)\n\n### KubeMQ Bridges Connector key features\n\n- Runs anywhere - Kubernetes, Cloud, on-prem, anywhere\n- Stand-alone - small docker container / binary\n- Build Any Topology - connects KubeMQ clusters in 1:1, 1:n , n:1, n:n\n- Middleware Supports - Logs, Metrics, Retries, and Rate Limiters\n- Easy Configuration - simple yaml file builds your topology\n\n[Check out Github page](https://github.com/kubemq-io/kubemq-bridges)\n\n### KubeMQ Sources Connector key features\n\n- Runs anywhere - Kubernetes, Cloud, on-prem, anywhere\n- Stand-alone - small docker container / binary\n- Single Interface - One interface all the services\n- Any Service - Support all major messaging services such as Kafka, ActiveMQ, SQS, and more.\n- Plug-in Architecture Easy to extend, easy to connect\n- Middleware Supports - Logs, Metrics, Retries, and Rate Limiters\n- Easy Configuration - simple yaml file builds your topology\n\n[Check out Github page](https://github.com/kubemq-io/kubemq-sources)\n\n## Getting Started\n\n[Start with OpenShift](https://docs.kubemq.io/getting-started/create-cluster/openshift)\n\n## Get Enterprise Trial License\n\n[Register](https://account.kubemq.io/login/register)\n\n## Request a Demo\n\n[See KubeMQ in Action](https://kubemq.io/request-a-demo/)",
+      "csv_display_name": "Kubemq Enterprise Operator",
+      "csv_metadata_description": "Kubernetes Messaging Platform",
+      "csv_name": "kubemq-operator.v1.7.8",
+      "in_index_img": true,
+      "install_modes": [
+        {
+          "supported": true,
+          "type": "OwnNamespace"
+        },
+        {
+          "supported": true,
+          "type": "SingleNamespace"
+        },
+        {
+          "supported": true,
+          "type": "MultiNamespace"
+        },
+        {
+          "supported": false,
+          "type": "AllNamespaces"
+        }
+      ],
+      "is_default_channel": true,
+      "last_update_date": "2022-11-23T08:36:58.770000+00:00",
+      "latest_in_channel": true,
+      "ocp_version": "4.10",
+      "organization": "certified-operators",
+      "package": "kubemq-operator-marketplace",
+      "provided_apis": [
+        {
+          "group": "core.k8s.kubemq.io",
+          "kind": "KubemqDashboard",
+          "plural": "kubemqdashboards",
+          "version": "v1beta1"
+        },
+        {
+          "group": "core.k8s.kubemq.io",
+          "kind": "KubemqCluster",
+          "plural": "kubemqclusters",
+          "version": "v1alpha1"
+        },
+        {
+          "group": "core.k8s.kubemq.io",
+          "kind": "KubemqCluster",
+          "plural": "kubemqclusters",
+          "version": "v1beta1"
+        },
+        {
+          "group": "core.k8s.kubemq.io",
+          "kind": "KubemqConnector",
+          "plural": "kubemqconnectors",
+          "version": "v1alpha1"
+        },
+        {
+          "group": "core.k8s.kubemq.io",
+          "kind": "KubemqConnector",
+          "plural": "kubemqconnectors",
+          "version": "v1beta1"
+        },
+        {
+          "group": "core.k8s.kubemq.io",
+          "kind": "KubemqDashboard",
+          "plural": "kubemqdashboards",
+          "version": "v1alpha1"
+        }
+      ],
+      "provider": "Kubemq.io",
+      "related_images": [],
+      "replaces": null,
+      "skip_range": null,
+      "skips": [],
+      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.10",
+      "version": "1.7.8",
+      "version_original": "1.7.8"
+    },
+    {
+      "_id": "61a57cfec17162a20c1c6890",
+      "alm_examples": [
+        {
+          "api_version": "game.marketplace.redhat.com/v1",
+          "kind": "Arcade",
+          "metadata": {
+            "name": "arcade-sample"
+          },
+          "spec": {
+            "size": 1
+          }
+        }
+      ],
+      "annotations": {
+        "infrastructure_features": [],
+        "valid_subscription": []
+      },
+      "architectures": [],
+      "bundle_path": "registry.connect.redhat.com/rhm-labs/arcade-operator-bundle@sha256:f5f025c7f56643fab9148bb5de8ee34a84d02b78a6abb4b5592306cf54296654",
+      "bundle_path_digest": "sha256:f5f025c7f56643fab9148bb5de8ee34a84d02b78a6abb4b5592306cf54296654",
+      "capabilities": [
+        "Basic Install"
+      ],
+      "channel_name": "alpha",
+      "creation_date": "2021-11-30T01:23:10.074000+00:00",
+      "csv_description": "RHM Arcade Operator - a simple operator used to showcase how to build an operator around an existing web application that can can run on Openshift, Vanilla k8s, or on-boarded to Red Hat Marketplace.",
+      "csv_display_name": "Arcade Operator",
+      "csv_metadata_description": "",
+      "csv_name": "marketplace-games-operator.v1.0.0",
+      "in_index_img": true,
+      "install_modes": [
+        {
+          "supported": false,
+          "type": "OwnNamespace"
+        },
+        {
+          "supported": false,
+          "type": "SingleNamespace"
+        },
+        {
+          "supported": false,
+          "type": "MultiNamespace"
+        },
+        {
+          "supported": true,
+          "type": "AllNamespaces"
+        }
+      ],
+      "is_default_channel": true,
+      "last_update_date": "2022-11-23T08:41:14.014000+00:00",
+      "latest_in_channel": true,
+      "ocp_version": "4.10",
+      "organization": "certified-operators",
+      "package": "marketplace-games-operator",
+      "provided_apis": [
+        {
+          "group": "game.marketplace.redhat.com",
+          "kind": "Arcade",
+          "plural": "arcades",
+          "version": "v1"
+        }
+      ],
+      "provider": "Red Hat Marketplace",
+      "related_images": [
+        {
+          "digest": "sha256:e10d1d982dd653db74ca87a1d1ad017bc5ef1aeb651bdea089debf16485b080b",
+          "image": "gcr.io/kubebuilder/kube-rbac-proxy@sha256:e10d1d982dd653db74ca87a1d1ad017bc5ef1aeb651bdea089debf16485b080b",
+          "name": "kube-rbac-proxy"
+        },
+        {
+          "digest": "sha256:d6959be6693728d2dc4cd38b69251551d23c5002cb52db2684df31a0a8f7b0ab",
+          "image": "registry.connect.redhat.com/rhm-labs/arcade-operator@sha256:d6959be6693728d2dc4cd38b69251551d23c5002cb52db2684df31a0a8f7b0ab",
+          "name": "manager"
+        }
+      ],
+      "replaces": null,
+      "skip_range": null,
+      "skips": [],
+      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.10",
+      "version": "1.0.0",
+      "version_original": "1.0.0"
+    },
+    {
+      "_id": "61a57d08c17162a20c1c6891",
+      "alm_examples": [
+        {
+          "api_version": "cache.omarg.net/v1alpha1",
+          "kind": "Memcached",
+          "metadata": {
+            "name": "memcached-sample"
+          },
+          "spec": {
+            "foo": "bar"
+          }
+        }
+      ],
+      "annotations": {
+        "infrastructure_features": [],
+        "valid_subscription": []
+      },
+      "architectures": [],
+      "bundle_path": "registry.connect.redhat.com/ogaye/ogaye@sha256:f35a21fb3936b259aabe27b453612616fca4e6327c9042361b4d00ef332905c0",
+      "bundle_path_digest": "sha256:f35a21fb3936b259aabe27b453612616fca4e6327c9042361b4d00ef332905c0",
+      "capabilities": [
+        "Basic Install"
+      ],
+      "channel_name": "alpha",
+      "creation_date": "2021-11-30T01:23:20.029000+00:00",
+      "csv_description": "Omar memcached operator",
+      "csv_display_name": "memcached-operator-ogaye",
+      "csv_metadata_description": "",
+      "csv_name": "memcached-operator.v0.0.1",
+      "in_index_img": true,
+      "install_modes": [
+        {
+          "supported": false,
+          "type": "OwnNamespace"
+        },
+        {
+          "supported": false,
+          "type": "SingleNamespace"
+        },
+        {
+          "supported": false,
+          "type": "MultiNamespace"
+        },
+        {
+          "supported": true,
+          "type": "AllNamespaces"
+        }
+      ],
+      "is_default_channel": true,
+      "last_update_date": "2022-11-23T08:41:21.786000+00:00",
+      "latest_in_channel": true,
+      "ocp_version": "4.10",
+      "organization": "certified-operators",
+      "package": "memcached-operator-ogaye",
+      "provided_apis": [
+        {
+          "group": "cache.omarg.net",
+          "kind": "Memcached",
+          "plural": "memcacheds",
+          "version": "v1alpha1"
+        }
+      ],
+      "provider": "Omar Gaye IBM",
+      "related_images": [
+        {
+          "digest": "sha256:9211b70edbb93d718428e1c9a992e5fc74a20cb213f8a0592ffe340c362890fe",
+          "image": "registry.redhat.io/openshift4/ose-kube-rbac-proxy@sha256:9211b70edbb93d718428e1c9a992e5fc74a20cb213f8a0592ffe340c362890fe",
+          "name": "kube-rbac-proxy"
+        },
+        {
+          "digest": "sha256:5340ac11ce676dd3204bf3807a4c2333a8dddcbcec918db0aeafbc977163c1c6",
+          "image": "quay.io/ogaye/memcached-operator@sha256:5340ac11ce676dd3204bf3807a4c2333a8dddcbcec918db0aeafbc977163c1c6",
+          "name": "manager"
+        }
+      ],
+      "replaces": null,
+      "skip_range": null,
+      "skips": [],
+      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.10",
+      "version": "0.0.1",
+      "version_original": "0.0.1"
+    },
+    {
+      "_id": "61a57d19c17162a20c1c6893",
+      "alm_examples": [
+        {
+          "api_version": "apm.neuvector.com/v1alpha1",
+          "kind": "Neuvector",
+          "metadata": {
+            "name": "neuvector"
+          },
+          "spec": {
+            "admissionwebhook": {
+              "type": "ClusterIP"
+            },
+            "bottlerocket": {
+              "enabled": false,
+              "runtimePath": "/run/dockershim.sock"
+            },
+            "containerd": {
+              "enabled": false,
+              "path": "/var/run/containerd/containerd.sock"
+            },
+            "controller": {
+              "apisvc": {
+                "annotations": {},
+                "route": {
+                  "enabled": false,
+                  "host": "",
+                  "termination": "passthrough"
+                },
+                "type": ""
+              },
+              "azureFileShare": {
+                "enabled": false,
+                "secretName": "",
+                "shareName": ""
+              },
+              "certificate": {
+                "keyFile": "tls.key",
+                "pemFile": "tls.pem",
+                "secret": ""
+              },
+              "configmap": {
+                "data": "",
+                "enabled": false
+              },
+              "disruptionbudget": 0,
+              "enabled": true,
+              "federation": {
+                "managedsvc": {
+                  "ingress": {
+                    "annotations": {
+                      "ingress.kubernetes.io/protocol": "https"
+                    },
+                    "enabled": false,
+                    "host": "",
+                    "path": "/",
+                    "secretName": "",
+                    "tls": false
+                  },
+                  "route": {
+                    "enabled": false,
+                    "host": "",
+                    "termination": "passthrough"
+                  },
+                  "type": ""
+                },
+                "mastersvc": {
+                  "ingress": {
+                    "annotations": {
+                      "ingress.kubernetes.io/protocol": "https"
+                    },
+                    "enabled": false,
+                    "host": "",
+                    "path": "/",
+                    "secretName": "",
+                    "tls": false
+                  },
+                  "route": {
+                    "enabled": false,
+                    "host": "",
+                    "termination": "passthrough"
+                  },
+                  "type": ""
+                }
+              },
+              "image": "registry.connect.redhat.com/neuvector/controller",
+              "ingress": {
+                "annotations": {
+                  "ingress.kubernetes.io/protocol": "https"
+                },
+                "enabled": false,
+                "host": "",
+                "path": "/",
+                "secretName": "",
+                "tls": false
+              },
+              "priorityClassName": "",
+              "pvc": {
+                "accessModes": [
+                  "ReadWriteMany"
+                ],
+                "capacity": "",
+                "enabled": false,
+                "storageClass": ""
+              },
+              "replicas": 3,
+              "resources": {},
+              "strategy": {
+                "rollingUpdate": {
+                  "maxSurge": 1,
+                  "maxUnavailable": 0
+                },
+                "type": "RollingUpdate"
+              }
+            },
+            "crdwebhook": {
+              "enabled": true,
+              "type": "ClusterIP"
+            },
+            "crio": {
+              "enabled": true,
+              "path": "/var/run/crio/crio.sock"
+            },
+            "cve": {
+              "scanner": {
+                "dockerPath": "",
+                "enabled": true,
+                "image": "registry.connect.redhat.com/neuvector/scanner@sha256:a802c012eee80444d9deea8c4402a1d977cf57d7b2b2044f90c9acc0e7ca3e06",
+                "priorityClassName": "",
+                "replicas": 3,
+                "resources": {},
+                "strategy": {
+                  "rollingUpdate": {
+                    "maxSurge": 1,
+                    "maxUnavailable": 0
+                  },
+                  "type": "RollingUpdate"
+                }
+              },
+              "updater": {
+                "enabled": true,
+                "image": "registry.access.redhat.com/ubi8@sha256:091ad37a5a638af2c21d01c2d3f4d489c2368070a6c43371e897013fb0987e49",
+                "priorityClassName": "",
+                "schedule": "0 0 * * *"
+              }
+            },
+            "docker": {
+              "enabled": false,
+              "path": "/var/run/docker.sock"
+            },
+            "enforcer": {
+              "enabled": true,
+              "image": "registry.connect.redhat.com/neuvector/enforcer",
+              "priorityClassName": "",
+              "resources": {},
+              "tolerations": [
+                {
+                  "effect": "NoSchedule",
+                  "key": "node-role.kubernetes.io/master"
+                }
+              ]
+            },
+            "k3s": {
+              "enabled": false,
+              "runtimePath": "/run/k3s/containerd/containerd.sock"
+            },
+            "manager": {
+              "certificate": {
+                "keyFile": "tls.key",
+                "pemFile": "tls.pem",
+                "secret": ""
+              },
+              "enabled": true,
+              "env": {
+                "ssl": true
+              },
+              "image": "registry.connect.redhat.com/neuvector/manager",
+              "ingress": {
+                "annotations": {},
+                "enabled": false,
+                "host": "",
+                "path": "/",
+                "secretName": "",
+                "tls": false
+              },
+              "priorityClassName": "",
+              "resources": {},
+              "route": {
+                "enabled": true,
+                "host": "",
+                "termination": "passthrough"
+              },
+              "svc": {
+                "annotations": {},
+                "loadBalancerIP": "",
+                "type": "NodePort"
+              }
+            },
+            "openshift": true,
+            "psp": false,
+            "resources": {},
+            "serviceAccount": "default"
+          }
+        }
+      ],
+      "annotations": {
+        "infrastructure_features": [],
+        "valid_subscription": []
+      },
+      "architectures": [],
+      "bundle_path": "registry.connect.redhat.com/neuvector/neuvector-operator-bundle@sha256:6f4ff463c67af42c1c3603e36e512a60dedb95775380a1a6b26c4cded86de5e1",
+      "bundle_path_digest": "sha256:6f4ff463c67af42c1c3603e36e512a60dedb95775380a1a6b26c4cded86de5e1",
+      "capabilities": [
+        "Basic Install"
+      ],
+      "channel_name": "beta",
+      "creation_date": "2021-11-30T01:23:37.745000+00:00",
+      "csv_description": "NeuVector delivers the only cloud-native Kubernetes security platform with uncompromising end-to-end protection from DevOps vulnerability protection to automated run-time security, and featuring a true Layer 7 container firewall.\n\nThe NeuVector Operator runs  in the openshift container platform to deploy and manage the NeuVector Security cluster components. The NeuVector operator contains all necessary information to deploy NeuVector using helm charts. You simply need to install the NeuVector operator from the OpenShift embeded operator hub and create NeuVector instance. You can modify the NeuVector installation configuration by modifying yaml while creating the NeuVector instance such as imagePullSecrets, tag version, etc. Please refer to [github link](https://github.com/neuvector/neuvector-helm/tree/master/charts/core) for the values that can be modifed during installation. To upgrade to a newer version of NeuVector, just reapply the NeuVector instance with desired tag , which in turn pulls the specified NeuVector image tags and upgrades as per upgrade plan configured on the helm chart.  NeuVector Operator versions are tied to NeuVector product versions. Version 1.2.8 of the NeuVector Certified Operator deploys version 4.3.1 of NeuVector.\n\n**Complete below steps to Grant Service Account Access to the Privileged SCC before installation.**\n\nCreate the NeuVector namespace\n\n         oc new-project  neuvector\nLogin as system:admin account\n\n         oc login -u system:admin\n\nGrant Service Account Access to the Privileged SCC\n\n         oc -n neuvector adm policy add-scc-to-user privileged -z default\n\nThe following info will be added in the Privileged SCC users:\n\n         - system:serviceaccount:neuvector:default\n\nIn OpenShift 4.6+ use the following to check:\n\n         oc get rolebinding system:openshift:scc:privileged -n neuvector -o wide\n         NAME                              ROLE                                          AGE     USERS   GROUPS   SERVICEACCOUNTS\n         system:openshift:scc:privileged   ClusterRole/system:openshift:scc:privileged   9m22s                    neuvector/default\n\n\n**Add NeuVector license from NeuVector WebUI->setting**\n\n\n#Deploying the NeuVector Operator#\n\n\nPlease refer to the instructions [here](https://github.com/neuvector/neuvector-operator/blob/master/README.md)\n\n\n",
+      "csv_display_name": "NeuVector Operator",
+      "csv_metadata_description": "NeuVector delivers the only cloud-native Kubernetes security platform with uncompromising end-to-end protection from DevOps vulnerability protection to automated run-time security, and featuring a true Layer 7 container firewall.",
+      "csv_name": "neuvector-operator.v1.2.8",
+      "in_index_img": true,
+      "install_modes": [
+        {
+          "supported": true,
+          "type": "OwnNamespace"
+        },
+        {
+          "supported": true,
+          "type": "SingleNamespace"
+        },
+        {
+          "supported": false,
+          "type": "MultiNamespace"
+        },
+        {
+          "supported": true,
+          "type": "AllNamespaces"
+        }
+      ],
+      "is_default_channel": true,
+      "last_update_date": "2022-11-23T08:43:12.024000+00:00",
+      "latest_in_channel": false,
+      "ocp_version": "4.10",
+      "organization": "certified-operators",
+      "package": "neuvector-certified-operator",
+      "provided_apis": [
+        {
+          "group": "apm.neuvector.com",
+          "kind": "Neuvector",
+          "plural": "neuvectors",
+          "version": "v1alpha1"
+        }
+      ],
+      "provider": "NeuVector",
+      "related_images": [
+        {
+          "digest": "sha256:9d8ab5fc5e3122fe1332ccf624e6897277e2e935690f4b07ca1c491599daec72",
+          "image": "registry.connect.redhat.com/neuvector/neuvector-operator@sha256:9d8ab5fc5e3122fe1332ccf624e6897277e2e935690f4b07ca1c491599daec72",
+          "name": "neuvector-operator-9d8ab5fc5e3122fe1332ccf624e6897277e2e935690f4b07ca1c491599daec72-annotation"
+        },
+        {
+          "digest": "sha256:9d8ab5fc5e3122fe1332ccf624e6897277e2e935690f4b07ca1c491599daec72",
+          "image": "registry.connect.redhat.com/neuvector/neuvector-operator@sha256:9d8ab5fc5e3122fe1332ccf624e6897277e2e935690f4b07ca1c491599daec72",
+          "name": "neuvector-operator"
+        },
+        {
+          "digest": "sha256:55b3d9873846d0a8670b58e8a8a76c426d3aba74d4e5c4fca43d05c1dd296f10",
+          "image": "registry.connect.redhat.com/neuvector/controller@sha256:55b3d9873846d0a8670b58e8a8a76c426d3aba74d4e5c4fca43d05c1dd296f10",
+          "name": "controller"
+        },
+        {
+          "digest": "sha256:fdd66288454dd01f4f618c8cf04c7da501d4362773266ec6f448d63e26e3a35c",
+          "image": "registry.connect.redhat.com/neuvector/enforcer@sha256:fdd66288454dd01f4f618c8cf04c7da501d4362773266ec6f448d63e26e3a35c",
+          "name": "enforcer"
+        },
+        {
+          "digest": "sha256:73445c18ea18f131b6fa630a97623a3043d05758205ef93fc02fa920abbedaa6",
+          "image": "registry.connect.redhat.com/neuvector/manager@sha256:73445c18ea18f131b6fa630a97623a3043d05758205ef93fc02fa920abbedaa6",
+          "name": "manager"
+        },
+        {
+          "digest": "sha256:a802c012eee80444d9deea8c4402a1d977cf57d7b2b2044f90c9acc0e7ca3e06",
+          "image": "registry.connect.redhat.com/neuvector/scanner@sha256:a802c012eee80444d9deea8c4402a1d977cf57d7b2b2044f90c9acc0e7ca3e06",
+          "name": "scanner"
+        },
+        {
+          "digest": "sha256:091ad37a5a638af2c21d01c2d3f4d489c2368070a6c43371e897013fb0987e49",
+          "image": "registry.access.redhat.com/ubi8@sha256:091ad37a5a638af2c21d01c2d3f4d489c2368070a6c43371e897013fb0987e49",
+          "name": "updater"
+        },
+        {
+          "digest": "sha256:a802c012eee80444d9deea8c4402a1d977cf57d7b2b2044f90c9acc0e7ca3e06",
+          "image": "registry.connect.redhat.com/neuvector/scanner@sha256:a802c012eee80444d9deea8c4402a1d977cf57d7b2b2044f90c9acc0e7ca3e06",
+          "name": "scanner-a802c012eee80444d9deea8c4402a1d977cf57d7b2b2044f90c9acc0e7ca3e06-annotation"
+        },
+        {
+          "digest": "sha256:091ad37a5a638af2c21d01c2d3f4d489c2368070a6c43371e897013fb0987e49",
+          "image": "registry.access.redhat.com/ubi8@sha256:091ad37a5a638af2c21d01c2d3f4d489c2368070a6c43371e897013fb0987e49",
+          "name": "ubi8-091ad37a5a638af2c21d01c2d3f4d489c2368070a6c43371e897013fb0987e49-annotation"
+        }
+      ],
+      "replaces": null,
+      "skip_range": null,
+      "skips": [],
+      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.10",
+      "version": "1.2.8",
+      "version_original": "1.2.8"
+    },
+    {
+      "_id": "61a57d223e9240fca360f55e",
+      "alm_examples": [
+        {
+          "api_version": "apm.neuvector.com/v1alpha1",
+          "kind": "Neuvector",
+          "metadata": {
+            "name": "neuvector"
+          },
+          "spec": {
+            "admissionwebhook": {
+              "type": "ClusterIP"
+            },
+            "bottlerocket": {
+              "enabled": false,
+              "runtimePath": "/run/dockershim.sock"
+            },
+            "containerd": {
+              "enabled": false,
+              "path": "/var/run/containerd/containerd.sock"
+            },
+            "controller": {
+              "apisvc": {
+                "annotations": {},
+                "route": {
+                  "enabled": false,
+                  "host": "",
+                  "termination": "passthrough"
+                },
+                "type": ""
+              },
+              "azureFileShare": {
+                "enabled": false,
+                "secretName": "",
+                "shareName": ""
+              },
+              "certificate": {
+                "keyFile": "tls.key",
+                "pemFile": "tls.pem",
+                "secret": ""
+              },
+              "configmap": {
+                "data": "",
+                "enabled": false
+              },
+              "disruptionbudget": 0,
+              "enabled": true,
+              "federation": {
+                "managedsvc": {
+                  "ingress": {
+                    "annotations": {
+                      "ingress.kubernetes.io/protocol": "https"
+                    },
+                    "enabled": false,
+                    "host": "",
+                    "path": "/",
+                    "secretName": "",
+                    "tls": false
+                  },
+                  "route": {
+                    "enabled": false,
+                    "host": "",
+                    "termination": "passthrough"
+                  },
+                  "type": ""
+                },
+                "mastersvc": {
+                  "ingress": {
+                    "annotations": {
+                      "ingress.kubernetes.io/protocol": "https"
+                    },
+                    "enabled": false,
+                    "host": "",
+                    "path": "/",
+                    "secretName": "",
+                    "tls": false
+                  },
+                  "route": {
+                    "enabled": false,
+                    "host": "",
+                    "termination": "passthrough"
+                  },
+                  "type": ""
+                }
+              },
+              "image": "registry.connect.redhat.com/neuvector/controller",
+              "ingress": {
+                "annotations": {
+                  "ingress.kubernetes.io/protocol": "https"
+                },
+                "enabled": false,
+                "host": "",
+                "path": "/",
+                "secretName": "",
+                "tls": false
+              },
+              "priorityClassName": "",
+              "pvc": {
+                "accessModes": [
+                  "ReadWriteMany"
+                ],
+                "capacity": "",
+                "enabled": false,
+                "storageClass": ""
+              },
+              "replicas": 3,
+              "resources": {},
+              "schedulerName": "",
+              "strategy": {
+                "rollingUpdate": {
+                  "maxSurge": 1,
+                  "maxUnavailable": 0
+                },
+                "type": "RollingUpdate"
+              }
+            },
+            "crdwebhook": {
+              "enabled": true,
+              "type": "ClusterIP"
+            },
+            "crio": {
+              "enabled": true,
+              "path": "/var/run/crio/crio.sock"
+            },
+            "cve": {
+              "scanner": {
+                "dockerPath": "",
+                "enabled": true,
+                "image": "registry.connect.redhat.com/neuvector/scanner@sha256:a802c012eee80444d9deea8c4402a1d977cf57d7b2b2044f90c9acc0e7ca3e06",
+                "priorityClassName": "",
+                "replicas": 3,
+                "resources": {},
+                "strategy": {
+                  "rollingUpdate": {
+                    "maxSurge": 1,
+                    "maxUnavailable": 0
+                  },
+                  "type": "RollingUpdate"
+                }
+              },
+              "updater": {
+                "enabled": true,
+                "image": "registry.access.redhat.com/ubi8@sha256:910f6bc0b5ae9b555eb91b88d28d568099b060088616eba2867b07ab6ea457c7",
+                "priorityClassName": "",
+                "schedule": "0 0 * * *",
+                "secure": false
+              }
+            },
+            "docker": {
+              "enabled": false,
+              "path": "/var/run/docker.sock"
+            },
+            "enforcer": {
+              "enabled": true,
+              "image": "registry.connect.redhat.com/neuvector/enforcer",
+              "priorityClassName": "",
+              "resources": {},
+              "tolerations": [
+                {
+                  "effect": "NoSchedule",
+                  "key": "node-role.kubernetes.io/master"
+                }
+              ]
+            },
+            "k3s": {
+              "enabled": false,
+              "runtimePath": "/run/k3s/containerd/containerd.sock"
+            },
+            "manager": {
+              "certificate": {
+                "keyFile": "tls.key",
+                "pemFile": "tls.pem",
+                "secret": ""
+              },
+              "enabled": true,
+              "env": {
+                "ssl": true
+              },
+              "image": "registry.connect.redhat.com/neuvector/manager",
+              "ingress": {
+                "annotations": {},
+                "enabled": false,
+                "host": "",
+                "path": "/",
+                "secretName": "",
+                "tls": false
+              },
+              "priorityClassName": "",
+              "resources": {},
+              "route": {
+                "enabled": true,
+                "host": "",
+                "termination": "passthrough"
+              },
+              "svc": {
+                "annotations": {},
+                "loadBalancerIP": "",
+                "type": "NodePort"
+              }
+            },
+            "openshift": true,
+            "psp": false,
+            "resources": {},
+            "serviceAccount": "default"
+          }
+        }
+      ],
+      "annotations": {
+        "infrastructure_features": [],
+        "valid_subscription": []
+      },
+      "architectures": [],
+      "bundle_path": "registry.connect.redhat.com/neuvector/neuvector-operator-bundle@sha256:29996196f2eba8f7662bdf1efeaac3a0ccf56bdfb2e522b340d9a239f7ca51e4",
+      "bundle_path_digest": "sha256:29996196f2eba8f7662bdf1efeaac3a0ccf56bdfb2e522b340d9a239f7ca51e4",
+      "capabilities": [
+        "Basic Install"
+      ],
+      "channel_name": "beta",
+      "creation_date": "2021-11-30T01:23:46.035000+00:00",
+      "csv_description": "NeuVector delivers the only cloud-native Kubernetes security platform with uncompromising end-to-end protection from DevOps vulnerability protection to automated run-time security, and featuring a true Layer 7 container firewall.\n\nThe NeuVector Operator runs  in the openshift container platform to deploy and manage the NeuVector Security cluster components. The NeuVector operator contains all necessary information to deploy NeuVector using helm charts. You simply need to install the NeuVector operator from the OpenShift embeded operator hub and create NeuVector instance. You can modify the NeuVector installation configuration by modifying yaml while creating the NeuVector instance such as imagePullSecrets, tag version, etc. Please refer to [github link](https://github.com/neuvector/neuvector-helm/tree/master/charts/core) for the values that can be modifed during installation. To upgrade to a newer version of NeuVector, just reapply the NeuVector instance with desired tag , which in turn pulls the specified NeuVector image tags and upgrades as per upgrade plan configured on the helm chart.  NeuVector Operator versions are tied to NeuVector product versions. Version 1.2.9 of the NeuVector Certified Operator deploys version 4.3.1 of NeuVector.\n\n**Complete below steps to Grant Service Account Access to the Privileged SCC before installation.**\n\nCreate the NeuVector namespace\n\n         oc new-project  neuvector\nLogin as system:admin account\n\n         oc login -u system:admin\n\nGrant Service Account Access to the Privileged SCC\n\n         oc -n neuvector adm policy add-scc-to-user privileged -z default\n\nThe following info will be added in the Privileged SCC users:\n\n         - system:serviceaccount:neuvector:default\n\nIn OpenShift 4.6+ use the following to check:\n\n         oc get rolebinding system:openshift:scc:privileged -n neuvector -o wide\n         NAME                              ROLE                                          AGE     USERS   GROUPS   SERVICEACCOUNTS\n         system:openshift:scc:privileged   ClusterRole/system:openshift:scc:privileged   9m22s                    neuvector/default\n\n\n**Add NeuVector license from NeuVector WebUI->setting**\n\n\n#Deploying the NeuVector Operator#\n\n\nPlease refer to the instructions [here](https://github.com/neuvector/neuvector-operator/blob/master/README.md)\n\n\n",
+      "csv_display_name": "NeuVector Operator",
+      "csv_metadata_description": "NeuVector delivers the only cloud-native Kubernetes security platform with uncompromising end-to-end protection from DevOps vulnerability protection to automated run-time security, and featuring a true Layer 7 container firewall.",
+      "csv_name": "neuvector-operator.v1.2.9",
+      "in_index_img": true,
+      "install_modes": [
+        {
+          "supported": true,
+          "type": "OwnNamespace"
+        },
+        {
+          "supported": true,
+          "type": "SingleNamespace"
+        },
+        {
+          "supported": false,
+          "type": "MultiNamespace"
+        },
+        {
+          "supported": true,
+          "type": "AllNamespaces"
+        }
+      ],
+      "is_default_channel": true,
+      "last_update_date": "2022-11-23T08:43:18.704000+00:00",
+      "latest_in_channel": false,
+      "ocp_version": "4.10",
+      "organization": "certified-operators",
+      "package": "neuvector-certified-operator",
+      "provided_apis": [
+        {
+          "group": "apm.neuvector.com",
+          "kind": "Neuvector",
+          "plural": "neuvectors",
+          "version": "v1alpha1"
+        }
+      ],
+      "provider": "NeuVector",
+      "related_images": [
+        {
+          "digest": "sha256:487e2d6e817b7e006fb90cf1d5da2964de665424acada7bc63b4fa7b642b64f1",
+          "image": "registry.connect.redhat.com/neuvector/neuvector-operator@sha256:487e2d6e817b7e006fb90cf1d5da2964de665424acada7bc63b4fa7b642b64f1",
+          "name": "neuvector-operator-487e2d6e817b7e006fb90cf1d5da2964de665424acada7bc63b4fa7b642b64f1-annotation"
+        },
+        {
+          "digest": "sha256:487e2d6e817b7e006fb90cf1d5da2964de665424acada7bc63b4fa7b642b64f1",
+          "image": "registry.connect.redhat.com/neuvector/neuvector-operator@sha256:487e2d6e817b7e006fb90cf1d5da2964de665424acada7bc63b4fa7b642b64f1",
+          "name": "neuvector-operator"
+        },
+        {
+          "digest": "sha256:55b3d9873846d0a8670b58e8a8a76c426d3aba74d4e5c4fca43d05c1dd296f10",
+          "image": "registry.connect.redhat.com/neuvector/controller@sha256:55b3d9873846d0a8670b58e8a8a76c426d3aba74d4e5c4fca43d05c1dd296f10",
+          "name": "controller"
+        },
+        {
+          "digest": "sha256:fdd66288454dd01f4f618c8cf04c7da501d4362773266ec6f448d63e26e3a35c",
+          "image": "registry.connect.redhat.com/neuvector/enforcer@sha256:fdd66288454dd01f4f618c8cf04c7da501d4362773266ec6f448d63e26e3a35c",
+          "name": "enforcer"
+        },
+        {
+          "digest": "sha256:73445c18ea18f131b6fa630a97623a3043d05758205ef93fc02fa920abbedaa6",
+          "image": "registry.connect.redhat.com/neuvector/manager@sha256:73445c18ea18f131b6fa630a97623a3043d05758205ef93fc02fa920abbedaa6",
+          "name": "manager"
+        },
+        {
+          "digest": "sha256:a802c012eee80444d9deea8c4402a1d977cf57d7b2b2044f90c9acc0e7ca3e06",
+          "image": "registry.connect.redhat.com/neuvector/scanner@sha256:a802c012eee80444d9deea8c4402a1d977cf57d7b2b2044f90c9acc0e7ca3e06",
+          "name": "scanner"
+        },
+        {
+          "digest": "sha256:910f6bc0b5ae9b555eb91b88d28d568099b060088616eba2867b07ab6ea457c7",
+          "image": "registry.access.redhat.com/ubi8@sha256:910f6bc0b5ae9b555eb91b88d28d568099b060088616eba2867b07ab6ea457c7",
+          "name": "updater"
+        },
+        {
+          "digest": "sha256:a802c012eee80444d9deea8c4402a1d977cf57d7b2b2044f90c9acc0e7ca3e06",
+          "image": "registry.connect.redhat.com/neuvector/scanner@sha256:a802c012eee80444d9deea8c4402a1d977cf57d7b2b2044f90c9acc0e7ca3e06",
+          "name": "scanner-a802c012eee80444d9deea8c4402a1d977cf57d7b2b2044f90c9acc0e7ca3e06-annotation"
+        },
+        {
+          "digest": "sha256:910f6bc0b5ae9b555eb91b88d28d568099b060088616eba2867b07ab6ea457c7",
+          "image": "registry.access.redhat.com/ubi8@sha256:910f6bc0b5ae9b555eb91b88d28d568099b060088616eba2867b07ab6ea457c7",
+          "name": "ubi8-910f6bc0b5ae9b555eb91b88d28d568099b060088616eba2867b07ab6ea457c7-annotation"
+        }
+      ],
+      "replaces": null,
+      "skip_range": null,
+      "skips": [],
+      "source_index_container_path": "registry.redhat.io/redhat/certified-operator-index:v4.10",
+      "version": "1.2.9",
+      "version_original": "1.2.9"
     }
   ]
 }
