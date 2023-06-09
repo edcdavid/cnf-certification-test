@@ -5,7 +5,7 @@ go 1.20
 require (
 	github.com/Masterminds/semver/v3 v3.2.0 // indirect
 	github.com/basgys/goxml2json v1.1.0
-	github.com/sirupsen/logrus v1.9.0
+	github.com/sirupsen/logrus v1.9.3
 	github.com/spf13/cobra v1.7.0
 	github.com/stretchr/testify v1.8.2
 	github.com/test-network-function/test-network-function-claim v1.0.17
@@ -13,7 +13,7 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
 
-require k8s.io/client-go v0.26.3
+require k8s.io/client-go v0.27.2
 
 require (
 	github.com/kelseyhightower/envconfig v1.4.0
@@ -25,8 +25,8 @@ require (
 	github.com/operator-framework/operator-lifecycle-manager v0.20.0
 	github.com/pkg/errors v0.9.1 // indirect
 	helm.sh/helm/v3 v3.11.2
-	k8s.io/api v0.26.3
-	k8s.io/apimachinery v0.26.3
+	k8s.io/api v0.27.2
+	k8s.io/apimachinery v0.27.2
 	k8s.io/klog/v2 v2.90.1 // indirect
 )
 
@@ -136,7 +136,6 @@ require (
 	github.com/redhat-openshift-ecosystem/ocp-olm-catalog-validator v0.1.0 // indirect
 	github.com/remyoudompheng/bigfft v0.0.0-20230129092748-24d4a6f8daec // indirect
 	github.com/rivo/uniseg v0.4.4 // indirect
-	github.com/rogpeppe/go-internal v1.10.0 // indirect
 	github.com/rubenv/sql-migrate v1.3.1 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/shopspring/decimal v1.3.1 // indirect
@@ -183,7 +182,7 @@ require (
 	k8s.io/apiserver v0.26.3 // indirect
 	k8s.io/cli-runtime v0.26.3 // indirect
 	k8s.io/component-base v0.26.3 // indirect
-	k8s.io/kube-openapi v0.0.0-20230327201221-f5883ff37f0c // indirect
+	k8s.io/kube-openapi v0.0.0-20230501164219-8b0f38b5fd1f // indirect
 	k8s.io/utils v0.0.0-20230313181309-38a27ef9d749 // indirect
 	modernc.org/libc v1.22.3 // indirect
 	modernc.org/mathutil v1.5.0 // indirect
@@ -211,7 +210,7 @@ require (
 	github.com/k8snetworkplumbingwg/network-attachment-definition-client v1.4.0
 	github.com/openshift/machine-config-operator v0.0.1-0.20230407192800-580aa60b1551
 	github.com/redhat-openshift-ecosystem/openshift-preflight v0.0.0-20230407145337-ed51939eef5d
-	github.com/test-network-function/privileged-daemonset v1.0.2
+	github.com/test-network-function/privileged-daemonset v1.0.4
 	gopkg.in/yaml.v3 v3.0.1
 	k8s.io/kubectl v0.26.3
 )
