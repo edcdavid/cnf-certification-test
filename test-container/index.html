@@ -15,7 +15,7 @@
         <link rel="next" href="../test-standalone/">
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.15">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.26e3688c.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.eebd395e.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.ecc896b0.min.css">
@@ -553,6 +553,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#output-targz-file-with-results-and-web-viewer-files" class="md-nav__link">
+    Output tar.gz file with results and web viewer files
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -850,6 +857,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#output-targz-file-with-results-and-web-viewer-files" class="md-nav__link">
+    Output tar.gz file with results and web viewer files
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -934,7 +948,7 @@ In order to get the required information, the test suite does not <code>ssh</cod
 <p><strong>Required arguments</strong></p>
 <ul>
 <li><code>-t</code> to provide the path of the local directory that contains tnf config files</li>
-<li><code>-o</code> to provide the path of the local directory where test results (claim.json) and execution logs (tnf-execution.log) will be available from after the container exits.</li>
+<li><code>-o</code> to provide the path of the local directory where test results (claim.json), the execution logs (tnf-execution.log), and the results artifacts file (results.tar.gz) will be available from after the container exits.</li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -988,10 +1002,18 @@ client using <code>TNF_CONTAINER_CLIENT</code> can be configured. This is partic
 <code>run-tnf-container.sh</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">TNF_CONTAINER_CLIENT</span><span class="o">=</span>docker
 </code></pre></div>
+<h3 id="output-targz-file-with-results-and-web-viewer-files">Output tar.gz file with results and web viewer files<a class="headerlink" href="#output-targz-file-with-results-and-web-viewer-files" title="Permanent link">&para;</a></h3>
+<p>After running all the test cases, a compressed file will be created with all the results files and web artifacts to review them.</p>
+<p>By default, only the <code>claim.js</code>, the <code>cnf-certification-tests_junit.xml</code> file and this new tar.gz file are created after the test suite has finished, as this is probably all that normal partners/users will need.</p>
+<p>Two env vars allow to control the web artifacts and the the new tar.gz file generation:</p>
+<ul>
+<li>TNF_OMIT_ARTIFACTS_ZIP_FILE=true/false : Defaulted to false in the launch scripts. If set to true, the tar.gz generation will be skipped.</li>
+<li>TNF_INCLUDE_WEB_FILES_IN_OUTPUT_FOLDER=true/false : Defaulted to false in the launch scripts. If set to true, the web viewer/parser files will also be copied to the output (claim) folder.</li>
+</ul>
 <h2 id="with-local-test-container-image">With local test container image<a class="headerlink" href="#with-local-test-container-image" title="Permanent link">&para;</a></h2>
 <h3 id="build-locally">Build locally<a class="headerlink" href="#build-locally" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>podman<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>cnf-certification-test:v4.3.0<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--build-arg<span class="w"> </span><span class="nv">TNF_VERSION</span><span class="o">=</span>v4.3.0<span class="w"> </span><span class="se">\</span>
+<div class="highlight"><pre><span></span><code>podman<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>cnf-certification-test:v4.3.4<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--build-arg<span class="w"> </span><span class="nv">TNF_VERSION</span><span class="o">=</span>v4.3.4<span class="w"> </span><span class="se">\</span>
 </code></pre></div>
 <ul>
 <li><code>TNF_VERSION</code> value is set to a branch, a tag, or a hash of a commit that will be installed into the image</li>
@@ -999,13 +1021,13 @@ client using <code>TNF_CONTAINER_CLIENT</code> can be configured. This is partic
 <h3 id="build-from-an-unofficial-source">Build from an unofficial source<a class="headerlink" href="#build-from-an-unofficial-source" title="Permanent link">&para;</a></h3>
 <p>The unofficial source could be a fork of the <abbr title="Test Network Function">TNF</abbr> repository.</p>
 <p>Use the <code>TNF_SRC_URL</code> build argument to override the URL to a source repository.</p>
-<div class="highlight"><pre><span></span><code>podman<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>cnf-certification-test:v4.3.0<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--build-arg<span class="w"> </span><span class="nv">TNF_VERSION</span><span class="o">=</span>v4.3.0<span class="w"> </span><span class="se">\</span>
+<div class="highlight"><pre><span></span><code>podman<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>cnf-certification-test:v4.3.4<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--build-arg<span class="w"> </span><span class="nv">TNF_VERSION</span><span class="o">=</span>v4.3.4<span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>--build-arg<span class="w"> </span><span class="nv">TNF_SRC_URL</span><span class="o">=</span>https://github.com/test-network-function/cnf-certification-test<span class="w"> </span>.
 </code></pre></div>
 <h3 id="run-the-tests-2">Run the tests 2<a class="headerlink" href="#run-the-tests-2" title="Permanent link">&para;</a></h3>
 <p>Specify the custom <abbr title="Test Network Function">TNF</abbr> image using the <code>-i</code> parameter.</p>
-<div class="highlight"><pre><span></span><code>./run-tnf-container.sh<span class="w"> </span>-i<span class="w"> </span>cnf-certification-test:v4.3.0
+<div class="highlight"><pre><span></span><code>./run-tnf-container.sh<span class="w"> </span>-i<span class="w"> </span>cnf-certification-test:v4.3.4
 -t<span class="w"> </span>~/tnf/config<span class="w"> </span>-o<span class="w"> </span>~/tnf/output<span class="w"> </span>-l<span class="w"> </span><span class="s2">&quot;networking,access-control&quot;</span>
 </code></pre></div>
 <p>Note: see <a href="../test-spec/#general-tests">General tests</a> for a list of available keywords.</p>
@@ -1052,10 +1074,10 @@ client using <code>TNF_CONTAINER_CLIENT</code> can be configured. This is partic
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "content.tooltips", "content.code.annotate"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "content.tooltips", "content.code.annotate"], "search": "../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.b4d07000.min.js"></script>
+      <script src="../assets/javascripts/bundle.220ee61c.min.js"></script>
       
     
   </body>

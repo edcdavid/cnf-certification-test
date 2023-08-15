@@ -15,7 +15,7 @@
         <link rel="next" href="../test-spec/">
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.15">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
@@ -23,7 +23,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.26e3688c.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.eebd395e.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.ecc896b0.min.css">
@@ -588,6 +588,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#output-targz-file-with-results-and-web-viewer-files" class="md-nav__link">
+    Output tar.gz file with results and web viewer files
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -870,6 +877,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#output-targz-file-with-results-and-web-viewer-files" class="md-nav__link">
+    Output tar.gz file with results and web viewer files
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -940,7 +954,7 @@ need to be installed in your environment prior to runtime.</p>
 </tr>
 <tr>
 <td><a href="https://golangci-lint.run/usage/install/">golangci-lint</a></td>
-<td>1.53.2</td>
+<td>1.53.3</td>
 </tr>
 <tr>
 <td><a href="https://stedolan.github.io/jq/">jq</a></td>
@@ -996,7 +1010,7 @@ a single test.</p>
 </div>
 <h3 id="run-all-of-the-tests">Run all of the tests<a class="headerlink" href="#run-all-of-the-tests" title="Permanent link">&para;</a></h3>
 <p>You can run all of the tests (including the intrusive tests and the extended suite) with the following commands:</p>
-<div class="highlight"><pre><span></span><code>./run-cnf-suites.sh<span class="w"> </span>-l<span class="w"> </span>common,extended
+<div class="highlight"><pre><span></span><code>./run-cnf-suites.sh<span class="w"> </span>-l<span class="w"> </span>all
 </code></pre></div>
 <h4 id="run-a-subset">Run a subset<a class="headerlink" href="#run-a-subset" title="Permanent link">&para;</a></h4>
 <p>You can find all the labels attached to the tests by running the following command:</p>
@@ -1009,6 +1023,15 @@ To run the tests in an offline environment, skip the tests using the <code>l</co
 <div class="highlight"><pre><span></span><code>./run-cnf-suites.sh<span class="w"> </span>-l<span class="w"> </span><span class="s1">&#39;!online&#39;</span>
 </code></pre></div>
 <p>Alternatively, if an offline DB for containers, helm charts and operators is available, there is no need to skip those tests if the environment variable <code>TNF_OFFLINE_DB</code> is set to the DB location. This DB can be generated using the <a href="https://github.com/test-network-function/oct">OCT tool</a>.</p>
+<p>Note: Only partner certified images are stored in the offline database. If Redhat images are checked against the offline database, they will show up as not certified. The online database includes both Partner and Redhat images.</p>
+<h4 id="output-targz-file-with-results-and-web-viewer-files">Output tar.gz file with results and web viewer files<a class="headerlink" href="#output-targz-file-with-results-and-web-viewer-files" title="Permanent link">&para;</a></h4>
+<p>After running all the test cases, a compressed file will be created with all the results files and web artifacts to review them.</p>
+<p>By default, only the <code>claim.js</code>, the <code>cnf-certification-tests_junit.xml</code> file and this new tar.gz file are created after the test suite has finished, as this is probably all that normal partners/users will need.</p>
+<p>Two env vars allow to control the web artifacts and the the new tar.gz file generation:</p>
+<ul>
+<li>TNF_OMIT_ARTIFACTS_ZIP_FILE=true/false : Defaulted to false in the launch scripts. If set to true, the tar.gz generation will be skipped.</li>
+<li>TNF_INCLUDE_WEB_FILES_IN_OUTPUT_FOLDER=true/false : Defaulted to false in the launch scripts. If set to true, the web viewer/parser files will also be copied to the output (claim) folder.</li>
+</ul>
 <h3 id="build-test-a-cnf">Build + Test a <abbr title="Cloud-Native Network Function or Containerised Network Function">CNF</abbr><a class="headerlink" href="#build-test-a-cnf" title="Permanent link">&para;</a></h3>
 <p>Refer <a href="../developers/">Developers&rsquo; Guide</a></p>
 <!-- markdownlint-disable first-line-heading -->
@@ -1054,10 +1077,10 @@ To run the tests in an offline environment, skip the tests using the <code>l</co
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "content.tooltips", "content.code.annotate"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "content.tooltips", "content.code.annotate"], "search": "../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.b4d07000.min.js"></script>
+      <script src="../assets/javascripts/bundle.220ee61c.min.js"></script>
       
     
   </body>
