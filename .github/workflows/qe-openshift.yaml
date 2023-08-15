@@ -11,7 +11,7 @@ env:
 
 jobs:
   qe-testing:
-    runs-on: qe-runner-openshift
+    runs-on: osgh1
     strategy:
       fail-fast: false
       matrix: 
