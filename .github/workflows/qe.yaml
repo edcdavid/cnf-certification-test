@@ -20,11 +20,11 @@ jobs:
     env:
       SHELL: /bin/bash
       DEBUG_TNF: true # More verbose output from the TNF
-      KUBECONFIG: '/home/tnf/.kube/config'
-      PFLT_DOCKERCONFIG: '/home/tnf/.docker/config'
+      KUBECONFIG: '/home/labuser/.kube/config'
+      PFLT_DOCKERCONFIG: '/home/labuser/.docker/config'
       TEST_TNF_IMAGE_NAME: quay.io/testnetworkfunction/cnf-certification-test
       TEST_TNF_IMAGE_TAG: localtest
-      DOCKER_CONFIG_DIR: '/home/tnf/.docker'
+      DOCKER_CONFIG_DIR: '/home/labuser/.docker'
 
     steps:
       - name: Check out code
