@@ -12,8 +12,6 @@ jobs:
     runs-on: osgh1
     strategy:
       fail-fast: false
-      matrix: 
-        suite: [accesscontrol, affiliatedcertification, lifecycle, networking, observability, platformalteration, performance, operator]
     env:
       SHELL: /bin/bash
       DEBUG_TNF: true # More verbose output from the TNF
@@ -41,9 +39,9 @@ jobs:
           repository: test-network-function/cnf-certification-test-partner
           path: cnf-certification-test-partner
             
-      - name: Install partner resources
-        run: make install
-        working-directory: cnf-certification-test-partner
+#      - name: Install partner resources
+#        run: make install
+#        working-directory: cnf-certification-test-partner
 
       - name: Clone the QE repository
         uses: actions/checkout@v3
@@ -53,5 +51,5 @@ jobs:
 
       # Setup is complete.  Time to run the QE tests.
       - name: Run the tests
-        run: FEATURES=${{matrix.suite}} TNF_REPO_PATH=${GITHUB_WORKSPACE} TNF_IMAGE=${{env.TEST_TNF_IMAGE_NAME}} TNF_IMAGE_TAG=${{env.TEST_TNF_IMAGE_TAG}} make test-features
+        run: TNF_REPO_PATH=${GITHUB_WORKSPACE} TNF_IMAGE=${{env.TEST_TNF_IMAGE_NAME}} TNF_IMAGE_TAG=${{env.TEST_TNF_IMAGE_TAG}} make test-all
         working-directory: cnfcert-tests-verification
