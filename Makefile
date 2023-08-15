@@ -159,6 +159,12 @@ build-image-local:
 		-t ${REGISTRY}/${TNF_IMAGE_NAME}:${IMAGE_TAG} \
 		-f Dockerfile .
 
+build-image-local-podman:
+	docker build --no-cache \
+		-t ${REGISTRY_LOCAL}/${TNF_IMAGE_NAME}:${IMAGE_TAG} \
+		-t ${REGISTRY}/${TNF_IMAGE_NAME}:${IMAGE_TAG} \
+		-f Dockerfile .
+
 build-image-tnf:
 	docker build --no-cache \
 		-t ${REGISTRY_LOCAL}/${TNF_IMAGE_NAME}:${IMAGE_TAG} \

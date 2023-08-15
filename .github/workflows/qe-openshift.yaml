@@ -33,7 +33,7 @@ jobs:
         uses: ./.github/actions/setup
 
       - name: Build the test image
-        run: make build-image-local # quay.io/testnetworkfunction/cnf-certification-test:localtest
+        run: make build-image-local-podman # quay.io/testnetworkfunction/cnf-certification-test:localtest
         
       - name: Check out `cnf-certification-test-partner`
         uses: actions/checkout@v3
