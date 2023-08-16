@@ -34,8 +34,8 @@ jobs:
       - name: Run initial setup
         uses: ./.github/actions/setup
 
-      - name: Build the test image
-        run: make build-image-local # quay.io/testnetworkfunction/cnf-certification-test:localtest
+#      - name: Build the test image
+#        run: make build-image-local # quay.io/testnetworkfunction/cnf-certification-test:localtest
         
       - name: Check out `cnf-certification-test-partner`
         uses: actions/checkout@v3
@@ -55,5 +55,7 @@ jobs:
 
       # Setup is complete.  Time to run the QE tests.
       - name: Run the tests
-        run: FEATURES=${{matrix.suite}} TNF_REPO_PATH=${GITHUB_WORKSPACE} TNF_IMAGE=${{env.TEST_TNF_IMAGE_NAME}} TNF_IMAGE_TAG=${{env.TEST_TNF_IMAGE_TAG}} make test-features
+        run: |
+          echo 'FEATURES=${{matrix.suite}} TNF_REPO_PATH=${GITHUB_WORKSPACE} TNF_IMAGE=${{env.TEST_TNF_IMAGE_NAME}} TNF_IMAGE_TAG=${{env.TEST_TNF_IMAGE_TAG}} make test-features'
+          FEATURES=${{matrix.suite}} TNF_REPO_PATH=${GITHUB_WORKSPACE} TNF_IMAGE=${{env.TEST_TNF_IMAGE_NAME}} TNF_IMAGE_TAG=${{env.TEST_TNF_IMAGE_TAG}} make test-features
         working-directory: cnfcert-tests-verification
