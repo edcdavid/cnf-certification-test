@@ -57,7 +57,7 @@ func TestRunTest(t *testing.T) {
 			},
 			Spec: corev1.PodSpec{},
 		}
-
+		// test1
 		ownerRef := ownerreference.NewOwnerReference(testPod)
 		assert.NotNil(t, ownerRef)
 		ownerRef.RunTest()
