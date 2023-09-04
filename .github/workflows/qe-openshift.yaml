@@ -25,7 +25,7 @@ jobs:
 
     steps:
       - name: Check out code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ github.sha }}
 
@@ -36,7 +36,7 @@ jobs:
 #        run: make build-image-local-podman # quay.io/testnetworkfunction/cnf-certification-test:localtest
         
       - name: Check out `cnf-certification-test-partner`
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: test-network-function/cnf-certification-test-partner
           path: cnf-certification-test-partner
@@ -46,7 +46,7 @@ jobs:
 #        working-directory: cnf-certification-test-partner
 
       - name: Clone the QE repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: ${{ env.QE_REPO }}
           path: cnfcert-tests-verification
