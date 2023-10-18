@@ -580,8 +580,8 @@ github.com/subosito/gotenv v1.4.2 h1:X1TuBLAMDFbaTAChgCBLu3DU3UPyELpnF2jjJ2cz/S8
 github.com/subosito/gotenv v1.4.2/go.mod h1:ayKnFf/c6rvx/2iiLrJUk1e6plDbT3edrFNGqEflhK0=
 github.com/test-network-function/privileged-daemonset v1.0.10 h1:6CKIa7T2JcBQ3jdm4KZLZh7xwpV8x8vFgQ9tpIPbqBY=
 github.com/test-network-function/privileged-daemonset v1.0.10/go.mod h1:OmZMWwRXPvlVr43KjLBapQzzOh3aj+YcNmnpxA2GzSg=
-github.com/test-network-function/test-network-function-claim v1.0.27 h1:kxRb8Z668txqsCrzaeWLu9T9TeuwB+3d7xnq39xUlOE=
-github.com/test-network-function/test-network-function-claim v1.0.27/go.mod h1:ManMHiKx8sLk4UDLRiYITVM8XmV4048pdfqh855v5RU=
+github.com/test-network-function/test-network-function-claim v1.0.28 h1:do9IF2ILh98LB8m8nhbDAf2Ti5YATjL9LUAV3DmVglc=
+github.com/test-network-function/test-network-function-claim v1.0.28/go.mod h1:P/EGpfCfJ60f8wIZiKlPQ8hDX/GOBN2xSHkcMclmJEc=
 github.com/urfave/cli v1.22.12/go.mod h1:sSBEIC79qR6OvcmsD4U3KABeOTxDqQtdDnaFuUN30b8=
 github.com/vbatts/tar-split v0.11.3 h1:hLFqsOLQ1SsppQNTMpkpPXClLDfC2A3Zgy9OUU+RVck=
 github.com/vbatts/tar-split v0.11.3/go.mod h1:9QlHN18E+fEH7RdG+QAJJcuya3rqT7eXSTY7wGrAokY=
