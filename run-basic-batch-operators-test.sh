@@ -27,6 +27,15 @@ OPERATOR_CATALOG=""
 # Operator from user
 OPERATORS_UNDER_TEST=""
 
+# Forced Namespace value, when not using suggestion from operator
+OPERATOR_NAMESPACE=""
+
+# do not use suggested namespace
+if [ -n "${FORCE_NS+any}" ]; then
+	echo "Namespace forced to $FORCE_NS"
+	OPERATOR_NAMESPACE="$FORCE_NS"
+fi
+
 # OUTPUTS
 
 # Check if DEBUG mode
@@ -98,7 +107,7 @@ withRetry() {
 		unset stdout stderr status
 		eval "$(
 			(
-				#oc command
+				# command
 				$"$@"
 			) \
 				2> >(
@@ -182,6 +191,8 @@ waitForCsvToAppearAndLabel() {
 	local elapsedTime=0
 	local command=""
 	local status=0
+	local run=0
+	local falsePositive=0
 
 	startTime=$(date +%s)
 	while true; do
@@ -208,9 +219,41 @@ waitForCsvToAppearAndLabel() {
 	command=$(withRetry 180 10 oc get csv -n "$csvNamespace" -o custom-columns=':.metadata.name,:.metadata.namespace,:.kind' | grep -v openshift-operator-lifecycle-manager | sed '/^ *$/d' | awk '{print "  withRetry 180 10 oc label " $3  " -n " $2 " " $1  " test-network-function.com/operator=target "}')
 	eval "$command"
 
-	# Wait for the CSV to be succeeded
-	withRetry 2 10 oc wait csv -l test-network-function.com/operator=target -n "$ns" --for=jsonpath=\{.status.phase\}=Succeeded --timeout=60s || status="$?"
-	return $status
+	sleep 5
+
+	# Wait for CSV to be in succeeded state for 60s. If true, then wait 10 seconds for the CSV to be in a state other than succeeded. If that is true, then start over
+	# until trying 3 times, them CSV is failed. If CSV fails to be non-succeeded for 10s CSV is succeeded.
+	while [ "$run" != 3 ]; do
+		run=$((run + 1))
+		echo "try $run ..."
+		oc wait csv -l test-network-function.com/operator=target -n "$ns" --for=jsonpath=\{.status.phase\}=Succeeded --timeout=60s || status="$?"
+		if [ "$status" == 0 ]; then
+			falsePositive=1
+			echo "CSV is in succeeeded state, checking if it lasts 10s"
+			oc wait csv -l test-network-function.com/operator=target -n "$ns" \
+				--for=jsonpath=\{.status.phase\}=Pending \
+				--for=jsonpath=\{.status.phase\}=Installing \
+				--for=jsonpath=\{.status.phase\}=InstalReady \
+				--for=jsonpath=\{.status.phase\}=Failed \
+				--timeout=10s || status="$?"
+			if [ "$status" == 0 ]; then
+				echo "CSV Succeeded state did not last 10s continue to wait for Succeedded state"
+				continue
+			else
+				echo "CSV Succeeded state lasted more than 10s, success!!"
+				return 0
+			fi
+		else
+			echo "CSV failed to reach succeeded state, retry"
+		fi
+	done
+
+	echo "CSV failed to reach succeeded state"
+	if [ "$falsePositive" == 1 ]; then
+		return 2
+	fi
+
+	return 1
 }
 
 forceDeleteNamespaceIfPresent() {
@@ -231,14 +274,16 @@ forceDeleteNamespaceIfPresent() {
 	fi
 
 	# Otherwise force delete namespace
+	# wait to get latest object version
+	sleep 5
 	withRetry 180 10 oc get namespace "$aNamespace" -ojson | sed '/"kubernetes"/d' >temp.yaml
-	withRetry 180 10 oc proxy &
+	oc proxy &
 	pid=$!
 	echo "PID: $pid"
 	sleep 5
 	curl -H "Content-Type: application/yaml" -X PUT --data-binary @temp.yaml http://127.0.0.1:8001/api/v1/namespaces/"$aNamespace"/finalize
 	kill -9 "$pid"
-	withRetry 2 10 oc wait namespace "$aNamespace" --for=delete --timeout=60s
+	withRetry 2 10 oc wait namespace "$aNamespace" --for=delete --timeout=30s || true
 }
 
 # Main
@@ -247,7 +292,7 @@ forceDeleteNamespaceIfPresent() {
 if [ "$#" -eq 1 ]; then
 	OPERATOR_CATALOG=$1
 	# Get all the packages present in the cluster catalog
-	withRetry 180 10 oc get packagemanifest -o jsonpath='{range .items[*]}{.metadata.name}{","}{.status.catalogSource}{"\n"}{end}' | grep "$OPERATOR_CATALOG" | head -n -1 >"$OPERATOR_LIST_PATH"
+	withRetry 180 10 oc get packagemanifest -o jsonpath='{range .items[*]}{.metadata.name}{","}{.status.catalogSource}{"\n"}{end}' | grep "$OPERATOR_CATALOG" | sort >"$OPERATOR_LIST_PATH"
 
 elif [ "$#" -eq 2 ]; then
 	OPERATOR_CATALOG=$1
@@ -356,7 +401,14 @@ while IFS=, read -r packageName catalog; do
 
 	namesCount=$(withRetry 180 10 tasty install "$packageName" --source "$catalog" --stdout | grep -c "name:")
 
-	if [ "$namesCount" = "4" ]; then
+	isOwnNamespace=0
+
+	if [ "$OPERATOR_NAMESPACE" != "" ]; then
+		ns="$OPERATOR_NAMESPACE"
+		if [ "$namesCount" = "4" ]; then
+			isOwnNamespace=1
+		fi
+	elif [ "$namesCount" = "4" ]; then
 		# Get namespace from tasty
 		ns=$(withRetry 180 10 tasty install "$packageName" --source "$catalog" --stdout | grep "name:" | head -n1 | awk '{ print $2 }')
 	elif [ "$namesCount" = "2" ]; then
@@ -376,8 +428,17 @@ while IFS=, read -r packageName catalog; do
 	if [ "$ns" = "test-operators" ]; then
 		sed -i '/targetNamespaces:/ { N; /- test-operators/d }' operator.yml
 	fi
+	if [ "$ns" = "$OPERATOR_NAMESPACE" ] && [ "$isOwnNamespace" = 0 ]; then
+		echo "All Namespace mode isOwnNamespace = $isOwnNamespace"
+		sed -i "/targetNamespaces:/ { N; /- $OPERATOR_NAMESPACE/d }" operator.yml
+	fi
 
-	# apply namespace/operator group and subscription
+	cat operator.yml
+	# Apply namespace/operator group and subscription
+	withRetry 180 10 oc apply -f operator.yml
+
+	# Sleep and reapply, sometimes objects are created and deleted
+	sleep 5
 	withRetry 180 10 oc apply -f operator.yml
 
 	# Wait for the cluster to be reachable
@@ -401,8 +462,11 @@ while IFS=, read -r packageName catalog; do
 		# Add per operator links
 		{
 			# Add error message
-			echo "Results for: <b>$packageName</b>, "'<span style="color: red;">Operator installation failed, skipping test</span>'
-
+			if [ "$status" == 2 ]; then
+				echo "Results for: <b>$packageName</b>, "'<span style="color: red;">Operator installation failed with False positive, skipping test</span>'
+			else
+				echo "Results for: <b>$packageName</b>, "'<span style="color: red;">Operator installation failed, skipping test</span>'
+			fi
 			# Add tnf_config link
 			echo ", tnf_config: "
 			echo '<a href="/'"$REPORT_FOLDER_RELATIVE"'/'"$packageName"'/tnf_config.yml">'"link"'</a>'
@@ -412,7 +476,7 @@ while IFS=, read -r packageName catalog; do
 		} >>"$REPORT_FOLDER"/"$INDEX_FILE"
 
 		# Remove the operator
-		withRetry 180 10 oc delete -f operator.yml
+		oc delete --wait=false -f operator.yml || true
 
 		cleanup
 		waitDeleteNamespace "$ns"
@@ -431,7 +495,7 @@ while IFS=, read -r packageName catalog; do
 	sleep 30
 
 	# run tnf-container
-	TNF_LOG_LEVEL=trace ./run-tnf-container.sh -k "$KUBECONFIG" -t "$reportDir" -o "$reportDir" -c "$DOCKER_CONFIG" -l all || true
+	TNF_LOG_LEVEL=trace ./run-tnf-container.sh -i quay.io/testnetworkfunction/cnf-certification-test:unstable -k "$KUBECONFIG" -t "$reportDir" -o "$reportDir" -c "$DOCKER_CONFIG" -l all || true
 
 	# Unlabel the operator
 	oc get csv -n "$ns" -o custom-columns=':.metadata.name,:.metadata.namespace,:.kind' | sed '/^ *$/d' | awk '{print "  oc label " $3  " -n " $2 " " $1  " test-network-function.com/operator- "}' | bash || true
@@ -449,7 +513,7 @@ while IFS=, read -r packageName catalog; do
 		# Add per operator links
 		{
 			# Add error message
-			echo "Results for: <b>$packageName</b>, "'<span style="color: red;">Operator installation failed due to claim parsing error, skipping test</span>'
+			echo "Results for: <b>$packageName</b>, "'<span style="color: red;">claim parsing error, claim not available</span>'
 
 			# Add tnf_config link
 			echo ", tnf_config: "
