@@ -62,3 +62,5 @@ Please contact us in case the documentation is broken.
 CNF Certification Test is copyright [Red Hat, Inc.](https://www.redhat.com) and available
 under an
 [Apache 2 license](https://github.com/test-network-function/cnf-certification-test/blob/main/LICENSE).
+
+test
