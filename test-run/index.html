@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../test-container/">
+        <link rel="prev" href="../runtime-env/">
       
       
         <link rel="next" href="../test-spec/">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Standalone test executable - Red Hat Best Practices Test Suite for Kubernetes</title>
+        <title>Run - Red Hat Best Practices Test Suite for Kubernetes</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#standalone-test-executable" class="md-skip">
+        <a href="#run-the-test-suite" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Standalone test executable
+              Run
             
           </span>
         </div>
@@ -183,7 +183,7 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/test-network-function/cnf-certification-test/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/redhat-best-practices-for-k8s/certsuite/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
@@ -251,19 +251,16 @@
     
   
   
-    
-    
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../test-container/" class="md-tabs__link">
-          
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
   
     
   
-  Build | Execute
+  Run
 
-        </a>
-      </li>
-    
+      </a>
+    </li>
   
 
       
@@ -271,16 +268,19 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="../test-spec/" class="md-tabs__link">
-        
+    
+    
+      <li class="md-tabs__item">
+        <a href="../test-spec/" class="md-tabs__link">
+          
   
     
   
   Available Test Specs
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -358,6 +358,23 @@
   
 
       
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../data-collection/" class="md-tabs__link">
+        
+  
+    
+  
+  Data Collection
+
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -390,7 +407,7 @@
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/test-network-function/cnf-certification-test/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/redhat-best-practices-for-k8s/certsuite/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
@@ -526,78 +543,6 @@
   
   
   
-    
-    
-      
-        
-      
-        
-      
-    
-    
-      
-        
-        
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    Build | Execute
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            Build | Execute
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../test-container/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Prebuilt container
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
@@ -610,7 +555,7 @@
           
   
   <span class="md-ellipsis">
-    Standalone test executable
+    Run
   </span>
   
 
@@ -621,7 +566,7 @@
         
   
   <span class="md-ellipsis">
-    Standalone test executable
+    Run
   </span>
   
 
@@ -643,94 +588,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-install-dependencies" class="md-nav__link">
+  <a href="#building-the-certsuite-tool-executable" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Install dependencies
+      Building the Certsuite tool executable
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-build-the-test-suite" class="md-nav__link">
+  <a href="#test-labels" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Build the Test Suite
+      Test labels
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Build the Test Suite">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selected-flags-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selected flags description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-container-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using the container image
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using the container image">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#3-test-a-workload" class="md-nav__link">
+  <a href="#pull-the-test-image" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Test a workload
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Test a workload">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#run-a-single-test" class="md-nav__link">
-    <span class="md-ellipsis">
-      Run a single test
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#run-all-of-the-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      Run all of the tests
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Run all of the tests">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#run-a-subset" class="md-nav__link">
-    <span class="md-ellipsis">
-      Run a subset
+      Pull the test image
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#labels-for-offline-environments" class="md-nav__link">
+  <a href="#launch-the-test-suite" class="md-nav__link">
     <span class="md-ellipsis">
-      Labels for offline environments
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#output-targz-file-with-results-and-web-viewer-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Output tar.gz file with results and web viewer files
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#build-test-a-workload" class="md-nav__link">
-    <span class="md-ellipsis">
-      Build + Test a workload
+      Launch the Test Suite
     </span>
   </a>
   
@@ -748,17 +654,55 @@
     </li>
   
 
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
     
       
       
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Available Test Specs
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Available Test Specs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
   
   
   
@@ -768,11 +712,40 @@
         
   
   <span class="md-ellipsis">
-    Available Test Specs
+    Test Specs
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../test-spec-implementation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Implementation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -984,6 +957,26 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-collection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Collection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1011,94 +1004,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-install-dependencies" class="md-nav__link">
+  <a href="#building-the-certsuite-tool-executable" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Install dependencies
+      Building the Certsuite tool executable
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-build-the-test-suite" class="md-nav__link">
+  <a href="#test-labels" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Build the Test Suite
+      Test labels
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Build the Test Suite">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selected-flags-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selected flags description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-container-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using the container image
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using the container image">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#3-test-a-workload" class="md-nav__link">
+  <a href="#pull-the-test-image" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Test a workload
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Test a workload">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#run-a-single-test" class="md-nav__link">
-    <span class="md-ellipsis">
-      Run a single test
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#run-all-of-the-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      Run all of the tests
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Run all of the tests">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#run-a-subset" class="md-nav__link">
-    <span class="md-ellipsis">
-      Run a subset
+      Pull the test image
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#labels-for-offline-environments" class="md-nav__link">
+  <a href="#launch-the-test-suite" class="md-nav__link">
     <span class="md-ellipsis">
-      Labels for offline environments
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#output-targz-file-with-results-and-web-viewer-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Output tar.gz file with results and web viewer files
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#build-test-a-workload" class="md-nav__link">
-    <span class="md-ellipsis">
-      Build + Test a workload
+      Launch the Test Suite
     </span>
   </a>
   
@@ -1127,119 +1081,102 @@
   
 
 
-<!-- markdownlint-disable code-block-style link-fragments line-length no-bare-urls no-emphasis-as-heading -->
-<h1 id="standalone-test-executable">Standalone test executable<a class="headerlink" href="#standalone-test-executable" title="Permanent link">&para;</a></h1>
-<p><strong>Prerequisites</strong></p>
-<p>The repo is cloned and all the commands should be run from the cloned repo.</p>
-<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>~/workspace
-<span class="nb">cd</span><span class="w"> </span>~/workspace
-git<span class="w"> </span>clone<span class="w"> </span>git@github.com:test-network-function/cnf-certification-test.git
-<span class="nb">cd</span><span class="w"> </span>cnf-certification-test
+<!-- markdownlint-disable code-block-style line-length no-bare-urls no-emphasis-as-heading -->
+<h1 id="run-the-test-suite">Run the Test Suite<a class="headerlink" href="#run-the-test-suite" title="Permanent link">&para;</a></h1>
+<p>The Test Suite can be run using the Certsuite tool directly or through a container.</p>
+<p>To run the Test Suite direct use:</p>
+<div class="highlight"><pre><span></span><code>./certsuite<span class="w"> </span>run<span class="w"> </span>-l<span class="w"> </span>&lt;label-filter&gt;<span class="w"> </span>-c<span class="w"> </span>&lt;certsuite-config&gt;<span class="w"> </span>-k<span class="w"> </span>&lt;kubeconfig&gt;<span class="w"> </span>-o<span class="w"> </span>&lt;output-dir&gt;<span class="w"> </span><span class="o">[</span>&lt;flags&gt;<span class="o">]</span>
 </code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>By default, <code>cnf-certification-test</code> emits results to <code>cnf-certification-test/cnf-certification-tests_junit.xml</code>.</p>
-</div>
-<h2 id="1-install-dependencies">1. Install dependencies<a class="headerlink" href="#1-install-dependencies" title="Permanent link">&para;</a></h2>
-<p>Depending on how you want to run the test suite there are different dependencies that will be needed.</p>
-<p>If you are planning on running the test suite as a container, the only pre-requisite is Docker or Podman.</p>
-<p>If you are planning on running the test suite as a standalone binary, there are pre-requisites that will
-need to be installed in your environment prior to runtime.</p>
-<table>
-<thead>
-<tr>
-<th>Dependency</th>
-<th>Minimum Version</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://golang.org/dl/">GoLang</a></td>
-<td>1.22</td>
-</tr>
-<tr>
-<td><a href="https://golangci-lint.run/usage/install/">golangci-lint</a></td>
-<td>1.58.1</td>
-</tr>
-<tr>
-<td><a href="https://stedolan.github.io/jq/">jq</a></td>
-<td>1.6</td>
-</tr>
-<tr>
-<td><a href="https://mirror.openshift.com/pub/openshift-v4/clients/ocp/">OpenShift Client</a></td>
-<td>4.12</td>
-</tr>
-</tbody>
-</table>
-<p>Other binary dependencies required to run tests can be installed using the following command:</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+<p>If the <em>kubeconfig</em> is not provided the value of the <code>KUBECONFIG</code> environment variable will be taken by default.</p>
+<p>The CLI output will show the following information:</p>
 <ul>
-<li>You must also make sure that <code>$GOBIN</code> (default <code>$GOPATH/bin</code>) is on your <code>$PATH</code>.</li>
-<li>Efforts to containerise this offering are considered a work in progress.</li>
+<li>Details of the Certsuite and claim file versions, the test case filter used and the location of the output files.</li>
+<li>The results for each test case grouped into test suites (the most recent log line is shown live as each test executes).</li>
+<li>Table with the number of test cases that have passed/failed or been skipped per test suite.</li>
+<li>The log lines produced by each test case that has failed.</li>
 </ul>
-</div>
-<h2 id="2-build-the-test-suite">2. Build the Test Suite<a class="headerlink" href="#2-build-the-test-suite" title="Permanent link">&para;</a></h2>
-<p>In order to build the test executable, first make sure you have satisfied the <a href="#dependencies">dependencies</a>.</p>
-<div class="highlight"><pre><span></span><code>make<span class="w"> </span>build-cnf-tests
+<p>Once the test run has completed, the test results can be visualized by opening the <code>results.html</code> website in a web browser and loading the <code>claim.json</code> file.</p>
+<p>For more information on how to analyze the results see <a href="../test-output/">Test Output</a>.</p>
+<h2 id="building-the-certsuite-tool-executable">Building the Certsuite tool executable<a class="headerlink" href="#building-the-certsuite-tool-executable" title="Permanent link">&para;</a></h2>
+<p>The Certsuite binary can be built as follows:</p>
+<div class="highlight"><pre><span></span><code>make<span class="w"> </span>build-certsuite-tool
 </code></pre></div>
-<p><em>Gotcha:</em> The <code>make build*</code> commands run unit tests where appropriate. They do NOT test the workload.</p>
-<h3 id="3-test-a-workload">3. Test a workload<a class="headerlink" href="#3-test-a-workload" title="Permanent link">&para;</a></h3>
-<p>A workload is tested by specifying which suites to run using the <code>run-cnf-suites.sh</code> helper
-script.</p>
-<p>Run any combination of the suites keywords listed at in the <a href="../test-spec/#general-tests">General tests</a> section, e.g.</p>
-<div class="highlight"><pre><span></span><code>./run-cnf-suites.sh<span class="w"> </span>-l<span class="w"> </span><span class="s2">&quot;lifecycle&quot;</span>
-./run-cnf-suites.sh<span class="w"> </span>-l<span class="w"> </span><span class="s2">&quot;networking,lifecycle&quot;</span>
-./run-cnf-suites.sh<span class="w"> </span>-l<span class="w"> </span><span class="s2">&quot;operator,networking&quot;</span>
-./run-cnf-suites.sh<span class="w"> </span>-l<span class="w"> </span><span class="s2">&quot;networking,platform-alteration&quot;</span>
-./run-cnf-suites.sh<span class="w"> </span>-l<span class="w"> </span><span class="s2">&quot;networking,lifecycle,affiliated-certification,operator&quot;</span>
-</code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>As with &ldquo;run-tnf-container.sh&rdquo;, if <code>-l</code> is not specified here, the tnf will run in &lsquo;diagnostic&rsquo; mode.</p>
-</div>
-<p>By default the claim file will be output into the same location as the test executable. The <code>-o</code> argument for
-    <code>run-cnf-suites.sh</code> can be used to provide a new location that the output files will be saved to. For more detailed
-    control over the outputs, see the output of <code>cnf-certification-test.test --help</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nb">cd</span><span class="w"> </span>cnf-certification-test<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>./cnf-certification-test.test<span class="w"> </span>--help
-</code></pre></div>
-<h4 id="run-a-single-test">Run a single test<a class="headerlink" href="#run-a-single-test" title="Permanent link">&para;</a></h4>
-<p>All tests have unique labels, which can be used to filter which tests are to be run. This is useful when debugging
-a single test.</p>
-<p>To select the test to be executed when running <code>run-cnf-suites.sh</code> with the following command-line:</p>
-<div class="highlight"><pre><span></span><code>./run-cnf-suites.sh<span class="w"> </span>-l<span class="w"> </span>operator-install-source
-</code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The test labels work the same as the suite labels, so you can select more than one test with the filtering mechanism shown before.</p>
-</div>
-<h3 id="run-all-of-the-tests">Run all of the tests<a class="headerlink" href="#run-all-of-the-tests" title="Permanent link">&para;</a></h3>
-<p>You can run all of the tests (including the intrusive tests and the extended suite) with the following commands:</p>
-<div class="highlight"><pre><span></span><code>./run-cnf-suites.sh<span class="w"> </span>-l<span class="w"> </span>all
-</code></pre></div>
-<h4 id="run-a-subset">Run a subset<a class="headerlink" href="#run-a-subset" title="Permanent link">&para;</a></h4>
-<p>You can find all the labels attached to the tests by running the following command:</p>
-<div class="highlight"><pre><span></span><code>./run-cnf-suites.sh<span class="w"> </span>--list
-</code></pre></div>
-<p>You can also check the <a href="CATALOG.md">CATALOG.md</a> to find all test labels.</p>
-<h4 id="labels-for-offline-environments">Labels for offline environments<a class="headerlink" href="#labels-for-offline-environments" title="Permanent link">&para;</a></h4>
-<p>Some tests do require connectivity to Red Hat servers to validate certification status.
-To run the tests in an offline environment, skip the tests using the <code>l</code> option.</p>
-<div class="highlight"><pre><span></span><code>./run-cnf-suites.sh<span class="w"> </span>-l<span class="w"> </span><span class="s1">&#39;!online&#39;</span>
-</code></pre></div>
-<p>Alternatively, if an offline DB for containers, helm charts and operators is available, there is no need to skip those tests if the environment variable <code>TNF_OFFLINE_DB</code> is set to the DB location. This DB can be generated using the <a href="https://github.com/test-network-function/oct">OCT tool</a>.</p>
-<p>Note: Only partner certified images are stored in the offline database. If Red Hat images are checked against the offline database, they will show up as not certified. The online database includes both Partner and Redhat images.</p>
-<h4 id="output-targz-file-with-results-and-web-viewer-files">Output tar.gz file with results and web viewer files<a class="headerlink" href="#output-targz-file-with-results-and-web-viewer-files" title="Permanent link">&para;</a></h4>
-<p>After running all the test cases, a compressed file will be created with all the results files and web artifacts to review them.</p>
-<p>By default, only the <code>claim.js</code>, the <code>cnf-certification-tests_junit.xml</code> file and this new tar.gz file are created after the test suite has finished, as this is probably all that normal partners/users will need.</p>
-<p>Two env vars allow to control the web artifacts and the the new tar.gz file generation:</p>
+<h2 id="test-labels">Test labels<a class="headerlink" href="#test-labels" title="Permanent link">&para;</a></h2>
+<p>The test cases cases have several labels to allow for different types of groupings when selecting which to run. These are the following:</p>
 <ul>
-<li>TNF_OMIT_ARTIFACTS_ZIP_FILE=true/false : Defaulted to false in the launch scripts. If set to true, the tar.gz generation will be skipped.</li>
-<li>TNF_INCLUDE_WEB_FILES_IN_OUTPUT_FOLDER=true/false : Defaulted to false in the launch scripts. If set to true, the web viewer/parser files will also be copied to the output (claim) folder.</li>
+<li>The name of the test case</li>
+<li>The name of the test suite</li>
+<li>The category of the test case (common, telco, faredge, extended)</li>
 </ul>
-<h3 id="build-test-a-workload">Build + Test a workload<a class="headerlink" href="#build-test-a-workload" title="Permanent link">&para;</a></h3>
-<p>Refer <a href="../developers/">Developers&rsquo; Guide</a></p>
-<!-- markdownlint-disable first-line-heading -->
+<p>These labels can be combined with some operators to create label filters that match any condition. For example:</p>
+<ul>
+<li>The label filter &ldquo;observability,access-control&rdquo; will match the test suites <em>observability</em> and <em>access-control</em>.</li>
+<li>The label filter &ldquo;operator &amp;&amp; !operator-crd-versioning&rdquo; will match the <em>operator</em> test suite without the <em>operator_crd_versioning</em> test case.</li>
+<li>To select all the test cases the <em>all</em> label filter can be used.</li>
+</ul>
+<p>To view which test cases will run for a specific label or label filter use the flag <code>--list</code>.</p>
+<p>See the <a href="CATALOG.md">CATALOG.md</a> to find all test labels.</p>
+<h2 id="selected-flags-description">Selected flags description<a class="headerlink" href="#selected-flags-description" title="Permanent link">&para;</a></h2>
+<p>The following is a non-exhaustive list of the most common flags that the <code>certsuite run</code> command accepts. To see the complete list use the <code>-h, --help</code> flag.</p>
+<ul>
+<li><code>-l, --label-filter</code>: Label expression to filter test cases. Can be a test suite or list or test suites, such as <code>"observability,access-control"</code> or a more complex expression with logical operators such as <code>"access-control &amp;&amp; !access-control-sys-admin-capability"</code>.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If <code>-l</code> is not specified, the Test Suite will run in &lsquo;diagnostic&rsquo; mode. In this mode, no test case will run: it will only get information from the cluster (PUTs, CRDs, nodes info, etc…) to save it in the claim file. This can be used to make sure the configuration was properly set and the autodiscovery found the right pods/crds…</p>
+</div>
+<ul>
+<li>
+<p><code>-o, --output-dir</code>: Path of the local directory where test results (claim.json), the execution logs (certsuite.log), and the results artifacts file (results.tar.gz) will be available from after the container exits.</p>
+</li>
+<li>
+<p><code>-k, --kubeconfig</code>: Path to the Kubeconfig file of the target cluster.</p>
+</li>
+<li>
+<p><code>-c, --config-file</code>: Path to the <code>certsuite_config.yml</code> file.</p>
+</li>
+<li>
+<p><code>--preflight-dockerconfig</code>: Path to the Dockerconfig file to be used by the Preflight test suite</p>
+</li>
+<li>
+<p><code>--offline-db</code>: Path to an offline DB to check the certification status of container images, operators and helm charts. Defaults to the DB included in the test container image.</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>See the <a href="https://github.com/redhat-best-practices-for-k8s/oct">OCT tool</a> for more information on how to create this DB.</p>
+</div>
+<h2 id="using-the-container-image">Using the container image<a class="headerlink" href="#using-the-container-image" title="Permanent link">&para;</a></h2>
+<p>The only prerequisite for running the Test Suite in container mode is having Docker or Podman installed.</p>
+<h3 id="pull-the-test-image">Pull the test image<a class="headerlink" href="#pull-the-test-image" title="Permanent link">&para;</a></h3>
+<p>The test image is available at this <a href="https://quay.io/repository/redhat-best-practices-for-k8s/certsuite">repository</a> and can be pulled using:</p>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>pull<span class="w"> </span>quay.io/redhat-best-practices-for-k8s/certsuite:&lt;image-tag&gt;
+</code></pre></div>
+<p>The image tag can be <code>latest</code> to select the latest release, <code>unstable</code> to fetch the image built with the latest commit in the repository or any existing version number such as <code>v5.2.1</code>.</p>
+<h3 id="launch-the-test-suite">Launch the Test Suite<a class="headerlink" href="#launch-the-test-suite" title="Permanent link">&para;</a></h3>
+<p>The Test Suite requires 3 files that must be provided to the test container:</p>
+<ul>
+<li>The <em>Kubeconfig</em> for the target cluster.</li>
+<li>The <em>Dockerconfig</em> of the local Docker installation (only for the Preflight test suite).</li>
+<li>The <code>certsuite_config.yml</code>.</li>
+</ul>
+<p>To reduce the number of shared volumes with the test container in the example below those files are copied into a folder called &ldquo;config&rdquo;. Also, another folder to contain the output files called &ldquo;results&rdquo; has been created. The files saved in the output directory after the test run are:</p>
+<ul>
+<li>A <code>claim.json</code> file with the test results.</li>
+<li>A <code>certsuite.log</code> file with the execution logs.</li>
+<li>A <code>.tar.gz</code> file with the above two files and an additional <code>results.html</code> file to visualize the results in a website.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span>--network<span class="w"> </span>host<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-v<span class="w"> </span>&lt;path-to-local-dir&gt;/config:/usr/certsuite/config:Z<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-v<span class="w"> </span>&lt;path-to-local-dir&gt;/results:/usr/certsuite/results:Z<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>quay.io/redhat-best-practices-for-k8s/certsuite:latest<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>certsuite<span class="w"> </span>run<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--kubeconfig<span class="o">=</span>/usr/certsuite/config/kubeconfig<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--preflight-dockerconfig<span class="o">=</span>/usr/certsuite/config/dockerconfig<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--config-file<span class="o">=</span>/usr/certsuite/config/certsuite_config.yml<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--output-dir<span class="o">=</span>/usr/certsuite/results<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--label-filter<span class="o">=</span>all
+</code></pre></div>
 
 
 

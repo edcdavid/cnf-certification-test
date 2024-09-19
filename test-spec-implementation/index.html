@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../runtime-env/">
+        <link rel="prev" href="../test-spec/">
       
       
-        <link rel="next" href="../test-standalone/">
+        <link rel="next" href="../test-output/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Prebuilt container - Red Hat Best Practices Test Suite for Kubernetes</title>
+        <title>Implementation - Red Hat Best Practices Test Suite for Kubernetes</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#test" class="md-skip">
+        <a href="#test-case-implementation" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Prebuilt container
+              Implementation
             
           </span>
         </div>
@@ -183,7 +183,7 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/test-network-function/cnf-certification-test/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/redhat-best-practices-for-k8s/certsuite/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
@@ -248,39 +248,39 @@
         
   
   
-    
   
-  
-    
-    
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
-          
+    <li class="md-tabs__item">
+      <a href="../test-run/" class="md-tabs__link">
+        
   
     
   
-  Build | Execute
+  Run
 
-        </a>
-      </li>
-    
+      </a>
+    </li>
   
 
       
         
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../test-spec/" class="md-tabs__link">
-        
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../test-spec/" class="md-tabs__link">
+          
   
     
   
   Available Test Specs
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -358,6 +358,23 @@
   
 
       
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../data-collection/" class="md-tabs__link">
+        
+  
+    
+  
+  Data Collection
+
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -390,7 +407,7 @@
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/test-network-function/cnf-certification-test/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/redhat-best-practices-for-k8s/certsuite/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
@@ -522,6 +539,26 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../test-run/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Run
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -548,26 +585,47 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   <span class="md-ellipsis">
-    Build | Execute
+    Available Test Specs
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Build | Execute
+            Available Test Specs
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../test-spec/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Test Specs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -589,7 +647,7 @@
           
   
   <span class="md-ellipsis">
-    Prebuilt container
+    Implementation
   </span>
   
 
@@ -600,7 +658,7 @@
         
   
   <span class="md-ellipsis">
-    Prebuilt container
+    Implementation
   </span>
   
 
@@ -622,104 +680,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#with-quay-test-container-image" class="md-nav__link">
+  <a href="#lifecycle-deployment-scaling-and-lifecycle-statefulset-scaling" class="md-nav__link">
     <span class="md-ellipsis">
-      With quay test container image
+      lifecycle-deployment-scaling and lifecycle-statefulset-scaling
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="With quay test container image">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pull-test-image" class="md-nav__link">
-    <span class="md-ellipsis">
-      Pull test image
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#check-cluster-resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Check cluster resources
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#run-the-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      Run the tests
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#run-with-docker" class="md-nav__link">
-    <span class="md-ellipsis">
-      Run with docker
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#output-targz-file-with-results-and-web-viewer-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Output tar.gz file with results and web viewer files
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#with-local-test-container-image" class="md-nav__link">
+  <a href="#lifecycle-crd-scaling" class="md-nav__link">
     <span class="md-ellipsis">
-      With local test container image
+      lifecycle-crd-scaling
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="With local test container image">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#build-locally" class="md-nav__link">
-    <span class="md-ellipsis">
-      Build locally
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#build-from-an-unofficial-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      Build from an unofficial source
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#run-the-tests-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Run the tests 2
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -732,50 +706,9 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../test-standalone/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Standalone test executable
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../test-spec/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Available Test Specs
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -987,6 +920,26 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-collection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Collection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1014,104 +967,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#with-quay-test-container-image" class="md-nav__link">
+  <a href="#lifecycle-deployment-scaling-and-lifecycle-statefulset-scaling" class="md-nav__link">
     <span class="md-ellipsis">
-      With quay test container image
+      lifecycle-deployment-scaling and lifecycle-statefulset-scaling
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="With quay test container image">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pull-test-image" class="md-nav__link">
-    <span class="md-ellipsis">
-      Pull test image
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#check-cluster-resources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Check cluster resources
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#run-the-tests" class="md-nav__link">
-    <span class="md-ellipsis">
-      Run the tests
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#run-with-docker" class="md-nav__link">
-    <span class="md-ellipsis">
-      Run with docker
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#output-targz-file-with-results-and-web-viewer-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Output tar.gz file with results and web viewer files
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#with-local-test-container-image" class="md-nav__link">
+  <a href="#lifecycle-crd-scaling" class="md-nav__link">
     <span class="md-ellipsis">
-      With local test container image
+      lifecycle-crd-scaling
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="With local test container image">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#build-locally" class="md-nav__link">
-    <span class="md-ellipsis">
-      Build locally
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#build-from-an-unofficial-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      Build from an unofficial source
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#run-the-tests-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Run the tests 2
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1133,117 +1002,27 @@
   
 
 
-<!-- markdownlint-disable code-block-style line-length no-bare-urls no-emphasis-as-heading -->
-<h1 id="test">Test<a class="headerlink" href="#test" title="Permanent link">&para;</a></h1>
-<p>The tests can be run within a prebuilt container in the <abbr title="OpenShift Container Platform">OCP</abbr> cluster.</p>
-<p><strong>Prerequisites for the <abbr title="OpenShift Container Platform">OCP</abbr> cluster</strong></p>
+<!-- markdownlint-disable line-length no-bare-urls -->
+<h1 id="test-case-implementation">Test Case Implementation<a class="headerlink" href="#test-case-implementation" title="Permanent link">&para;</a></h1>
+<p>This section explains the implementation of some test cases so that users can have a better idea on what the is code actually doing and, in some cases, which configuration fields are relevant to them.</p>
+<h2 id="lifecycle-deployment-scaling-and-lifecycle-statefulset-scaling"><a href="https://github.com/redhat-best-practices-for-k8s/certsuite/blob/main/CATALOG.md#lifecycle-deployment-scaling">lifecycle-deployment-scaling</a> and <a href="https://github.com/redhat-best-practices-for-k8s/certsuite/blob/main/CATALOG.md#lifecycle-statefulset-scaling">lifecycle-statefulset-scaling</a><a class="headerlink" href="#lifecycle-deployment-scaling-and-lifecycle-statefulset-scaling" title="Permanent link">&para;</a></h2>
+<p>For each discovered deployment in the <a href="https://github.com/redhat-best-practices-for-k8s/certsuite/blob/main/config/certsuite_config.yml#L1">target namespaces</a>, the test case will try to modify its replica count to check whether pod&rsquo;s can be correctly removed and re-deployed in the cluster.</p>
+<!-- markdownlint-disable MD033 -->
+<p><img src="../assets/images/tests-flow-charts/lifecycle-deployment-scaling.png"></img></p>
+<!-- markdownlint-disable MD033 -->
+
+<p>As depicted in the image, the way to modify the number of replicas varies depending on whether the deployment/statefulset&rsquo;s replica count is managed by an HPA, a CR or it&rsquo;s just a standalone resource.</p>
 <ul>
-<li>The cluster should have enough resources to drain nodes and reschedule pods. If that is not the case, then <code>lifecycle-pod-recreation</code> test should be skipped.</li>
+<li>If the deployment/statefulset is an standalone resource, the test case just decreases the <code>.spec.replicas</code> field by one, waits for that pod to be removed and then it restores the original number increasing the field by one again. The test case passes as soon as the new pod is up and running again.</li>
+<li>If there&rsquo;s an <a href="https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/">Horizontal Pod Autoscaler</a> (HPA) managing the resource, the test case decreases and increases the HPA&rsquo;s MaxReplicas field accordingly.</li>
+<li>If <a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/owners-dependents/#owner-references-in-object-specifications">the owner</a> of the resource is a CR, the test makes sure that CR&rsquo;s CRD matches any of the suffixes in the certsuite_config.yaml&rsquo;s <a href="https://github.com/redhat-best-practices-for-k8s/certsuite/blob/main/config/certsuite_config.yml#L9">targetCrdFilters</a> field. If there&rsquo;s a match, the test case is skipped as it&rsquo;s there&rsquo;s another test case called lifecycle-crd-scaling that will test it. Otherwise it will flagged as failed.</li>
 </ul>
-<h2 id="with-quay-test-container-image">With quay test container image<a class="headerlink" href="#with-quay-test-container-image" title="Permanent link">&para;</a></h2>
-<h3 id="pull-test-image">Pull test image<a class="headerlink" href="#pull-test-image" title="Permanent link">&para;</a></h3>
-<p>The test image is available at this repository in <a href="https://quay.io/repository/testnetworkfunction/cnf-certification-test">quay.io</a> and can be pulled using
-The image can be pulled using :</p>
-<div class="highlight"><pre><span></span><code>podman<span class="w"> </span>pull<span class="w"> </span>quay.io/testnetworkfunction/cnf-certification-test
-</code></pre></div>
-<h3 id="check-cluster-resources">Check cluster resources<a class="headerlink" href="#check-cluster-resources" title="Permanent link">&para;</a></h3>
-<p>Some tests suites such as <code>platform-alteration</code> require node access to get node configuration like <code>hugepage</code>.
-In order to get the required information, the test suite does not <code>ssh</code> into nodes, but instead rely on <a href="https://docs.openshift.com/container-platform/3.7/cli_reference/basic_cli_operations.html#debug">oc debug tools</a>. This tool makes it easier to fetch information from nodes and also to debug running pods.</p>
-<p><code>oc debug tool</code> will launch a new container ending with <strong>-debug</strong> suffix, and the container will be destroyed once the debug session is done. Ensure that the cluster should have enough resources to create debug pod, otherwise those tests would fail.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>It&rsquo;s <strong>recommended</strong> to clean up disk space and make sure there&rsquo;s enough resources to deploy another container image in every node before starting the tests.</p>
-</div>
-<h3 id="run-the-tests">Run the tests<a class="headerlink" href="#run-the-tests" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>./run-tnf-container.sh
-</code></pre></div>
-<p><strong>Required arguments</strong></p>
-<ul>
-<li><code>-t</code> to provide the path of the local directory that contains tnf config files</li>
-<li><code>-o</code> to provide the path of the local directory where test results (claim.json), the execution logs (cnf-certsuite.log), and the results artifacts file (results.tar.gz) will be available from after the container exits.</li>
-</ul>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>This directory must exist in order for the claim file to be written.</p>
-</div>
-<p><strong>Optional arguments</strong></p>
-<ul>
-<li><code>-l</code> to list the labels to be run. See <a href="https://onsi.github.io/ginkgo/#spec-labels">Ginkgo Spec Labels</a> for more information on how to filter tests with labels.</li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If <code>-l</code> is not specified, the tnf will run in &lsquo;diagnostic&rsquo; mode. In this mode, no test case will run: it will only get information from the cluster (PUTs, CRDs, nodes info, etc…) to save it in the claim file. This can be used to make sure the configuration was properly set and the autodiscovery found the right pods/crds…</p>
-</div>
-<ul>
-<li>
-<p><code>-i</code> to provide a name to a custom <abbr title="Test Network Function">TNF</abbr> container image. Supports local images, as well as images from external registries.</p>
-</li>
-<li>
-<p><code>-k</code> to set a path to one or more kubeconfig files to be used by the container to authenticate with the cluster. Paths must be separated by a colon.</p>
-</li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If <code>-k</code> is not specified, autodiscovery is performed.</p>
-</div>
-<p>The autodiscovery first looks for paths in the <code>$KUBECONFIG</code> environment variable on the host system, and if the variable is not set or is empty, the default configuration stored in <code>$HOME/.kube/config</code> is checked.</p>
-<ul>
-<li><code>-n</code> to give the network mode of the container. Defaults set to <code>host</code>, which requires selinux to be disabled. Alternatively, <code>bridge</code> mode can be used with selinux if TNF_CONTAINER_CLIENT is set to <code>docker</code> or running the test as root.</li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>See the <a href="https://docs.docker.com/engine/reference/run/#network-settings">docker run &ndash;network parameter reference</a> for more information on how to configure network settings.</p>
-</div>
-<ul>
-<li><code>-b</code> to set an external offline DB that will be used to verify the certification status of containers, helm charts and operators. Defaults to the DB included in the <abbr title="Test Network Function">TNF</abbr> container image.</li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>See the <a href="https://github.com/test-network-function/oct">OCT tool</a> for more information on how to create this DB.</p>
-</div>
-<p><strong>Command to run</strong></p>
-<div class="highlight"><pre><span></span><code>./run-tnf-container.sh<span class="w"> </span>-k<span class="w"> </span>~/.kube/config<span class="w"> </span>-t<span class="w"> </span>~/tnf/config
--o<span class="w"> </span>~/tnf/output<span class="w"> </span>-l<span class="w"> </span><span class="s2">&quot;networking,access-control&quot;</span>
-</code></pre></div>
-<p>See <a href="../test-spec/#general-tests">General tests</a> for a list of available keywords.</p>
-<h3 id="run-with-docker">Run with <code>docker</code><a class="headerlink" href="#run-with-docker" title="Permanent link">&para;</a></h3>
-<p>By default, <code>run-container.sh</code> utilizes <code>podman</code>. However, an alternate container virtualization
-client using <code>TNF_CONTAINER_CLIENT</code> can be configured. This is particularly useful for operating systems that do not readily support
-<code>podman</code>.</p>
-<p>In order to configure the test harness to use <code>docker</code>, issue the following prior to
-<code>run-tnf-container.sh</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">TNF_CONTAINER_CLIENT</span><span class="o">=</span>docker
-</code></pre></div>
-<h3 id="output-targz-file-with-results-and-web-viewer-files">Output tar.gz file with results and web viewer files<a class="headerlink" href="#output-targz-file-with-results-and-web-viewer-files" title="Permanent link">&para;</a></h3>
-<p>After running all the test cases, a compressed file will be created with all the results files and web artifacts to review them.</p>
-<p>By default, only the <code>claim.js</code>, the <code>cnf-certification-tests_junit.xml</code> file and this new tar.gz file are created after the test suite has finished, as this is probably all that normal partners/users will need.</p>
-<p>Two env vars allow to control the web artifacts and the the new tar.gz file generation:</p>
-<ul>
-<li>TNF_OMIT_ARTIFACTS_ZIP_FILE=true/false : Defaulted to false in the launch scripts. If set to true, the tar.gz generation will be skipped.</li>
-<li>TNF_INCLUDE_WEB_FILES_IN_OUTPUT_FOLDER=true/false : Defaulted to false in the launch scripts. If set to true, the web viewer/parser files will also be copied to the output (claim) folder.</li>
-</ul>
-<h2 id="with-local-test-container-image">With local test container image<a class="headerlink" href="#with-local-test-container-image" title="Permanent link">&para;</a></h2>
-<h3 id="build-locally">Build locally<a class="headerlink" href="#build-locally" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>podman<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>cnf-certification-test:v5.1.0<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--build-arg<span class="w"> </span><span class="nv">TNF_VERSION</span><span class="o">=</span>v5.1.0<span class="w"> </span><span class="se">\</span>
-</code></pre></div>
-<ul>
-<li><code>TNF_VERSION</code> value is set to a branch, a tag, or a hash of a commit that will be installed into the image</li>
-</ul>
-<h3 id="build-from-an-unofficial-source">Build from an unofficial source<a class="headerlink" href="#build-from-an-unofficial-source" title="Permanent link">&para;</a></h3>
-<p>The unofficial source could be a fork of the <abbr title="Test Network Function">TNF</abbr> repository.</p>
-<p>Use the <code>TNF_SRC_URL</code> build argument to override the URL to a source repository.</p>
-<div class="highlight"><pre><span></span><code>podman<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>cnf-certification-test:v5.1.0<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--build-arg<span class="w"> </span><span class="nv">TNF_VERSION</span><span class="o">=</span>v5.1.0<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--build-arg<span class="w"> </span><span class="nv">TNF_SRC_URL</span><span class="o">=</span>https://github.com/test-network-function/cnf-certification-test<span class="w"> </span>.
-</code></pre></div>
-<h3 id="run-the-tests-2">Run the tests 2<a class="headerlink" href="#run-the-tests-2" title="Permanent link">&para;</a></h3>
-<p>Specify the custom <abbr title="Test Network Function">TNF</abbr> image using the <code>-i</code> parameter.</p>
-<div class="highlight"><pre><span></span><code>./run-tnf-container.sh<span class="w"> </span>-i<span class="w"> </span>cnf-certification-test:v5.1.0
--t<span class="w"> </span>~/tnf/config<span class="w"> </span>-o<span class="w"> </span>~/tnf/output<span class="w"> </span>-l<span class="w"> </span><span class="s2">&quot;networking,access-control&quot;</span>
-</code></pre></div>
-<p>Note: see <a href="../test-spec/#general-tests">General tests</a> for a list of available keywords.</p>
-<!-- markdownlint-disable first-line-heading -->
+<h2 id="lifecycle-crd-scaling"><a href="https://github.com/redhat-best-practices-for-k8s/certsuite/blob/main/CATALOG.md#lifecycle-crd-scaling">lifecycle-crd-scaling</a><a class="headerlink" href="#lifecycle-crd-scaling" title="Permanent link">&para;</a></h2>
+<p>During the program&rsquo;s startup, an autodiscovery phase is performed where all the CRDs and their existing CRs in the <a href="https://github.com/redhat-best-practices-for-k8s/certsuite/blob/main/config/certsuite_config.yml#L1">target namespaces</a> are stored to be tested later. Only CRs whose CRD&rsquo;s suffix matches at least one of the <a href="https://github.com/redhat-best-practices-for-k8s/certsuite/blob/main/config/certsuite_config.yml#L9">targetCrdFilters</a> and has an <a href="https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/#scale-subresource">scale subresource</a> will be selected as test targets.</p>
+<p>For every CR under test, a similar approach to the scaling of deployments and statefulsets is done.</p>
+<!-- markdownlint-disable MD033 -->
+<p><img src="../assets/images/tests-flow-charts/lifecycle-crd-scaling.png"></img></p>
+<!-- markdownlint-disable MD033 -->
 
 
 

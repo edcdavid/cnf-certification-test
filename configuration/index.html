@@ -183,7 +183,7 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/test-network-function/cnf-certification-test/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/redhat-best-practices-for-k8s/certsuite/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
@@ -251,19 +251,16 @@
   
   
   
-    
-    
-      <li class="md-tabs__item">
-        <a href="../test-container/" class="md-tabs__link">
-          
+    <li class="md-tabs__item">
+      <a href="../test-run/" class="md-tabs__link">
+        
   
     
   
-  Build | Execute
+  Run
 
-        </a>
-      </li>
-    
+      </a>
+    </li>
   
 
       
@@ -271,16 +268,19 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="../test-spec/" class="md-tabs__link">
-        
+    
+    
+      <li class="md-tabs__item">
+        <a href="../test-spec/" class="md-tabs__link">
+          
   
     
   
   Available Test Specs
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -358,6 +358,23 @@
   
 
       
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../data-collection/" class="md-tabs__link">
+        
+  
+    
+  
+  Data Collection
+
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -390,7 +407,7 @@
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/test-network-function/cnf-certification-test/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/redhat-best-practices-for-k8s/certsuite/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
@@ -694,9 +711,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#debugdaemonsetnamespace" class="md-nav__link">
+  <a href="#probedaemonsetnamespace" class="md-nav__link">
     <span class="md-ellipsis">
-      debugDaemonSetNamespace
+      probeDaemonSetNamespace
     </span>
   </a>
   
@@ -797,6 +814,26 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../test-run/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Run
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     
     
       
@@ -816,24 +853,24 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    Build | Execute
+    Available Test Specs
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Build | Execute
+            Available Test Specs
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -844,11 +881,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../test-container/" class="md-nav__link">
+      <a href="../test-spec/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Prebuilt container
+    Test Specs
   </span>
   
 
@@ -865,11 +902,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../test-standalone/" class="md-nav__link">
+      <a href="../test-spec-implementation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Standalone test executable
+    Implementation
   </span>
   
 
@@ -882,26 +919,6 @@
           </ul>
         </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../test-spec/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Available Test Specs
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -1113,6 +1130,26 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-collection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Collection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1307,9 +1344,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#debugdaemonsetnamespace" class="md-nav__link">
+  <a href="#probedaemonsetnamespace" class="md-nav__link">
     <span class="md-ellipsis">
-      debugDaemonSetNamespace
+      probeDaemonSetNamespace
     </span>
   </a>
   
@@ -1388,14 +1425,14 @@
 <!-- markdownlint-disable code-block-style line-length no-bare-urls -->
 <h1 id="red-hat-best-practices-test-suite-for-kubernetes-configuration">Red Hat Best Practices Test Suite for Kubernetes configuration<a class="headerlink" href="#red-hat-best-practices-test-suite-for-kubernetes-configuration" title="Permanent link">&para;</a></h1>
 <p>The Red Hat Best Practices Test Suite for Kubernetes uses a YAML configuration file to certify a specific workload. This file specifies the workload&rsquo;s resources to be certified, as well as any exceptions or other general configuration options.</p>
-<p>By default a file named <em>tnf_config.yml</em> will be used. Here&rsquo;s an <a href="https://github.com/test-network-function/cnf-certification-test/blob/main/cnf-certification-test/tnf_config.yml">example</a> of the Config File. For a description of each config option see the section <a href="#config-file-options">Config File options</a>.</p>
+<p>By default a file named <em>certsuite_config.yml</em> will be used. Here&rsquo;s an <a href="https://github.com/redhat-best-practices-for-k8s/certsuite/blob/main/config/certsuite_config.yml">example</a> of the Config File. For a description of each config option see the section <a href="#config-file-options">Config File options</a>.</p>
 <h2 id="config-generator">Config Generator<a class="headerlink" href="#config-generator" title="Permanent link">&para;</a></h2>
 <p>The Config File can be created using the Config Generator, which is part of the <em>certsuite</em> tool shipped with the Test Suite. The purpose of this particular tool is to help users configuring the Test Suite providing a logical structure of the available options as well as the information required to make use of them. The result is a Config File in YAML format that will be parsed to adapt the verification process to a specific workload.</p>
 <p>To compile the <em>certsuite</em> tool:</p>
 <div class="highlight"><pre><span></span><code>make<span class="w"> </span>build-certsuite-tool
 </code></pre></div>
 <p>To launch the Config Generator:</p>
-<div class="highlight"><pre><span></span><code>./tnf<span class="w"> </span>generate<span class="w"> </span>config
+<div class="highlight"><pre><span></span><code>./certsuite<span class="w"> </span>generate<span class="w"> </span>config
 </code></pre></div>
 <p>Here&rsquo;s an example of how to use the tool:</p>
 <!-- markdownlint-disable MD033 -->
@@ -1410,7 +1447,7 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Using the number of labels to determine how to get the resources under test.<br> 
-If there are labels defined, we get the list of pods, statefulsets, deployments, csvs, by fetching the resources matching the labels. Otherwise, if the labels are not defined, we only test the resources that are in the namespaces under test (defined in tnf_config.yml).</p>
+If there are labels defined, we get the list of pods, statefulsets, deployments, csvs, by fetching the resources matching the labels. Otherwise, if the labels are not defined, we only test the resources that are in the namespaces under test (defined in certsuite_config.yml).</p>
 </div>
 <h4 id="targetnamespaces">targetNameSpaces<a class="headerlink" href="#targetnamespaces" title="Permanent link">&para;</a></h4>
 <p>The namespaces in which the workload under test will be deployed.</p>
@@ -1424,26 +1461,26 @@ If there are labels defined, we get the list of pods, statefulsets, deployments,
 <p>The labels should be defined in Pod definition rather than added after the Pod is created, as labels added later on will be lost in case the Pod gets rescheduled. In the case of Pods defined as part of a Deployment, it&rsquo;s best to use the same label as the one defined in the <em>spec.selector.matchLabels</em> section of the Deployment YAML. The prefix field can be used to avoid naming collision with other labels.</p>
 </div>
 <div class="annotate highlight"><pre><span></span><code><span class="nt">podsUnderTestLabels</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;test-network-function.com/generic:</span><span class="nv"> </span><span class="s">target&quot;</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;redhat-best-practices-for-k8s.com/generic:</span><span class="nv"> </span><span class="s">target&quot;</span>
 </code></pre></div>
 <h4 id="operatorsundertestlabels">operatorsUnderTestLabels<a class="headerlink" href="#operatorsundertestlabels" title="Permanent link">&para;</a></h4>
-<p>The labels that each operator&rsquo;s <abbr title="ClusterServiceVersion in Operator Lifecycle Manager">CSV</abbr> of the workload under test must have to be verified by the Test Suite.</p>
+<p>The labels that each operator&rsquo;s CSV of the workload under test must have to be verified by the Test Suite.</p>
 <p>If a new label is used for this purpose make sure it is added to the workload operator&rsquo;s CSVs.</p>
 <div class="annotate highlight"><pre><span></span><code><span class="nt">operatorsUnderTestLabels</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;test-network-function.com/operator:</span><span class="nv"> </span><span class="s">target&quot;</span><span class="w"> </span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;redhat-best-practices-for-k8s.com/operator:</span><span class="nv"> </span><span class="s">target&quot;</span><span class="w"> </span>
 </code></pre></div>
 <h4 id="targetcrdfilters">targetCrdFilters<a class="headerlink" href="#targetcrdfilters" title="Permanent link">&para;</a></h4>
-<p>The <abbr title="Custom Resource Definition">CRD</abbr> name suffix used to filter the workload&rsquo;s CRDs among all the CRDs present in the cluster. For each <abbr title="Custom Resource Definition">CRD</abbr> it can also be specified if it&rsquo;s scalable or not in order to avoid some lifecycle test cases.</p>
+<p>The CRD name suffix used to filter the workload&rsquo;s CRDs among all the CRDs present in the cluster. For each CRD it can also be specified if it&rsquo;s scalable or not in order to avoid some lifecycle test cases.</p>
 <div class="annotate highlight"><pre><span></span><code><span class="nt">targetCrdFilters</span><span class="p">:</span>
 <span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">nameSuffix</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;group1.tnf.com&quot;</span>
 <span class="w">   </span><span class="nt">scalable</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
 <span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">nameSuffix</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;anydomain.com&quot;</span>
 <span class="w">   </span><span class="nt">scalable</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 </code></pre></div>
-<p>With the config show above, all <abbr title="Custom Resource Definition">CRD</abbr> names in the cluster whose names have the suffix <em>group1.tnf.com</em> or <em>anydomain.com</em> ( e.g. <em>crd1.group1.tnf.com</em> or <em>mycrd.mygroup.anydomain.com</em>) will be tested.</p>
+<p>With the config show above, all CRD names in the cluster whose names have the suffix <em>group1.tnf.com</em> or <em>anydomain.com</em> ( e.g. <em>crd1.group1.tnf.com</em> or <em>mycrd.mygroup.anydomain.com</em>) will be tested.</p>
 <h4 id="manageddeployments-managedstatefulsets">managedDeployments / managedStatefulSets<a class="headerlink" href="#manageddeployments-managedstatefulsets" title="Permanent link">&para;</a></h4>
 <p>The Deployments/StatefulSets managed by a Custom Resource whose scaling is controlled using the &ldquo;scale&rdquo; subresource of the CR.</p>
-<p>The <abbr title="Custom Resource Definition">CRD</abbr> defining that CR should be included in the <abbr title="Custom Resource Definition">CRD</abbr> filters with the scalable property set to true. If so, the test case <em>lifecycle-{deployment/statefulset}-scaling</em> will be skipped, otherwise it will fail.</p>
+<p>The CRD defining that CR should be included in the CRD filters with the scalable property set to true. If so, the test case <em>lifecycle-{deployment/statefulset}-scaling</em> will be skipped, otherwise it will fail.</p>
 <div class="annotate highlight"><pre><span></span><code><span class="nt">managedDeployments</span><span class="p">:</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">jack</span>
 <span class="nt">managedStatefulsets</span><span class="p">:</span>
@@ -1452,12 +1489,12 @@ If there are labels defined, we get the list of pods, statefulsets, deployments,
 <h4 id="junit-xml-file-creation">JUnit XML File Creation<a class="headerlink" href="#junit-xml-file-creation" title="Permanent link">&para;</a></h4>
 <p>The test suite has the ability to create the JUNit XML File output containing the test ID and the corresponding test result.</p>
 <p>To enable this, set:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">TNF_ENABLE_XML_CREATION</span><span class="o">=</span><span class="nb">true</span>
+<div class="highlight"><pre><span></span><code>--create-xml-junit-file<span class="w"> </span><span class="nb">true</span>
 </code></pre></div>
-<p>This will create a file named <code>cnf-certification-test/cnf-certification-tests_junit.xml</code>.</p>
+<p>This will create a file named <code>certsuite/certsuite-tests_junit.xml</code>.</p>
 <h4 id="enable-running-container-against-openshift-local">Enable running container against OpenShift Local<a class="headerlink" href="#enable-running-container-against-openshift-local" title="Permanent link">&para;</a></h4>
 <p>While running the test suite as a container, you can enable the container to be able to reach the local CRC instance by setting:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">TNF_ENABLE_CRC_TESTING</span><span class="o">=</span><span class="nb">true</span>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">CERTSUITE_ENABLE_CRC_TESTING</span><span class="o">=</span><span class="nb">true</span>
 </code></pre></div>
 <p>This utilizes the <code>--add-host</code> flag in Docker to be able to point <code>api.crc.testing</code> to the host gateway.</p>
 <h3 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permanent link">&para;</a></h3>
@@ -1505,11 +1542,11 @@ If there are labels defined, we get the list of pods, statefulsets, deployments,
 <span class="w">    </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tnf</span>
 </code></pre></div>
 <h3 id="red-hat-best-practices-test-suite-settings">Red Hat Best Practices Test Suite settings<a class="headerlink" href="#red-hat-best-practices-test-suite-settings" title="Permanent link">&para;</a></h3>
-<h4 id="debugdaemonsetnamespace">debugDaemonSetNamespace<a class="headerlink" href="#debugdaemonsetnamespace" title="Permanent link">&para;</a></h4>
+<h4 id="probedaemonsetnamespace">probeDaemonSetNamespace<a class="headerlink" href="#probedaemonsetnamespace" title="Permanent link">&para;</a></h4>
 <p>This is an optional field with the name of the namespace where a privileged DaemonSet will be deployed. The namespace will be created in case it does not exist. In case this field is not set, the default namespace for this DaemonSet is <em>cnf-suite</em>.</p>
-<div class="annotate highlight"><pre><span></span><code><span class="nt">debugDaemonSetNamespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cnf-cert</span>
+<div class="annotate highlight"><pre><span></span><code><span class="nt">probeDaemonSetNamespace</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cnf-cert</span>
 </code></pre></div>
-<p>This DaemonSet, called <em>tnf-debug</em> is deployed and used internally by the Test Suite tool to issue some shell commands that are needed in certain test cases. Some of these test cases might fail or be skipped in case it wasn&rsquo;t deployed correctly.</p>
+<p>This DaemonSet, called <em>certsuite-probe</em> is deployed and used internally by the Test Suite tool to issue some shell commands that are needed in certain test cases. Some of these test cases might fail or be skipped in case it wasn&rsquo;t deployed correctly.</p>
 <h3 id="other-settings">Other settings<a class="headerlink" href="#other-settings" title="Permanent link">&para;</a></h3>
 <p>The autodiscovery mechanism will attempt to identify the default network device and all the IP addresses of the Pods it needs for network connectivity tests, though that information can be explicitly set using annotations if needed.</p>
 <h4 id="pod-ips">Pod IPs<a class="headerlink" href="#pod-ips" title="Permanent link">&para;</a></h4>
@@ -1521,11 +1558,10 @@ If there are labels defined, we get the list of pods, statefulsets, deployments,
 <ul>
 <li>The <em>k8s.v1.cni.cncf.io/networks-status</em> annotation is checked and the <em>interface</em> from the first entry found with <em>“default”=true</em> is used. This annotation is automatically managed in OpenShift but may not be present in K8s.</li>
 </ul>
-<p>The label <em>test-network-function.com/skip_connectivity_tests</em> excludes Pods from all connectivity tests.</p>
-<p>The label <em>test-network-function.com/skip_multus_connectivity_tests</em> excludes Pods from <a href="https://github.com/k8snetworkplumbingwg/multus-cni">Multus</a> connectivity tests. Tests on the default interface are still run.</p>
+<p>The label <em>redhat-best-practices-for-k8s.com/skip_connectivity_tests</em> excludes Pods from all connectivity tests.</p>
+<p>The label <em>redhat-best-practices-for-k8s.com/skip_multus_connectivity_tests</em> excludes Pods from <a href="https://github.com/k8snetworkplumbingwg/multus-cni">Multus</a> connectivity tests. Tests on the default interface are still run.</p>
 <h4 id="affinity-requirements">Affinity requirements<a class="headerlink" href="#affinity-requirements" title="Permanent link">&para;</a></h4>
 <p>For workloads that require Pods to use Pod or Node Affinity rules, the label <em>AffinityRequired: true</em> must be included on the Pod YAML. This will ensure that the affinity best practices are tested and prevent any test cases for anti-affinity to fail.</p>
-<!-- markdownlint-disable first-line-heading -->
 
 
 

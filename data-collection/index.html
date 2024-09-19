@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../developers/">
+        <link rel="prev" href="../reference/">
       
-      
-        <link rel="next" href="../reference/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +18,7 @@
     
     
       
-        <title>Workload Developers - Red Hat Best Practices Test Suite for Kubernetes</title>
+        <title>Data Collection - Red Hat Best Practices Test Suite for Kubernetes</title>
       
     
     
@@ -72,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#workload-guidelines-for-developers" class="md-skip">
+        <a href="#share-test-suite-results-with-red-hat" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Workload Developers
+              Data Collection
             
           </span>
         </div>
@@ -319,12 +317,10 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../developers/" class="md-tabs__link">
           
   
@@ -361,9 +357,11 @@
         
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../data-collection/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
     
@@ -694,10 +692,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -708,22 +704,19 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -734,7 +727,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Developers' Guide
@@ -766,30 +759,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Workload Developers
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../workload-developers/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -798,35 +771,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#to-add-private-test-cases" class="md-nav__link">
-    <span class="md-ellipsis">
-      To add private test cases
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -915,10 +859,30 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../data-collection/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Data Collection
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -927,6 +891,44 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-information-is-shared" class="md-nav__link">
+    <span class="md-ellipsis">
+      What information is shared
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-should-i-store-my-data-in-the-collector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why should I store my data in the Collector?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -958,9 +960,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#to-add-private-test-cases" class="md-nav__link">
+  <a href="#what-information-is-shared" class="md-nav__link">
     <span class="md-ellipsis">
-      To add private test cases
+      What information is shared
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-should-i-store-my-data-in-the-collector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why should I store my data in the Collector?
     </span>
   </a>
   
@@ -984,22 +995,21 @@
   
 
 
-<!-- markdownlint-disable header-increment line-length no-bare-urls no-emphasis-as-heading -->
-<h1 id="workload-guidelines-for-developers">Workload Guidelines for developers<a class="headerlink" href="#workload-guidelines-for-developers" title="Permanent link">&para;</a></h1>
-<p>Developers of Kubernetes workloads, particularly those targeting
-<a href="https://redhat-connect.gitbook.io/openshift-badges/badges/cloud-native-network-functions-cnf">certification with Red Hat on OpenShift</a>,
-can use this suite to test the interaction of their workload with OpenShift.  If interested in certification
-please contact <a href="https://redhat-connect.gitbook.io/red-hat-partner-connect-general-guide/managing-your-account/getting-help/technology-partner-success-desk">Red Hat</a>.</p>
-<p><strong>Requirements</strong></p>
+<h1 id="share-test-suite-results-with-red-hat">Share Test Suite Results with Red Hat<a class="headerlink" href="#share-test-suite-results-with-red-hat" title="Permanent link">&para;</a></h1>
+<p>Your test suite results can be collected and stored in our
+<a href="https://github.com/redhat-best-practices-for-k8s/collector">Collector</a> database.</p>
+<h2 id="what-information-is-shared">What information is shared<a class="headerlink" href="#what-information-is-shared" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://docs.openshift.com/container-platform/4.10/welcome/index.html">OpenShift 4.10 installation</a> to run the workload</li>
-<li>At least one extra machine to host the test suite</li>
+<li>Only partner name and pass/fail/skip status per test case is stored</li>
+<li>Protected by password, partners can access only the data they have submitted.
+Red Hat team can access data from all partners.</li>
 </ul>
-<h3 id="to-add-private-test-cases">To add private test cases<a class="headerlink" href="#to-add-private-test-cases" title="Permanent link">&para;</a></h3>
-<p>Refer this documentation
-<a href="https://github.com/redhat-best-practices-for-k8s/cnfextensions">https://github.com/redhat-best-practices-for-k8s/cnfextensions</a></p>
-<p><strong>Reference</strong></p>
-<p><a href="https://github.com/redhat-best-practices-for-k8s/certsuite-sample-workload">certsuite-sample-workload</a> repository provides sample example to model the test setup.</p>
+<h2 id="why-should-i-store-my-data-in-the-collector">Why should I store my data in the Collector?<a class="headerlink" href="#why-should-i-store-my-data-in-the-collector" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Keep track of your test suite results over time.</li>
+<li>Contribute to our statistics and analysis,
+to improve Red Hat best practices test suite for Kubernetes.</li>
+</ul>
 
 
 
