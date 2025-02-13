@@ -7,7 +7,7 @@ Depending on the workload type, not all tests are required to pass to satisfy be
 
 ## Test cases summary
 
-### Total test cases: 118
+### Total test cases: 119
 
 ### Total suites: 10
 
@@ -21,14 +21,14 @@ Depending on the workload type, not all tests are required to pass to satisfy be
 |observability|5|
 |operator|12|
 |performance|6|
-|platform-alteration|13|
+|platform-alteration|14|
 |preflight|18|
 
-### Extended specific tests only: 12
+### Extended specific tests only: 13
 
 |Mandatory|Optional|
 |---|---|
-|9|3|
+|10|3|
 
 ### Far-Edge specific tests only: 9
 
@@ -40,7 +40,7 @@ Depending on the workload type, not all tests are required to pass to satisfy be
 
 |Mandatory|Optional|
 |---|---|
-|44|26|
+|43|27|
 
 ### Telco specific tests only: 27
 
@@ -1355,12 +1355,12 @@ Description|Verifies that only single/multi namespaced operators are installed i
 Suggested Remediation|Ensure that operator with install mode SingleNamespaced or MultiNamespaced only is installed in the tenant namespace. Any other operator with install mode AllNamespace, cluster-wide operator or pods not belonging to any operator must not be present in this namespace.
 Best Practice Reference|https://redhat-best-practices-for-k8s.github.io/guide/#redhat-best-practices-for-k8s-cnf-operator-requirements
 Exception Process|No exceptions
-Tags|common,operator
+Tags|extended,operator
 |**Scenario**|**Optional/Mandatory**|
 |Extended|Mandatory|
-|Far-Edge|Mandatory|
-|Non-Telco|Mandatory|
-|Telco|Mandatory|
+|Far-Edge|Optional|
+|Non-Telco|Optional|
+|Telco|Optional|
 
 ### performance
 
@@ -1493,6 +1493,22 @@ Tags|common,platform-alteration
 |Far-Edge|Mandatory|
 |Non-Telco|Mandatory|
 |Telco|Mandatory|
+
+#### platform-alteration-cluster-operator-health
+
+Property|Description
+---|---
+Unique ID|platform-alteration-cluster-operator-health
+Description|Tests that all cluster operators are healthy.
+Suggested Remediation|Ensure each cluster operator is in an 'Available' state. If an operator is not in an 'Available' state, investigate the operator's logs and events to determine the cause of the failure.
+Best Practice Reference|https://redhat-best-practices-for-k8s.github.io/guide/#redhat-best-practices-for-k8s-cnf-operator-requirements
+Exception Process|No exceptions
+Tags|common,platform-alteration
+|**Scenario**|**Optional/Mandatory**|
+|Extended|Optional|
+|Far-Edge|Optional|
+|Non-Telco|Optional|
+|Telco|Optional|
 
 #### platform-alteration-hugepages-1g-only
 
